@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de"> <!-- Die Sprache der Seite ist Deutsch -->
+
+<head>
+	<!-- Kopfbereich, enthält Metadaten und Links zu Ressourcen -->
+	<meta charset="UTF-8"> <!-- Zeichensatz der Seite ist UTF-8 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Für die responsive Darstellung auf mobilen Geräten -->
+	<title>Kernfusion Präsentation</title> <!-- Titel der Seite -->
+	<link rel="stylesheet" href="/CSS/style.css"> <!-- Einbinden einer externen CSS-Datei -->
+	<link rel="stylesheet" href="/CSS/bgStyle.css">
+	<script src="Java script/script.js"></script>
+	<style>
+		/* Inline-CSS-Definitionen für die Gestaltung der Seite */
+
+		body {
+			/* font-family: Arial, sans-serif; */
+			/* margin: 20px; */
+			line-height: 1.6;
+			/* Zeilenabstand */
+		}
+
+		nav {
+			margin-bottom: 20px;
+			/* Abstand zwischen der Navigation und dem restlichen Inhalt */
+		}
+
+		nav a {
+			margin-right: 15px;
+			/* Abstand zwischen den Navigationslinks */
+			text-decoration: none;
+			/* Entfernt die Unterstreichung der Links */
+			color: #007BFF;
+			/* Farbe der Links (blau) */
+		}
+
+		section {
+			display: none;
+			/* Abschnitte (Folie 1, 2, etc.) sind standardmäßig unsichtbar */
+			padding: 10px;
+			/* Innenabstand der Abschnitte */
+			border: 1px solid #846500;
+			/* Rahmen um die Abschnitte in brauner Farbe */
+			border-radius: 10px;
+			/* Abgerundete Ecken für die Abschnitte */
+			background-color: #feb25a;
+			/* Hintergrundfarbe der Abschnitte (orange) */
+		}
+
+		h2 {
+			color: #333;
+			/* Farbe der Überschriften */
+		}
+
+		.active {
+			display: block;
+			/* Der Abschnitt mit der Klasse "active" wird angezeigt */
+		}
+	</style>
+
+
+</head>
+
+<body class="bgGreyAlpha"> <!-- Der Körper der Seite, hier wird der Inhalt geladen -->
+
+	<!-- Navigationsleiste mit Links, die verschiedene Folien anzeigen -->
+	<nav class="bgBlackRad">
+		<!-- Jeder Link hat eine "onclick"-Funktion, die den entsprechenden Abschnitt anzeigt -->
+		<a href="javascript:void(0);" onclick="showSection('folien1')">Folie 1</a>
+		<a href="javascript:void(0);" onclick="showSection('folien2')">Folie 2</a>
+		<a href="javascript:void(0);" onclick="showSection('folien3')">Folie 3</a>
+		<a href="javascript:void(0);" onclick="showSection('folien4')">Folie 4</a>
+		<a href="javascript:void(0);" onclick="showSection('folien5')">Folie 5</a>
+		<a href="javascript:void(0);" onclick="showSection('folien6')">Folie 6</a>
+		<a href="javascript:void(0);" onclick="showSection('folien7')">Folie 7</a>
+		<a href="javascript:void(0);" onclick="showSection('folien8')">Folie 8</a>
+		<a href="javascript:void(0);" onclick="showSection('folien9')">Folie 9</a>
+		<a href="javascript:void(0);" onclick="showSection('quellen')">Quellen</a>
+		<!-- Zeigt den Abschnitt "Quellen" an -->
+	</nav>
+
+	<section id="folien1">
+		<h2>Folie 1: Einführung in die Kernfusion</h2>
+		<p>Was ist Kernfusion? Fusion bezeichnet den physikalischen Prozess, bei dem zwei leichte Atomkerne zu einem
+			schwereren Kern verschmelzen. Dabei wird eine große Menge an Energie freigesetzt. Dieser Prozess findet in
+			der Sonne statt und ist verantwortlich für die enorme Energiemenge, die sie abstrahlt.</p>
+		<p>Warum ist Kernfusion interessant? Saubere Energiequelle: Es entstehen keine schädlichen Treibhausgase und nur
+			geringe Mengen an radioaktiven Abfällen. Unbegrenzte Brennstoffquelle: Brennstoffe wie Deuterium (aus
+			Wasser) und Tritium (aus Lithium) sind praktisch unerschöpflich. Hohe Energieausbeute: Ein Gramm
+			Fusionsbrennstoff kann so viel Energie liefern wie mehrere Tonnen fossiler Brennstoffe.</p>
+	</section>
+
+	<section id="folien2">
+		<h2>Folie 2: Grundlagen der Fusionsreaktion</h2>
+		<p>Wichtige Reaktionen: In Fusionsreaktoren wird meist die Verschmelzung von Deuterium (schwerer Wasserstoff)
+			und Tritium (radioaktiver Wasserstoff) genutzt.</p>
+		<p>Reaktionsgleichung: 2H + 3H → 4He + n + Energie</p>
+		<p>Ergebnis: Ein Heliumkern, ein Neutron und große Mengen an Energie. Die freigesetzte Energie stammt aus der
+			Umwandlung von Masse in Energie nach Einsteins Gleichung: E = mc². Ein kleiner Teil der Masse der Kerne wird
+			in Energie umgewandelt.</p>
+	</section>
+
+	<section id="folien3">
+		<h2>Folie 3: Die physikalischen Herausforderungen</h2>
+		<p>Extrem hohe Temperaturen: Um die Fusion zu ermöglichen, müssen die Atomkerne genug Energie haben, um die
+			Coulomb-Barriere zu überwinden. Diese Barriere entsteht durch die abstoßende elektrische Kraft zwischen den
+			positiv geladenen Kernen. Dies erfordert Temperaturen von über 100 Millionen Grad Celsius – das ist mehr als
+			das Zehnfache der Temperatur im Sonneninneren!</p>
+		<p>Plasma: Bei diesen Temperaturen sind Atome vollständig ionisiert, das heißt, Elektronen sind von den
+			Atomkernen getrennt. Dieser Zustand wird Plasma genannt – ein extrem heißes und elektrisch leitfähiges Gas.
+		</p>
+		<p>Plasmadruck und Dichte: Neben hohen Temperaturen muss das Plasma auch eine hohe Dichte und einen
+			ausreichenden Einschluss (Containment) haben, um genug Fusionsreaktionen stattfinden zu lassen.</p>
+	</section>
+
+	<section id="folien4">
+		<h2>Folie 4: Technologien für die Kernfusion</h2>
+		<p>Tokamak: Ein Tokamak ist eine ringförmige Maschine, die ein heißes Plasma durch starke Magnetfelder
+			einschließt. Die Magnetfelder verhindern, dass das Plasma die Wände des Reaktors berührt und abkühlt.</p>
+		<p>Stellarator: Ein alternativer Ansatz zur Plasmaeinschließung, bei dem die Magnetfelder so verdreht sind, dass
+			das Plasma stabiler bleibt als im Tokamak. Der Stellarator ist technisch anspruchsvoller, bietet aber
+			potenziell bessere Stabilität.</p>
+		<p>Trägheitseinschlussfusion (Inertial Confinement Fusion, ICF): Kleine Kügelchen aus Deuterium und Tritium
+			werden durch extrem starke Laser beschossen. Die Energie dieser Laser komprimiert das Kügelchen so stark,
+			dass es zur Fusion kommt.</p>
+	</section>
+
+	<section id="folien5">
+		<h2>Folie 5: Energiegewinnung aus der Fusion</h2>
+		<p>Energieübertragung: Bei der Fusion wird die meiste Energie in Form von schnellen Neutronen freigesetzt. Diese
+			Neutronen tragen die Energie in den Reaktormantel, wo sie von Materialien absorbiert und in Wärme
+			umgewandelt wird.</p>
+		<p>Elektrizitätsproduktion: Die durch die Fusion erzeugte Wärme wird genutzt, um Wasser zu erhitzen und
+			Dampfturbinen anzutreiben, die schließlich Elektrizität erzeugen – ähnlich wie in herkömmlichen Kraftwerken.
+		</p>
+		<p>Tritium-Zyklus: Tritium, einer der Fusionsbrennstoffe, wird in der Natur nur in geringen Mengen gefunden. Es
+			muss im Reaktor durch Neutronenbeschuss von Lithium selbst erzeugt werden.</p>
+	</section>
+
+	<section id="folien6">
+		<h2>Folie 6: Aktuelle Forschungsprojekte</h2>
+		<p>ITER-Projekt: ITER ist der weltweit größte experimentelle Fusionsreaktor und wird in Südfrankreich gebaut. Es
+			ist ein internationales Gemeinschaftsprojekt, das zeigen soll, dass die Fusion als Energiequelle machbar
+			ist.</p>
+		<p>Ziel von ITER: Eine Netto-Energieproduktion, das heißt, mehr Energie aus der Fusion zu gewinnen, als zur
+			Erzeugung des Plasmas benötigt wird.</p>
+		<p>Andere vielversprechende Ansätze: Kompakte Fusionsreaktoren: Kleinere, effizientere Designs, die schneller
+			umgesetzt werden könnten. Fortschritte in der Supraleitung: Diese Technologien ermöglichen stärkere
+			Magnetfelder, die den Einschluss des Plasmas verbessern.</p>
+	</section>
+
+	<section id="folien7">
+		<h2>Folie 7: Herausforderungen der Kernfusion</h2>
+		<p>Energieausbeute: Bislang haben experimentelle Reaktoren mehr Energie verbraucht, als sie durch Fusion
+			erzeugen konnten. Dieses Problem muss gelöst werden, bevor Fusionsenergie kommerziell genutzt werden kann.
+		</p>
+		<p>Materialien: Die Reaktorwände müssen extremen Bedingungen standhalten: Hohe Temperaturen und
+			Neutronenstrahlung können Materialien zerstören. Die Forschung an hitzebeständigen Materialien ist
+			entscheidend.</p>
+		<p>Kosten: Der Bau und Betrieb eines Fusionskraftwerks ist technisch komplex und derzeit noch sehr teuer. Um die
+			Fusion wirtschaftlich tragfähig zu machen, sind deutliche Kostenreduktionen erforderlich.</p>
+	</section>
+
+	<section id="folien8">
+		<h2>Folie 8: Zukunftsperspektiven der Fusionsenergie</h2>
+		<p>Vorteile der Fusion: Unerschöpflich: Fast unbegrenzter Brennstoffvorrat. Umweltfreundlich: Keine
+			Treibhausgase, minimale radioaktive Abfälle. Sicher: Es besteht kein Risiko einer nuklearen Kettenreaktion
+			wie bei Kernspaltung.</p>
+		<p>Wann wird es soweit sein?: Der Weg zur kommerziellen Fusionsenergie ist noch lang, aber die Fortschritte in
+			Forschung und Technik geben Anlass zu Optimismus. Viele Experten glauben, dass die ersten Fusionskraftwerke
+			in den nächsten 30 bis 50 Jahren in Betrieb gehen könnten.</p>
+	</section>
+
+	<section id="folien9">
+		<h2>Folie 9: Fazit</h2>
+		<p>Kernfusion als Energiequelle der Zukunft: Kernfusion bietet das Potenzial, die Energieprobleme der Welt
+			dauerhaft zu lösen, mit minimalen Umweltbelastungen.</p>
+		<p>Technologische Herausforderungen: Um dieses Potenzial auszuschöpfen, müssen jedoch erhebliche technische
+			Herausforderungen überwunden werden, insbesondere die Stabilisierung des Plasmas, die Entwicklung geeigneter
+			Materialien und die Effizienzsteigerung der Energieerzeugung.</p>
+		<p>Ausblick: Die Kernfusion könnte der Schlüssel zu einer sauberen und nachhaltigen Energiezukunft sein.</p>
+	</section>
+
+	<section id="quellen">
+		<h2>Quellen</h2>
+		<p>1. Internationale Energieagentur (IEA): <a href="https://www.iea.org">www.iea.org</a></p>
+		<p>2. ITER Organisation: <a href="https://www.iter.org">www.iter.org</a></p>
+		<p>3. Deutsches Zentrum für Luft- und Raumfahrt (DLR): <a href="https://www.dlr.de">www.dlr.de</a></p>
+		<p>4. Wissenschaftsjahr 2023: <a href="https://www.wissenschaftsjahr.de">www.wissenschaftsjahr.de</a></p>
+	</section>

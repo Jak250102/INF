@@ -1,0 +1,33 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.bgBlackRad {
+	background-color: rgb(0, 0, 0);
+	/* Schwarzer Hintergrund */
+	border-radius: 5px;
+	/* Abgerundete Ecken */
+}
+
+.textRed {
+	color: #f00;
+	/* Rote Textfarbe (#f00 ist eine Kurzform für #ff0000) */
+}
+
+.green {
+	color: #0f0;
+	/* Grüne Textfarbe (#0f0 ist eine Kurzform für #00ff00) */
+}
+
+.bold {
+	font-weight: bold;
+	/* Fettgedruckter Text */
+}
+
+.borderBlack1px {
+	border: 1px solid black;
+}
+
+.BorderBoldBottom {
+	border-bottom: 4px solid black !important;
+}

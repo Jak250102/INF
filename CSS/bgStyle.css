@@ -1,0 +1,59 @@
+.bgBlue {
+	background-color: rgb(75, 139, 166);
+}
+
+.bgDarkBlue {
+	background-color: rgb(50, 74, 255);
+}
+
+.bgGreen {
+	background-color: rgb(148, 252, 87);
+}
+
+.bgDarkGreen {
+	background-color: rgb(83, 133, 54);
+}
+
+.bgGrey {
+	background-color: rgb(132, 140, 144);
+}
+
+.bgGreyAlpha {
+	background-color: rgba(118, 118, 118, 0.531);
+}
+
+.bgDarkGrey {
+	background-color: rgb(97, 97, 97);
+}
+
+.bgLigthBlack {
+	background-color: rgba(0, 0, 0, 0.678);
+}
+
+.bgLigthBlue {
+	background-color: rgb(182, 223, 243);
+}
+
+.bgOrange {
+	background-color: rgb(255, 194, 71);
+}
+
+.bgPink {
+	background-color: rgb(245, 101, 245);
+}
+
+.bgRed {
+	background-color: rgb(234, 104, 98);
+}
+
+.bgLigthRed {
+	background-color: rgb(254, 152, 130);
+}
+
+.bgWhite {
+	background-color: rgb(255, 255, 255);
+}
+
+.bgYellow {
+	background-color: rgb(255, 235, 205);
+}
