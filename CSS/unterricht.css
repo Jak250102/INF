@@ -1,0 +1,34 @@
+/* für erste seite und adventskranz */
+.unterricht h1 {
+	color: red;
+	font-family: Helvetica, Arial;
+	font-size: 40px;
+}
+
+/* Navigation */
+.unterricht p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.days {
+	background-color: red;
+	width: 200px;
+	height: 200px;
+	border: 2px solid white;
+	margin-left: 100px;
+}
+
+.days:hover {
+	background-color: green;
+	transform: scale(1.2, 1.2);
+	transition-duration: 1.0s;
+}
+
+.days:active {
+	background: url(../Pictures/labrador.jpg) no-repeat red;
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+
+}

@@ -7,6 +7,20 @@ body {
 	/* Schwarzer Hintergrund */
 	border-radius: 5px;
 	/* Abgerundete Ecken */
+
+}
+
+.bgBlackRad li:hover {
+	background-color: greenyellow;
+}
+
+.bgBlackRad li {
+	text-decoration: none;
+}
+
+.bgBlackRad a {
+	text-decoration: none;
+	color: white;
 }
 
 .textRed {

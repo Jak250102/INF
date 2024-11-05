@@ -57,6 +57,31 @@
 .bgYellow {
 	background-color: rgb(255, 235, 205);
 }
+
 .bgLila {
 	background-color: rgb(179, 0, 122);
+}
+
+#bgFirst {
+	background-color: cornflowerblue;
+}
+
+.bgSecond {
+	background-color: rgb(111, 255, 59);
+}
+
+.bgFourth {
+	background-color: rgb(23, 213, 198);
+}
+
+.bgThird {
+	background-color: rgb(167, 103, 30);
+}
+
+.bgFifth {
+	background-color: rgb(93, 46, 108);
+}
+
+.bgSixth {
+	background-color: rgb(98, 117, 45);
 }
