@@ -12,7 +12,7 @@
 }
 
 .days {
-	background-color: red;
+	background-color: red !important;
 	margin: auto;
 	width: 200px;
 	height: 200px;
@@ -30,17 +30,14 @@
 /* } */
 
 .days:active {
-	background: url(../Pictures/labrador.jpg) no-repeat red;
-	background-size: cover;
 	width: 200px;
 	height: 200px;
 	transform: rotate(360deg);
 	transition-duration: 2s;
 
 }
-/* .picture:active {
 
-} */
+
 
 .flex-wrapper {
 	justify-content: center;
@@ -51,4 +48,13 @@
 	width: 672px;
 	height: 672px;
 	background-color: rgb(141, 141, 141);
+}
+
+#day1:active {
+	background: url(../Pictures/labrador.jpg);
+		background-size: cover;
+}
+#day2:active {
+	background: url(../Pictures/Bild.jpg);
+	background-size: cover;
 }
