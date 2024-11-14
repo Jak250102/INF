@@ -2,27 +2,6 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.bgBlackRad {
-	background-color: rgb(0, 0, 0);
-	/* Schwarzer Hintergrund */
-	border-radius: 5px;
-	/* Abgerundete Ecken */
-
-}
-
-.bgBlackRad li:hover {
-	background-color: greenyellow;
-}
-
-.bgBlackRad li {
-	text-decoration: none;
-}
-
-.bgBlackRad a {
-	text-decoration: none;
-	color: white;
-}
-
 .textRed {
 	color: #f00;
 	/* Rote Textfarbe (#f00 ist eine Kurzform für #ff0000) */
