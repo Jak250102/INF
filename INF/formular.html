@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Formular</title>
+	<link rel="stylesheet" href="../CSS/style.css">
+	<link rel="stylesheet" href="../CSS/bgstyle.css">
+	<link rel="stylesheet" href="../CSS/unterricht.css">
+	<link rel="stylesheet" href="../CSS/navigation.css">
+
+</head>
+
+<body class="bgGreyAlpha">
+	<!--Verweise-->
+	<nav class="bgBlackRad">
+		<ul>
+			<li><a href="1 seite.html">Startseite</a></li>
+			<li><a href="stundenplan.html">stundenplan</a></li>
+			<li><a href="Zauberlehrling.html">Zauberlehrling</a> </li>
+			<li><a href="über-mich.html">über-mich</a></li>
+			<li><a href="Adventskalender.html">Adventskalender</a></li>
+			<li><a href="formular.html">Formular</a></li>
+		</ul>
+	</nav>
+	<hr>
+	<h1>Registrierungsformular</h1>
+
+	<!-- Textfield -->
+	<div class="div1">
+		<form action="">
+			<label for="nn">Nachname</label>
+			<input type="text" name="nachname" id="nn">
+
+
+	</div>
+	<div class="div1">
+		<label>Vornamme
+			<input type="text" name="vorname">
+		</label>
+	</div>
+	<div class="div1">
+		<label>Passwort festlegen
+			<input type="password" name="pw">
+		</label>
+	</div>
+	<div class="div1">
+		<label>Geburtsdatum
+			<input type="date" name="geb">
+		</label>
+	</div>
+	<!-- Radiobutton -->
+	<div class="div1">
+		<fieldset>
+			<legend>Kundenbereich</legend>
+			<label>
+				<input type="radio" name="kunde">Privatkunde <br>
+			</label>
+			<label>
+				<input type="radio" name="kunde">Geschäftskunde
+			</label>
+		</fieldset>
+		<!-- drop down list -->
+
+		<div class="div1">
+			<label> Bezahlart
+				<select name="bezahlung">
+					<option value="1">Bankeinzug</option>
+					<option value="2">Kreditkarte</option>
+					<option value="3">Paypal</option>
+					<option value="4"> Sofort-Überweisung</option>
+				</select>
+			</label>
+		</div>
+		<!-- checkbox -->
+		<fieldset>
+			<legend>Bitte anhaken</legend>
+			<div class="div1">
+				<label>
+					<input type="checkbox" name="agb" required> <span class="textRed">*</span>
+					AGBs gelesen und bestätigt
+
+				</label>
+			</div>
+			<div class="div1">
+				<label>
+					<input type="checkbox" name="werbung">
+					Ich interessiere mich für weitere Angebote
+				</label>
+			</div>
+		</fieldset>
+
+	</div>
+	<!-- senden -->
+	<div>
+		<input type="submit" value="Senden">
+	</div>
+	</form>
