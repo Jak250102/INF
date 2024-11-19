@@ -28,72 +28,72 @@
 
 
 	<!-- Textfield -->
-	<div class="div1">
-		<form action="../PHP/auswertung.php">
+	<form action="../PHP/auswertung.php">
+		<div class="div1">
 			<label for="nn">Nachname:</label>
 			<input type="text" name="nachname" id="nn">
 
 
-	</div>
-	<div class="div1">
-		<label>Vornamme:
-			<input type="text" name="vorname">
-		</label>
-	</div>
-	<div class="div1">
-		<label>Passwort festlegen:
-			<input type="password" name="pw">
-		</label>
-	</div>
-	<div class="div1">
-		<label>Geburtsdatum:
-			<input type="date" name="geb">
-		</label>
-	</div>
-	<!-- Radiobutton -->
-	<div class="div1">
-		<fieldset>
-			<legend>Kundenbereich</legend>
-			<label>
-				<input type="radio" name="kunde" checked>Privatkunde <br>
-			</label>
-			<label>
-				<input type="radio" name="kunde">Geschäftskunde
-			</label>
-		</fieldset>
-		<!-- drop down list -->
-
+		</div>
 		<div class="div1">
-			<label> Bezahlart
-				<select name="bezahlung">
-					<option value="1">Bankeinzug</option>
-					<option value="2">Kreditkarte</option>
-					<option value="3" selected>Paypal</option>
-					<option value="4"> Sofort-Überweisung</option>
-				</select>
+			<label>Vornamme:
+				<input type="text" name="vorname">
 			</label>
 		</div>
-		<!-- checkbox -->
-		<fieldset>
-			<legend>Bitte anhaken</legend>
-			<div class="div1">
+		<div class="div1">
+			<label>Passwort festlegen:
+				<input type="password" name="pw">
+			</label>
+		</div>
+		<div class="div1">
+			<label>Geburtsdatum:
+				<input type="date" name="geb">
+			</label>
+		</div>
+		<!-- Radiobutton -->
+		<div class="div1">
+			<fieldset>
+				<legend>Kundenbereich</legend>
 				<label>
-					<input type="checkbox" name="agb" required> <span class="textRed">*</span>
-					AGBs gelesen und bestätigt
+					<input type="radio" name="kunde" checked>Privatkunde <br>
+				</label>
+				<label>
+					<input type="radio" name="kunde">Geschäftskunde
+				</label>
+			</fieldset>
+			<!-- drop down list -->
 
+			<div class="div1">
+				<label> Bezahlart
+					<select name="bezahlung">
+						<option value="1">Bankeinzug</option>
+						<option value="2">Kreditkarte</option>
+						<option value="3" selected>Paypal</option>
+						<option value="4"> Sofort-Überweisung</option>
+					</select>
 				</label>
 			</div>
-			<div class="div1">
-				<label>
-					<input type="checkbox" name="werbung">
-					Ich interessiere mich für weitere Angebote
-				</label>
-			</div>
-		</fieldset>
+			<!-- checkbox -->
+			<fieldset>
+				<legend>Bitte anhaken</legend>
+				<div class="div1">
+					<label>
+						<input type="checkbox" name="agb" required> <span class="textRed">*</span>
+						AGBs gelesen und bestätigt
 
-	</div>
-	<!-- senden -->
-	<div>
-		<input type="submit" value="Senden">
-	</div>
+					</label>
+				</div>
+				<div class="div1">
+					<label>
+						<input type="checkbox" name="werbung">
+						Ich interessiere mich für weitere Angebote
+					</label>
+				</div>
+			</fieldset>
+
+		</div>
+		<!-- senden -->
+		<div>
+			<input type="submit" value="Senden">
+		</div>
 	</form>
