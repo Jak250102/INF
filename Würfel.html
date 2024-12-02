@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lng="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Würfelgenerator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+            background-color: #d4edda;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #000;
+            white-space: pre-line;
+        }
+        input[type="number"] {
+            width: 50px;
+            padding: 5px;
+            font-size: 16px;
+            margin: 0 5px;
+        }
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        .input-controls {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+    <script>
+        function rollDice() {
+            let totalResult = 0;
+            let resultDetails = '';
+            
+
+            const rolls = [
+                { sides: 4, id: 'w4', label: 'W4' },
+                { sides: 6, id: 'w6', label: 'W6' },
+                { sides: 8, id: 'w8', label: 'W8' },
+                { sides: 12, id: 'w12', label: 'W12' },
+                { sides: 20, id: 'w20', label: 'W20' },
+                { sides: 100, id: 'w100', label: 'W100' }
+            ];
+
+            rolls.forEach(roll => {
+                const numberOfDice = parseInt(document.getElementById(`${roll.id}_number`).value) || 0;
+                const bonus = parseInt(document.getElementById(`${roll.id}_bonus`).value) || 0;
+
+                if (numberOfDice > 0) {
+                    let rollTotal = 0;
+                    let individualRolls = [];
+                    for (let i = 0; i < numberOfDice; i++) {
+                        const rollValue = Math.floor(Math.random() * roll.sides) + 1;
+                        individualRolls.push(rollValue);
+                        rollTotal += rollValue;
+                    }
+                    rollTotal += bonus;
+                    totalResult += rollTotal;
+                    resultDetails += `${numberOfDice}${roll.label} (${individualRolls.join(", ")}) + ${bonus} = ${rollTotal}\n`;
+                    
+                }
+            });
+
+            document.getElementById('result').textContent = `Gesamtergebnis: ${totalResult}\nDetails:\n${resultDetails}`;
+            
+        }
+
+        function adjustValue(id, amount, max = Infinity) {
+            const input = document.getElementById(id);
+            const currentValue = parseInt(input.value) || 0;
+            input.value = Math.min(Math.max(0, currentValue + amount), max);
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-decoration: underline;">Würfelgenerator</h1>
+    <table class="controls">
+        <tr>
+            <th>Würfel</th>
+            <th>Anzahl</th>
+            <th>Bonus</th>
+        </tr>
+        <tr>
+            <td>W4 </td>
+            <td>
+                <div class="input-controls">
+                    <button onclick="adjustValue('w4_number', -1)">-</button>
+                    <input type="number" id="w4_number" min="0" max="20" value="0" oninput="this.value = Math.min(this.value, 20)">
+                    <button onclick="adjustValue('w4_number', 1, 20)">+</button>
+                </div>
+            </td>
+            <td>
+                <div class="input-controls">
+                    <button onclick="adjustValue('w4_bonus', -1)">-</button>
+                    <input type="number" id="w4_bonus" value="0">
+                    <button onclick="adjustValue('w4_bonus', 1)">+</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>W6 </td>
+            <td>
+                <div class="input-controls">
+                    <button onclick="adjustValue('w6_number', -1)">-</button>
+                    <input type="number" id="w6_number" min="0" max="20" value="0" oninput="this.value = Math.min(this.value, 20)">
+                    <button onclick="adjustValue('w6_number', 1, 20)">+</button>
+                </div>
+            </td>
+            <td>
+                <div class="input-controls">
+                    <button onclick="adjustValue('w6_bonus', -1)">-</button>
+                    <input type="number" id="w6_bonus" value="0">
+                    <button onclick="adjustValue('w6_bonus', 1)">+</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>W8 </td>
+            <td>
+                <div class="input-controls">
+                    <button onclick="adjustValue('w8_number', -1)">-</button>
+                    <input type="number" id="w8_number" min="0" max="20" value="0" oninput="this.value = Math.min(this.value, 20)">
+                    <button onclick="adjustValue('w8_number', 1, 20)">+</button>
+                </div>
+            </td>
+            <td>
+                <div class="input-controls">
+                    <button onclick="adjustValue('w8_bonus', -1)">-</button>
+                    <input type="number" id="w8_bonus" value="0">
+                    <button onclick="adjustValue('w8_bonus', 1)">+</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>W12 </td>
+            <td>
+                <div class="input-controls">
+                    <button onclick="adjustValue('w12_number', -1)">-</button>
+                    <input type="number" id="w12_number" min="0" max="20" value="0" oninput="this.value = Math.min(this.value, 20)">
+                    <button onclick="adjustValue('w12_number', 1, 20)">+</button>
+                </div>
+            </td>
+            <td>
+                <div class="input-controls">
+                    <button onclick="adjustValue('w12_bonus', -1)">-</button>
+                    <input type="number" id="w12_bonus" value="0">
+                    <button onclick="adjustValue('w12_bonus', 1)">+</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>W20 </td>
+            <td>
+                <div class="input-controls">
+                    <button onclick="adjustValue('w20_number', -1)">-</button>
+                    <input type="number" id="w20_number" min="0" max="20" value="0" oninput="this.value = Math.min(this.value, 20)">
+                    <button onclick="adjustValue('w20_number', 1, 20)">+</button>
+                </div>
+            </td>
+            <td>
+                <div class="input-controls">
+                    <button onclick="adjustValue('w20_bonus', -1)">-</button>
+                    <input type="number" id="w20_bonus" value="0">
+                    <button onclick="adjustValue('w20_bonus', 1)">+</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>W100 </td>
+            <td>
+                <div class="input-controls">
+                    <button onclick="adjustValue('w100_number', -1)">-</button>
+                    <input type="number" id="w100_number" min="0" max="20" value="0" oninput="this.value = Math.min(this.value, 20)">
+                    <button onclick="adjustValue('w100_number', 1, 20)">+</button>
+                </div>
+            </td>
+            <td>
+                <div class="input-controls">
+                    <button onclick="adjustValue('w100_bonus', -1)">-</button>
+                    <input type="number" id="w100_bonus" value="0">
+                    <button onclick="adjustValue('w100_bonus', 1)">+</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <button onclick="rollDice()">Würfeln</button>
+    <p id="result">Ergebnis: </p>
+    
+</body>
+</html>
