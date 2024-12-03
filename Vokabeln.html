@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vokabelliste</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f9f9f9;
+			padding: 20px;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		th,
+		td {
+			border: 1px solid #ddd;
+			padding: 8px;
+			text-align: left;
+		}
+
+		th {
+			background-color: #f2f2f2;
+		}
+	</style>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const tbody = document.querySelector('tbody');
+			const checkboxes = tbody.querySelectorAll('input[type="checkbox"]');
+
+			// Lade die gespeicherte Reihenfolge aus dem Local Storage
+			const savedOrder = JSON.parse(localStorage.getItem('rowOrder'));
+			if (savedOrder) {
+				const rows = Array.from(tbody.querySelectorAll('tr'));
+				savedOrder.forEach(savedIndex => {
+					tbody.appendChild(rows[savedIndex]);
+				});
+			}
+
+			checkboxes.forEach((checkbox, index) => {
+				const savedState = localStorage.getItem('checkbox_' + index);
+				const row = checkbox.closest('tr');
+				if (savedState !== null) {
+					checkbox.checked = savedState === 'true';
+				}
+				// Speichere den Zustand der Checkboxen und verschiebe die Zeile, wenn sie geändert wird
+				checkbox.addEventListener('change', function () {
+					localStorage.setItem('checkbox_' + index, checkbox.checked);
+					if (checkbox.checked) {
+						tbody.appendChild(row);
+					} else {
+						tbody.insertBefore(row, tbody.firstChild);
+					}
+					updateRowOrder();
+				});
+			});
+
+			// Funktion zum Aktualisieren und Speichern der aktuellen Reihenfolge der Zeilen
+			function updateRowOrder() {
+				const rows = Array.from(tbody.querySelectorAll('tr'));
+				const order = rows.map(row => Array.from(tbody.children).indexOf(row));
+				localStorage.setItem('rowOrder', JSON.stringify(order));
+			}
+		});
+	</script>
+</head>
+
+
+<body>
+	<h1>Vokabelliste</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Englisch</th>
+				<th>Deutsch</th>
+				<th>Gelernt</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>introductions p/</td>
+				<td>Vorstellen, Bekanntmachen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>German</td>
+				<td>Deutsche/r; deutsch</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Melbourne</td>
+				<td>zweitgrößte Stadt Australiens</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Australia</td>
+				<td>Australien</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>lab(oratory)</td>
+				<td>Labor</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>lab(oratory) assistant</td>
+				<td>Laborant/in, Laborassistent/in</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>plastics</td>
+				<td>Kunststoff(e)</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to produce</td>
+				<td>herstellen, produzieren</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>range</td>
+				<td>Auswahl, Sortiment, Reihe, (Produkt-)Palette</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>environmentally friendly</td>
+				<td>umweltfreundlich</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>packaging</td>
+				<td>Verpackung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>teammate</td>
+				<td>Arbeitskollege/-in</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>order</td>
+				<td>Reihenfolge</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to check</td>
+				<td>überprüfen, kontrollieren</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>likewise</td>
+				<td>ebenso, ebenfalls</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to enjoy sth</td>
+				<td>etw genießen, an etwas Gefallen finden</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>senior</td>
+				<td>leitend, höherrangig, vorgesetzt</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>technician</td>
+				<td>Techniker/in, Mechaniker/in</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to be responsible for sth</td>
+				<td>für etw zuständig/verantwortlich sein</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>setup</td>
+				<td>Einrichtung, Aufbau</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>equipment</td>
+				<td>Ausstattung, Geräte</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>supervisor</td>
+				<td>Leiter/in</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>close(ly)</td>
+				<td>eng</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to be well suited</td>
+				<td>gut zueinander passen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>important (to sb/sth)</td>
+				<td>wichtig, bedeutend (für jdn/etw)</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>company</td>
+				<td>Unternehmen, Firma</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>accent</td>
+				<td>Akzent</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Germany</td>
+				<td>Deutschland</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>parents p/</td>
+				<td>Eltern</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>maintenance</td>
+				<td>Wartung, Instandhaltung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to call</td>
+				<td>rufen, anrufen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>skill</td>
+				<td>Fähigkeit, Fertigkeit, Wissen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>expertise</td>
+				<td>Fachwissen, Fachkenntnis(se)</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to fix</td>
+				<td>reparieren</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>microscope</td>
+				<td>Mikroskop</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>wife</td>
+				<td>(Ehe-)Frau</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>beautiful</td>
+				<td>schön</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>beach</td>
+				<td>Strand</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to enjoy doing sth</td>
+				<td>etw gern tun, Gefallen an etw finden</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>formal</td>
+				<td>formell, förmlich</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>informal</td>
+				<td>informell, locker, zwanglos</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to reply (to sth)</td>
+				<td>(auf etw) antworten, (auf etw) reagieren</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>pleasure</td>
+				<td>Vergnügen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to return sth</td>
+				<td>etw erwidern</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>compliment</td>
+				<td>Kompliment</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>statement</td>
+				<td>Aussage</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>What/How about you?</td>
+				<td>Und Sie? Und du/ihr?</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>French</td>
+				<td>französisch, Franzose/Französin</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>motorcycling</td>
+				<td>Motorradfahren</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to be free</td>
+				<td>Zeit haben</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Go ahead!</td>
+				<td>Nur zu! Na los!</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to be called</td>
+				<td>heißen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>engineer</td>
+				<td>Ingenieur/in</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Austria</td>
+				<td>Österreich</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to mind</td>
+				<td>etw dagegen haben</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to smoke</td>
+				<td>rauchen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>member</td>
+				<td>Mitglied</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>group</td>
+				<td>Gruppe</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to exchange</td>
+				<td>austauschen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Human Resources (HR) p/</td>
+				<td>Personalabteilung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>surname</td>
+				<td>Nachname</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>passport</td>
+				<td>Reisepass</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>driver's licence</td>
+				<td>Führerschein</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td>Ausweis</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>car registration number</td>
+				<td>Kfz-Kennzeichen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>parking space</td>
+				<td>Parkplatz</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>son</td>
+				<td>Sohn</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>model</td>
+				<td>Modell</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>enter sth</td>
+				<td>etw (Daten etc.) eingeben</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to set up</td>
+				<td>einrichten, anlegen, aufbauen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>date of birth</td>
+				<td>Geburtsdatum</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>address</td>
+				<td>Adresse, Anschrift</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>unit</td>
+				<td>Einheit</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>suburb</td>
+				<td>Vorort</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>postcode</td>
+				<td>Postleitzahl</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>contact</td>
+				<td>Verbindung, Kontakt</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>mobile (phone)</td>
+				<td>Handy, Mobiltelefon</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>landline</td>
+				<td>Festnetz(telefon)</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>employee</td>
+				<td>Angestellte/r, Beschäftigte/r</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to reserve</td>
+				<td>reservieren, vorbehalten</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>staff</td>
+				<td>Personal, Angestellte</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>of course</td>
+				<td>natürlich, selbstverständlich</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>daughter</td>
+				<td>Tochter</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>reliable</td>
+				<td>zuverlässig</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>screenshot</td>
+				<td>Bildschirmfoto</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>department</td>
+				<td>Abteilung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>data p/</td>
+				<td>Daten</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>data base</td>
+				<td>Datenbank</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to note down</td>
+				<td>aufschreiben, notieren</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>separate</td>
+				<td>einzeln, gesondert, separat</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>sheet (of paper)</td>
+				<td>Blatt (Papier)</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>dot</td>
+				<td>Punkt</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>hyphen</td>
+				<td>Bindestrich</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>underscore</td>
+				<td>Unterstrich</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>forward slash</td>
+				<td>Schrägstrich</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>account</td>
+				<td>Konto</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>national</td>
+				<td>national, Landes-</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>insurance</td>
+				<td>Versicherung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>security</td>
+				<td>Sicherheit, Wachschutz</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>security pass</td>
+				<td>Sicherheitsausweis</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>nought</td>
+				<td>null, Null</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>zero</td>
+				<td>null, Null</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>nil</td>
+				<td>null, Null</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>score</td>
+				<td>Spielstand</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>game</td>
+				<td>Spiel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>temperature</td>
+				<td>Temperatur</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to run sth</td>
+				<td>etw veranstalten, etw ausrichten</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>competition</td>
+				<td>Wettbewerb</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>football tipping competition</td>
+				<td>Fußball-Tippspiel, Toto</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>season</td>
+				<td>Saison</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>participant</td>
+				<td>Teilnehmer/in</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to tip the winner</td>
+				<td>auf den Sieger/Gewinner setzen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>league</td>
+				<td>Liga</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to enter sb in sth</td>
+				<td>jdn in etw aufnehmen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>exercise book</td>
+				<td>Heft</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>form</td>
+				<td>Formular</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>favourite</td>
+				<td>Lieblings-</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>plumbing</td>
+				<td>(Sanitär-)Installation</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>machining</td>
+				<td>(maschinelle) Bearbeitung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>mathematical</td>
+				<td>mathematisch</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>term</td>
+				<td>Begriff</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>calculation</td>
+				<td>Rechnung, Berechnung, Kalkulation</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>(multiplied) by</td>
+				<td>mal</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>divided by</td>
+				<td>geteilt durch</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>squared</td>
+				<td>im Quadrat, hoch zwei</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>cubed</td>
+				<td>hoch drei</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to the power of</td>
+				<td>hoch</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>square root</td>
+				<td>Quadratwurzel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>bracket</td>
+				<td>Klammer</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>pi</td>
+				<td>Pi</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>equals</td>
+				<td>(ist) gleich</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to subtract</td>
+				<td>abziehen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>fraction</td>
+				<td>Bruch</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>decimal</td>
+				<td>Dezimalzahl, -bruch</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>point</td>
+				<td>Komma</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>third</td>
+				<td>Drittel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>quarter</td>
+				<td>Viertel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>fifth</td>
+				<td>Fünftel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>aloud</td>
+				<td>laut</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>equation</td>
+				<td>Gleichung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to dictate</td>
+				<td>diktieren</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>engineering</td>
+				<td>Technik, Maschinenbau; technisch</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>formula</td>
+				<td>Formel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to solve</td>
+				<td>lösen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>acceleration</td>
+				<td>Beschleunigung, Erdanziehungskraft</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>angular</td>
+				<td>Winkel-</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>current</td>
+				<td>Strom</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>density</td>
+				<td>Dichte</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>diameter</td>
+				<td>Durchmesser</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>force</td>
+				<td>Kraft</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>height</td>
+				<td>Höhe</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>moment of inertia</td>
+				<td>Trägheitsmoment</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>momentum</td>
+				<td>Impuls</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>power</td>
+				<td>Leistung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>revolution</td>
+				<td>Umdrehung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>velocity</td>
+				<td>Geschwindigkeit</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>mass</td>
+				<td>Masse</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>cube</td>
+				<td>Würfel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>gravity</td>
+				<td>Schwerkraft</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>acceleration due to gravity</td>
+				<td>Erdbeschleunigung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>air resistance</td>
+				<td>Luftwiderstand</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>watermelon</td>
+				<td>Wassermelone</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>building</td>
+				<td>Gebäude</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>shaft</td>
+				<td>Welle</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>lathe</td>
+				<td>Drehmaschine</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to rotate</td>
+				<td>rotieren, sich drehen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>cutting speed</td>
+				<td>Schnittgeschwindigkeit</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>forklift truck</td>
+				<td>Gabelstapler</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>gearbox</td>
+				<td>Getriebe, Getriebekasten</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>height</td>
+				<td>Höhe</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>required</td>
+				<td>erforderlich, nötig</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>efficiency</td>
+				<td>Effizienz, Wirkungsgrad</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to take sth into account</td>
+				<td>etw berücksichtigen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to travel a curve</td>
+				<td>eine Kurve (durch)fahren</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>centripetal</td>
+				<td>Zentripetal-</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>flywheel</td>
+				<td>Schwungrad</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>titanium</td>
+				<td>Titan</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to calculate</td>
+				<td>berechnen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>charge</td>
+				<td>Ladung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>circuit</td>
+				<td>Stromkreis</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>breakdown</td>
+				<td>Panne</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>broken</td>
+				<td>kaputt</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>state-of-the-art</td>
+				<td>hochmodern, auf dem neuesten Stand der Technik</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to spend</td>
+				<td>(Zeit) verbringen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to contain</td>
+				<td>enthalten</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>correct</td>
+				<td>richtig, korrekt</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>quality</td>
+				<td>Qualität</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>clean</td>
+				<td>sauber</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to manage</td>
+				<td>führen, leiten</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>firm</td>
+				<td>Firma</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>training course</td>
+				<td>Schulung, Ausbildung(skurs)</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Scotland</td>
+				<td>Schottland</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>instructor</td>
+				<td>Lehrer/in, Ausbilder/in</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>form</td>
+				<td>Form</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>in italics</td>
+				<td>kursiv (gesetzt)</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>not... until</td>
+				<td>nicht vor ..., erst</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>New Zealand</td>
+				<td>Neuseeland</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>called</td>
+				<td>namens</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to translate</td>
+				<td>übersetzen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>chemist</td>
+				<td>Chemiker/in</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>unemployed</td>
+				<td>arbeitslos</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>furniture</td>
+				<td>Möbel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>factory</td>
+				<td>Fabrik, Werk</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>workbench</td>
+				<td>Werkbank</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>tool</td>
+				<td>Werkzeug</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>workshop</td>
+				<td>Werkstatt</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>joinery</td>
+				<td>Schreinerei, Tischlerei</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>explanation</td>
+				<td>Erläuterung, Erklärung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>adjustable</td>
+				<td>verstellbar, einstellbar</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>spanner</td>
+				<td>Schraubenschlüssel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>adjustable spanner</td>
+				<td>Rollgabelschlüssel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>hacksaw</td>
+				<td>Bügelsäge, Eisensäge</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>(a pair of) pliers</td>
+				<td>Zange, Flachzange</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>(a pair of) pincers</td>
+				<td>Beißzange</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>screwdriver</td>
+				<td>Schraubenzieher, Schraubendreher</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Phillips screwdriver</td>
+				<td>Kreuzschlitzschraubenzieher</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>slot-headed screwdriver</td>
+				<td>Schlitzschraubenzieher</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>(a pair of) tin snips</td>
+				<td>Blechschere</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>try square</td>
+				<td>Anschlagwinkel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>rule</td>
+				<td>Lineal</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>spirit level</td>
+				<td>Wasserwaage</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>saw</td>
+				<td>Säge</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>tenon saw</td>
+				<td>Rückensäge</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>universal</td>
+				<td>universell, Universal-</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>file</td>
+				<td>Feile</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>flat file</td>
+				<td>Flachfeile</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>round file</td>
+				<td>Rundfeile</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>chisel</td>
+				<td>Stechbeitel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>clamp</td>
+				<td>Schraubzwinge</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>vice</td>
+				<td>Schraubstock</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>centre punch</td>
+				<td>Körner</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Allen key</td>
+				<td>Inbusschlüssel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>socket wrench</td>
+				<td>Steckschlüssel, Knarre</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>socket</td>
+				<td>Steckschlüsseleinsatz, Nuss</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>caliper</td>
+				<td>Messschieber</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>joiner</td>
+				<td>Schreiner/in, Tischler/in</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>layout</td>
+				<td>Anordnung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>pegboard</td>
+				<td>Stecktafel, Werkzeugtafel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>common(ly)</td>
+				<td>häufig, (weit) verbreitet</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>steel</td>
+				<td>Stahl</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>handy</td>
+				<td>praktisch</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>strapping</td>
+				<td>(Metall-)Band, Reif</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>measuring instrument</td>
+				<td>Messinstrument</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>drawer</td>
+				<td>Schublade</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>lock</td>
+				<td>Schloss</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>valuable</td>
+				<td>wertvoll</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>secret</td>
+				<td>Geheimnis</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>for example</td>
+				<td>zum Beispiel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>bits and pieces p/</td>
+				<td>(kleine) Sachen, dies und das</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>personal</td>
+				<td>persönlich, privat</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>toolbox</td>
+				<td>Werkzeugkasten, -kiste</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to secure</td>
+				<td>befestigen, fixieren</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>work</td>
+				<td>Werkstück(e)</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>power tool</td>
+				<td>Elektrowerkzeug</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>nail</td>
+				<td>Nagel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>nail gun</td>
+				<td>Nagelpistole</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to drive sth in</td>
+				<td>etw (Nagel) einschlagen, etw (Schraube) eindrehen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>router</td>
+				<td>Oberfräse</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to shape</td>
+				<td>formen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>timber</td>
+				<td>(Bau-, Nutz-)Holz</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>mitre saw</td>
+				<td>Gehrungssäge, Tischkreissäge</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>jigsaw</td>
+				<td>Laubsäge</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>cordless</td>
+				<td>kabellos</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>belt sander</td>
+				<td>Bandschleifmaschine</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to smooth</td>
+				<td>glätten</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>drill</td>
+				<td>Bohrer, Bohrmaschine</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to bore</td>
+				<td>bohren</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>hole</td>
+				<td>Loch</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>bench grinder</td>
+				<td>Werkzeugschleifmaschine</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to sharpen</td>
+				<td>schärfen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>blade</td>
+				<td>Klinge</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to deburr</td>
+				<td>entgraten</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to bend</td>
+				<td>biegen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>wire</td>
+				<td>Draht</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>angle</td>
+				<td>Winkel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>level</td>
+				<td>Niveau, Lot</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to mark</td>
+				<td>markieren, anzeichnen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to measure</td>
+				<td>messen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>dimensions p/</td>
+				<td>Abmessungen, Maße</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to pull out</td>
+				<td>herausziehen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to tighten</td>
+				<td>festziehen, anziehen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>bolt</td>
+				<td>(mit einer Mutter gesicherte) Schraube</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to look sth up</td>
+				<td>etw (Vokabel etc.) nachschlagen, etw suchen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to guess</td>
+				<td>raten, erraten</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>welder</td>
+				<td>Schweißgerät</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to join</td>
+				<td>verbinden</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>supplies p/</td>
+				<td>Material, Zubehör, Bedarf</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>fastener</td>
+				<td>Halterung, Verschluss</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>store</td>
+				<td>Laden, Geschäft</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to find out</td>
+				<td>herausfinden, feststellen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>storage</td>
+				<td>Aufbewahrung, Lagerung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>bin</td>
+				<td>Behälter</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>coach bolt</td>
+				<td>Schlossschraube</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>washer</td>
+				<td>Unterlegscheibe</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>spring washer</td>
+				<td>Federscheibe</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>nail plate</td>
+				<td>Nagelplatte</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>straight away</td>
+				<td>sofort, jetzt gleich</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>inventory</td>
+				<td>(Waren-, Lager-)Bestand, Vorrat</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>item</td>
+				<td>Artikel, Posten</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>shelf</td>
+				<td>Regal</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>size</td>
+				<td>Größe</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>quantity</td>
+				<td>Menge</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>galvanized</td>
+				<td>verzinkt, galvanisiert</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>sandpaper</td>
+				<td>Schleifpapier</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>80 grit</td>
+				<td>80er Körnung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>wood adhesive</td>
+				<td>Holzleim</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>stainless steel</td>
+				<td>Edelstahl</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>plywood</td>
+				<td>Sperrholz</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>safety</td>
+				<td>Sicherheit</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>workspace</td>
+				<td>Arbeitsplatz</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>surface</td>
+				<td>Oberfläche</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>fireproof cabinet</td>
+				<td>feuerfester Schrank</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>first aid</td>
+				<td>Erste Hilfe</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>frequent(ly)</td>
+				<td>häufig, oft</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>hand tool</td>
+				<td>Handwerkzeug</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>instruction</td>
+				<td>Anweisung, Anleitung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>regulations p/</td>
+				<td>Vorschriften</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>label</td>
+				<td>Etikett, Beschriftung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>tube</td>
+				<td>Röhre</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>pipe</td>
+				<td>Rohr, Leitung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>cage</td>
+				<td>Käfig</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>rack</td>
+				<td>Regal, Ablage, Gestell</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>spool</td>
+				<td>Rolle, Spule</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>toxic</td>
+				<td>giftig, toxisch</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>flammable</td>
+				<td>entflammbar</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>liquid</td>
+				<td>Flüssigkeit</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>trip hazard</td>
+				<td>Stolperfalle, Stolpergefahr</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>flex</td>
+				<td>Netzkabel, Anschlussleitung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>blunt</td>
+				<td>stumpf</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>to belong to sb</td>
+				<td>jdm gehören</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>heavy</td>
+				<td>schwer</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>flat</td>
+				<td>(Akku, Batterie:) leer</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>battery</td>
+				<td>Akku, Batterie</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>van</td>
+				<td>Lieferwagen</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>inaccurate</td>
+				<td>ungenau</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>paint</td>
+				<td>Farbe</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>brush</td>
+				<td>Pinsel</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>knife</td>
+				<td>Messer</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>aircraft</td>
+				<td>Flugzeug</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>body</td>
+				<td>Karosserie, Unterbau</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>car crash</td>
+				<td>Autounfall</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>clutch</td>
+				<td>Kupplung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>cylinder</td>
+				<td>Zylinder</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>fuel</td>
+				<td>Treibstoff, Kraftstoff, Brennstoff</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>mix</td>
+				<td>Mischung</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>switch</td>
+				<td>Schalter</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>canteen</td>
+				<td>Kantine</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>non-alcoholic</td>
+				<td>alkoholfrei</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>afterwards</td>
+				<td>hinterher</td>
+				<td><input type="checkbox"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+
+</html>
