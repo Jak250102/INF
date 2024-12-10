@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Erklärung grundlegender HTML-Befehle und -Strukturen für Anfänger">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wichtige HTML-Befehle - Erklärung und Beispiele</title>
+    <style>
+        /* Grundlegende Stile im Dunkelmodus */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0; /* Entferne Standard-Margin */
+            background-color: #121212;
+            color: #e0e0e0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            position: fixed; /* Fixiere den Header */
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000; /* Stelle sicher, dass der Header oben bleibt */
+            background-color: #1e1e1e;
+            border-bottom: 1px solid #333333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #1e1e1e;
+            border-top: 1px solid #333333;
+            position: relative;
+        }
+        h1, h2, h3 { color: #ffffff; margin: 0; }
+        p { font-size: 1.1em; }
+        code, pre {
+            font-family: 'Courier New', Courier, monospace;
+            color: #ffffff;
+            background: #2c2c2c;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #333333;
+        }
+        ul { list-style-type: disc; margin-left: 20px; }
+        hr { border: 0; height: 1px; background: #333333; margin: 40px 0; }
+        section { margin-bottom: 40px; }
+        a { color: #ffffff; text-decoration: underline; }
+        a:hover { color: #cccccc; }
+        .example {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #333333;
+            margin-top: 10px;
+        }
+        .example h2, .example h3 { color: #ffffff; }
+        .example p, .example ul, .example ol, .example table, .example form, 
+        .example video, .example audio, .example header, .example nav, 
+        .example main, .example section, .example article, .example aside, 
+        .example footer, .example div, .example span, .example iframe {
+            color: #e0e0e0;
+        }
+        .example a { color: #1e90ff; text-decoration: underline; }
+        .example a:hover { color: #87cefa; }
+        .example table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .example th, .example td { border: 1px solid #333333; padding: 8px; text-align: left; }
+        .example th { background-color: #2c2c2c; }
+        .example input[type="text"], .example input[type="submit"] {
+            padding: 8px; margin: 5px 0; border: 1px solid #333333; border-radius: 4px;
+            background-color: #2c2c2c; color: #fff;
+        }
+        .example label { display: block; margin-top: 10px; }
+        .example video, .example audio { margin-top: 10px; max-width: 100%; }
+        @media (max-width: 600px) {
+            pre { padding: 10px; }
+            code { font-size: 0.95em; }
+        }
+        .additional-section {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #333333;
+            margin-top: 10px;
+        }
+        /* Sprachumschalter */
+        .language-switch button {
+            background-color: #2c2c2c;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .language-switch button.active {
+            background-color: #1e90ff;
+        }
+        .language-switch button:hover {
+            background-color: #444;
+        }
+        /* Padding für den fixierten Header */
+        main {
+            padding-top: 120px; /* Höhe des Headers plus etwas Abstand */
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        /* Footer bleibt am unteren Rand */
+        html, body {
+            height: 100%;
+        }
+        main {
+            min-height: calc(100vh - 160px); /* Höhe der Header und Footer */
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.language-switch button');
+            const sections = document.querySelectorAll('.lang-de, .lang-en');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Entferne aktive Klasse von allen Buttons
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    // Füge aktive Klasse zum geklickten Button hinzu
+                    button.classList.add('active');
+                    
+                    // Hole die gewählte Sprache
+                    const lang = button.getAttribute('data-lang');
+                    
+                    // Zeige die gewählte Sprache und verstecke die andere
+                    sections.forEach(section => {
+                        if(section.classList.contains('lang-' + lang)){
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Standardmäßig Deutsch anzeigen
+            document.querySelector('.language-switch button[data-lang="de"]').click();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="language-switch">
+            <button data-lang="de">Deutsch</button>
+            <button data-lang="en">English</button>
+        </div>
+        <!-- Die Überschrift wird nun innerhalb der sprachspezifischen Container platziert -->
+        <div class="lang-de">
+            <h1>Wichtige HTML-Befehle (Tags) - Erklärung und Beispiele</h1>
+            <p>Diese Seite bietet eine Übersicht über grundlegende HTML-Tags, ihre Funktionen und Beispiele, um Anfängern den Einstieg in HTML zu erleichtern.</p>
+        </div>
+        <div class="lang-en" style="display:none;">
+            <h1>Important HTML Commands (Tags) - Explanation and Examples</h1>
+            <p>This page provides an overview of basic HTML tags, their functions, and examples to help beginners get started with HTML.</p>
+        </div>
+    </header>
+    <main>
+        <!-- Grundstruktur -->
+        <section class="lang-de">
+            <h2>
+				<br>
+				<br>
+				1. Grundstruktur eines HTML-Dokuments</h2>
+            <p>Jedes HTML-Dokument hat eine grundlegende Struktur, damit der Browser weiß, wie er den Inhalt interpretieren soll.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="de"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Seitenüberschrift&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        Inhalt der Webseite.
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code>: Kennzeichnet ein HTML5-Dokument.</li>
+                <li><code>&lt;html&gt;</code>: Umschließt den gesamten HTML-Code.</li>
+                <li><code>&lt;head&gt;</code>: Beinhaltet Metadaten, Skripte, Stylesheets und den Titel.</li>
+                <li><code>&lt;title&gt;</code>: Titel der Webseite, im Browser-Tab sichtbar.</li>
+                <li><code>&lt;body&gt;</code>: Enthält den eigentlichen sichtbaren Inhalt.</li>
+            </ul>
+            <div class="example">
+                <h3>Gerenderte Grundstruktur:</h3>
+                <p>Inhalt der Webseite.</p>
+            </div>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>1. Basic Structure of an HTML Document</h2>
+            <p>Every HTML document has a basic structure so that the browser knows how to interpret the content.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        Content of the webpage.
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code>: Specifies an HTML5 document.</li>
+                <li><code>&lt;html&gt;</code>: Encloses all the HTML code.</li>
+                <li><code>&lt;head&gt;</code>: Contains metadata, scripts, stylesheets, and the title.</li>
+                <li><code>&lt;title&gt;</code>: Title of the webpage, visible in the browser tab.</li>
+                <li><code>&lt;body&gt;</code>: Contains the actual visible content.</li>
+            </ul>
+            <div class="example">
+                <h3>Rendered Basic Structure:</h3>
+                <p>Content of the webpage.</p>
+            </div>
+        </section>
+        <hr>
+        <!-- Textformatierung -->
+        <section class="lang-de">
+            <h2>2. Textformatierung</h2>
+            <p>Diese Tags helfen dir dabei, Text hervorzuheben und zu strukturieren:</p>
+            <pre><code>&lt;p&gt;Dies ist ein Absatz.&lt;/p&gt;
+&lt;b&gt;Fetter Text&lt;/b&gt;
+&lt;strong&gt;Wichtiger fetter Text&lt;/strong&gt;
+&lt;i&gt;Kursiver Text&lt;/i&gt;
+&lt;em&gt;Betonter kursiver Text&lt;/em&gt;
+&lt;u&gt;Unterstrichener Text&lt;/u&gt;
+&lt;mark&gt;Markierter Text&lt;/mark&gt;</code></pre>
+            <ul>
+                <li><code>&lt;p&gt;</code>: Absatz.</li>
+                <li><code>&lt;b&gt;</code>: Fett, aber ohne inhaltliche Hervorhebung.</li>
+                <li><code>&lt;strong&gt;</code>: Wichtig hervorgehobener (fetter) Text mit semantischer Bedeutung.</li>
+                <li><code>&lt;i&gt;</code>: Kursiv, ohne spezielle semantische Bedeutung.</li>
+                <li><code>&lt;em&gt;</code>: Betont (kursiv), semantisch wichtig.</li>
+                <li><code>&lt;u&gt;</code>: Unterstrichen, wird aber selten verwendet, da Unterstreichung oft mit Links assoziiert wird.</li>
+                <li><code>&lt;mark&gt;</code>: Hervorhebung wie mit einem Textmarker.</li>
+            </ul>
+            <div class="example">
+                <h3>Gerenderte Textformatierung:</h3>
+                <p>Dies ist ein Absatz.</p>
+                <p><b>Fetter Text</b></p>
+                <p><strong>Wichtiger fetter Text</strong></p>
+                <p><i>Kursiver Text</i></p>
+                <p><em>Betonter kursiver Text</em></p>
+                <p><u>Unterstrichener Text</u></p>
+                <p><mark>Markierter Text</mark></p>
+            </div>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>2. Text Formatting</h2>
+            <p>These tags help you highlight and structure text:</p>
+            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;b&gt;Bold Text&lt;/b&gt;
+&lt;strong&gt;Important Bold Text&lt;/strong&gt;
+&lt;i&gt;Italic Text&lt;/i&gt;
+&lt;em&gt;Emphasized Italic Text&lt;/em&gt;
+&lt;u&gt;Underlined Text&lt;/u&gt;
+&lt;mark&gt;Highlighted Text&lt;/mark&gt;</code></pre>
+            <ul>
+                <li><code>&lt;p&gt;</code>: Paragraph.</li>
+                <li><code>&lt;b&gt;</code>: Bold, but without semantic emphasis.</li>
+                <li><code>&lt;strong&gt;</code>: Strongly emphasized (bold) text with semantic meaning.</li>
+                <li><code>&lt;i&gt;</code>: Italic, without special semantic meaning.</li>
+                <li><code>&lt;em&gt;</code>: Emphasized (italic), semantically important.</li>
+                <li><code>&lt;u&gt;</code>: Underlined, but rarely used as underlining is often associated with links.</li>
+                <li><code>&lt;mark&gt;</code>: Highlighted like with a marker.</li>
+            </ul>
+            <div class="example">
+                <h3>Rendered Text Formatting:</h3>
+                <p>This is a paragraph.</p>
+                <p><b>Bold Text</b></p>
+                <p><strong>Important Bold Text</strong></p>
+                <p><i>Italic Text</i></p>
+                <p><em>Emphasized Italic Text</em></p>
+                <p><u>Underlined Text</u></p>
+                <p><mark>Highlighted Text</mark></p>
+            </div>
+        </section>
+        <hr>
+        <!-- Überschriften -->
+        <section class="lang-de">
+            <h2>3. Überschriften</h2>
+            <p>Überschriften strukturieren Inhalte hierarchisch. <code>&lt;h1&gt;</code> ist die wichtigste Überschrift, <code>&lt;h2&gt;</code> bis <code>&lt;h6&gt;</code> folgen in absteigender Wichtigkeit.</p>
+            <pre><code>&lt;h1&gt;Überschrift 1&lt;/h1&gt;
+&lt;h2&gt;Überschrift 2&lt;/h2&gt;
+&lt;h3&gt;Überschrift 3&lt;/h3&gt;</code></pre>
+            <ul>
+                <li><code>&lt;h1&gt;</code> bis <code>&lt;h6&gt;</code>: Überschriften (1 = größte, 6 = kleinste).</li>
+            </ul>
+            <div class="example">
+                <h3>Gerenderte Überschriften:</h3>
+                <h1>Überschrift 1</h1>
+                <h2>Überschrift 2</h2>
+                <h3>Überschrift 3</h3>
+            </div>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>3. Headings</h2>
+            <p>Headings structure content hierarchically. <code>&lt;h1&gt;</code> is the most important heading, followed by <code>&lt;h2&gt;</code> to <code>&lt;h6&gt;</code> in descending order of importance.</p>
+            <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;</code></pre>
+            <ul>
+                <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings (1 = largest, 6 = smallest).</li>
+            </ul>
+            <div class="example">
+                <h3>Rendered Headings:</h3>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+            </div>
+        </section>
+        <hr>
+        <!-- Listen -->
+        <section class="lang-de">
+            <h2>4. Listen</h2>
+            <p>Listen ordnen Inhalte als Punkte oder nummeriert an:</p>
+            <pre><code>&lt;ul&gt;
+&lt;li&gt;Listenpunkt 1&lt;/li&gt;
+&lt;li&gt;Listenpunkt 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Nummerierter Punkt 1&lt;/li&gt;
+&lt;li&gt;Nummerierter Punkt 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            <ul>
+                <li><code>&lt;ul&gt;</code>: Ungeordnete Liste mit Aufzählungspunkten.</li>
+                <li><code>&lt;ol&gt;</code>: Geordnete Liste mit Nummerierung.</li>
+                <li><code>&lt;li&gt;</code>: Einzelner Listenpunkt.</li>
+            </ul>
+            <div class="example">
+                <h3>Gerenderte Listen:</h3>
+                <h4>Ungeordnete Liste:</h4>
+                <ul>
+                    <li>Listenpunkt 1</li>
+                    <li>Listenpunkt 2</li>
+                </ul>
+                <h4>Geordnete Liste:</h4>
+                <ol>
+                    <li>Nummerierter Punkt 1</li>
+                    <li>Nummerierter Punkt 2</li>
+                </ol>
+            </div>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>4. Lists</h2>
+            <p>Lists organize content as bullet points or numbered items:</p>
+            <pre><code>&lt;ul&gt;
+&lt;li&gt;List item 1&lt;/li&gt;
+&lt;li&gt;List item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Numbered item 1&lt;/li&gt;
+&lt;li&gt;Numbered item 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            <ul>
+                <li><code>&lt;ul&gt;</code>: Unordered list with bullet points.</li>
+                <li><code>&lt;ol&gt;</code>: Ordered list with numbering.</li>
+                <li><code>&lt;li&gt;</code>: Single list item.</li>
+            </ul>
+            <div class="example">
+                <h3>Rendered Lists:</h3>
+                <h4>Unordered List:</h4>
+                <ul>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                </ul>
+                <h4>Ordered List:</h4>
+                <ol>
+                    <li>Numbered item 1</li>
+                    <li>Numbered item 2</li>
+                </ol>
+            </div>
+        </section>
+        <hr>
+        <!-- Links und Bilder -->
+        <section class="lang-de">
+            <h2>5. Links und Bilder</h2>
+            <p>Links verbinden deine Seite mit anderen Seiten. Bilder werden eingebunden, um visuelle Inhalte anzuzeigen.</p>
+            <pre><code>&lt;a href="https://example.com"&gt;Ein Link&lt;/a&gt;
+&lt;img src="bild.jpg" alt="Ein Bild" width="200" height="100"&gt;</code></pre>
+            <ul>
+                <li><code>&lt;a&gt;</code>: Link-Tag. <code>href</code> bestimmt das Ziel.</li>
+                <li><code>&lt;img&gt;</code>: Bild-Tag. <code>src</code> ist die Bildquelle, <code>alt</code> der Alternativtext.</li>
+            </ul>
+            <div class="example">
+                <h3>Gerenderte Links und Bilder:</h3>
+                <p><a href="https://example.com" target="_blank">Ein Link</a></p>
+                <p><img src="https://via.placeholder.com/200x100" alt="Ein Bild" width="200" height="100"></p>
+            </div>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>5. Links and Images</h2>
+            <p>Links connect your page to other pages. Images are embedded to display visual content.</p>
+            <pre><code>&lt;a href="https://example.com"&gt;A Link&lt;/a&gt;
+&lt;img src="image.jpg" alt="An Image" width="200" height="100"&gt;</code></pre>
+            <ul>
+                <li><code>&lt;a&gt;</code>: Link tag. <code>href</code> determines the target.</li>
+                <li><code>&lt;img&gt;</code>: Image tag. <code>src</code> is the image source, <code>alt</code> is the alternative text.</li>
+            </ul>
+            <div class="example">
+                <h3>Rendered Links and Images:</h3>
+                <p><a href="https://example.com" target="_blank">A Link</a></p>
+                <p><img src="https://via.placeholder.com/200x100" alt="An Image" width="200" height="100"></p>
+            </div>
+        </section>
+        <hr>
+        <!-- Tabellen -->
+        <section class="lang-de">
+            <h2>6. Tabellen</h2>
+            <p>Tabellen organisieren Daten in Zeilen und Spalten. Sie eignen sich vor allem für tabellarische Daten, nicht für das generelle Layout.</p>
+            <pre><code>&lt;table&gt;
+&lt;tr&gt;
+    &lt;th&gt;Überschrift 1&lt;/th&gt;
+    &lt;th&gt;Überschrift 2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Zelle 1&lt;/td&gt;
+    &lt;td&gt;Zelle 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            <ul>
+                <li><code>&lt;table&gt;</code>: Erzeugt eine Tabelle.</li>
+                <li><code>&lt;tr&gt;</code>: Tabellenzeile.</li>
+                <li><code>&lt;th&gt;</code>: Tabellenkopfzelle (fett und abhebend).</li>
+                <li><code>&lt;td&gt;</code>: Normale Tabellenzelle.</li>
+            </ul>
+            <div class="example">
+                <h3>Gerenderte Tabelle:</h3>
+                <table>
+                    <tr><th>Überschrift 1</th><th>Überschrift 2</th></tr>
+                    <tr><td>Zelle 1</td><td>Zelle 2</td></tr>
+                </table>
+            </div>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>6. Tables</h2>
+            <p>Tables organize data into rows and columns. They are especially suitable for tabular data, not for general layout.</p>
+            <pre><code>&lt;table&gt;
+&lt;tr&gt;
+    &lt;th&gt;Heading 1&lt;/th&gt;
+    &lt;th&gt;Heading 2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Cell 1&lt;/td&gt;
+    &lt;td&gt;Cell 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            <ul>
+                <li><code>&lt;table&gt;</code>: Creates a table.</li>
+                <li><code>&lt;tr&gt;</code>: Table row.</li>
+                <li><code>&lt;th&gt;</code>: Table header cell (bold and emphasized).</li>
+                <li><code>&lt;td&gt;</code>: Normal table cell.</li>
+            </ul>
+            <div class="example">
+                <h3>Rendered Table:</h3>
+                <table>
+                    <tr><th>Heading 1</th><th>Heading 2</th></tr>
+                    <tr><td>Cell 1</td><td>Cell 2</td></tr>
+                </table>
+            </div>
+        </section>
+        <hr>
+        <!-- Formulare -->
+        <section class="lang-de">
+            <h2>7. Formulare</h2>
+            <p>Formulare sammeln Benutzereingaben und senden diese an einen Server.</p>
+            <pre><code>&lt;form action="/submit" method="post"&gt;
+&lt;label for="name"&gt;Name:&lt;/label&gt;
+&lt;input type="text" id="name" name="name"&gt;
+&lt;input type="submit" value="Abschicken"&gt;
+&lt;/form&gt;</code></pre>
+            <ul>
+                <li><code>&lt;form&gt;</code>: Enthält das gesamte Formular. <code>action</code> gibt das Ziel an, <code>method</code> die Versandart (GET/POST).</li>
+                <li><code>&lt;label&gt;</code>: Beschriftet ein Eingabefeld.</li>
+                <li><code>&lt;input&gt;</code>: Eingabefeld, dessen <code>type</code> bestimmt, welche Art von Eingabe möglich ist (Text, Passwort, Checkbox, usw.).</li>
+                <li><code>&lt;button&gt;</code>: Erzeugt eine Schaltfläche. Mit <code>type="submit"</code> wird sie zum Absenden des Formulars verwendet.</li>
+            </ul>
+            <div class="example">
+                <h3>Gerendertes Formular:</h3>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Dein Name">
+                    <input type="submit" value="Abschicken">
+                </form>
+            </div>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>7. Forms</h2>
+            <p>Forms collect user inputs and send them to a server.</p>
+            <pre><code>&lt;form action="/submit" method="post"&gt;
+&lt;label for="name"&gt;Name:&lt;/label&gt;
+&lt;input type="text" id="name" name="name"&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+            <ul>
+                <li><code>&lt;form&gt;</code>: Contains the entire form. <code>action</code> specifies the target, <code>method</code> the submission method (GET/POST).</li>
+                <li><code>&lt;label&gt;</code>: Labels an input field.</li>
+                <li><code>&lt;input&gt;</code>: Input field, whose <code>type</code> determines the kind of input possible (text, password, checkbox, etc.).</li>
+                <li><code>&lt;button&gt;</code>: Creates a button. With <code>type="submit"</code>, it is used to submit the form.</li>
+            </ul>
+            <div class="example">
+                <h3>Rendered Form:</h3>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <hr>
+        <!-- Multimedia -->
+        <section class="lang-de">
+            <h2>8. Multimedia</h2>
+            <p>HTML5 erlaubt das direkte Einbinden von Videos und Audiodateien.</p>
+            <pre><code>&lt;video width="320" height="240" controls&gt;
+&lt;source src="video.mp4" type="video/mp4"&gt;
+Ihr Browser unterstützt dieses Video nicht.
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+&lt;source src="audio.mp3" type="audio/mpeg"&gt;
+Ihr Browser unterstützt dieses Audio nicht.
+&lt;/audio&gt;</code></pre>
+            <ul>
+                <li><code>&lt;video&gt;</code>: Video einbinden, mit <code>controls</code> für Abspielfunktionen.</li>
+                <li><code>&lt;audio&gt;</code>: Audio einbinden, ebenfalls mit <code>controls</code>.</li>
+            </ul>
+            <div class="example">
+                <h3>Gerenderte Multimedia-Elemente:</h3>
+                <video width="320" height="240" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Ihr Browser unterstützt dieses Video nicht.
+                </video><br>
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    Ihr Browser unterstützt dieses Audio nicht.
+                </audio>
+            </div>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>8. Multimedia</h2>
+            <p>HTML5 allows direct embedding of videos and audio files.</p>
+            <pre><code>&lt;video width="320" height="240" controls&gt;
+&lt;source src="video.mp4" type="video/mp4"&gt;
+Your browser does not support this video.
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+&lt;source src="audio.mp3" type="audio/mpeg"&gt;
+Your browser does not support this audio.
+&lt;/audio&gt;</code></pre>
+            <ul>
+                <li><code>&lt;video&gt;</code>: Embed video, with <code>controls</code> for playback functions.</li>
+                <li><code>&lt;audio&gt;</code>: Embed audio, also with <code>controls</code>.</li>
+            </ul>
+            <div class="example">
+                <h3>Rendered Multimedia Elements:</h3>
+                <video width="320" height="240" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support this video.
+                </video><br>
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    Your browser does not support this audio.
+                </audio>
+            </div>
+        </section>
+        <hr>
+        <!-- Semantische Tags -->
+        <section class="lang-de">
+            <h2>9. Semantische Tags</h2>
+            <p>Semantische Tags geben dem Inhalt eine Bedeutung und helfen Suchmaschinen und Screenreadern bei der Interpretation.</p>
+            <pre><code>&lt;header&gt;Kopfbereich (Logo, Hauptmenü)&lt;/header&gt;
+&lt;nav&gt;Navigationsbereich&lt;/nav&gt;
+&lt;main&gt;Hauptinhalt&lt;/main&gt;
+&lt;section&gt;Thematischer Abschnitt&lt;/section&gt;
+&lt;article&gt;Eigenständiger Artikel&lt;/article&gt;
+&lt;aside&gt;Zusätzliche Info am Rand&lt;/aside&gt;
+&lt;footer&gt;Fußzeile (Copyright, Kontakt)&lt;/footer&gt;</code></pre>
+            <ul>
+                <li><code>&lt;header&gt;</code>: Kopfbereich einer Seite oder eines Abschnitts.</li>
+                <li><code>&lt;nav&gt;</code>: Navigationselement, z. B. ein Menü.</li>
+                <li><code>&lt;main&gt;</code>: Hauptinhalt, der sich deutlich vom Header, Footer und Sidebar unterscheidet.</li>
+                <li><code>&lt;section&gt;</code>: Thematischer Abschnitt.</li>
+                <li><code>&lt;article&gt;</code>: Unabhängiger, selbstständiger Inhalt, z. B. ein Blogpost oder eine Zeitungsartikel.</li>
+                <li><code>&lt;aside&gt;</code>: Informationen am Rand, z. B. Werbung, weiterführende Links oder ein Glossar.</li>
+                <li><code>&lt;footer&gt;</code>: Fußzeile, meist mit Urheberangaben, rechtlichen Hinweisen oder Kontaktinformationen.</li>
+            </ul>
+            <div class="example">
+                <h3>Gerenderte semantische Tags:</h3>
+                <header>
+                    <h3>Header Bereich</h3>
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Über uns</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <main>
+                    <section>
+                        <h4>Thematischer Abschnitt</h4>
+                        <p>Dies ist ein thematischer Abschnitt innerhalb des Hauptinhalts.</p>
+                    </section>
+                    <article>
+                        <h4>Eigenständiger Artikel</h4>
+                        <p>Dies ist ein eigenständiger Artikel oder Beitrag.</p>
+                    </article>
+                    <aside>
+                        <h4>Seitenleiste</h4>
+                        <p>Zusätzliche Informationen am Rand.</p>
+                    </aside>
+                </main>
+                <footer>
+                    <p>&copy; 2024 HTML-Einführung. Alle Rechte vorbehalten.</p>
+                </footer>
+            </div>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>9. Semantic Tags</h2>
+            <p>Semantic tags give the content meaning and help search engines and screen readers interpret it.</p>
+            <pre><code>&lt;header&gt;Header Area (Logo, Main Menu)&lt;/header&gt;
+&lt;nav&gt;Navigation Area&lt;/nav&gt;
+&lt;main&gt;Main Content&lt;/main&gt;
+&lt;section&gt;Thematic Section&lt;/section&gt;
+&lt;article&gt;Independent Article&lt;/article&gt;
+&lt;aside&gt;Additional Info at the Side&lt;/aside&gt;
+&lt;footer&gt;Footer (Copyright, Contact)&lt;/footer&gt;</code></pre>
+            <ul>
+                <li><code>&lt;header&gt;</code>: Header area of a page or section.</li>
+                <li><code>&lt;nav&gt;</code>: Navigation element, e.g., a menu.</li>
+                <li><code>&lt;main&gt;</code>: Main content that is distinct from the header, footer, and sidebar.</li>
+                <li><code>&lt;section&gt;</code>: Thematic section.</li>
+                <li><code>&lt;article&gt;</code>: Independent, self-contained content, e.g., a blog post or newspaper article.</li>
+                <li><code>&lt;aside&gt;</code>: Information at the side, e.g., advertisements, additional links, or a glossary.</li>
+                <li><code>&lt;footer&gt;</code>: Footer, usually with copyright information, legal notices, or contact information.</li>
+            </ul>
+            <div class="example">
+                <h3>Rendered Semantic Tags:</h3>
+                <header><h3>Header Area</h3></header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <main>
+                    <section>
+                        <h4>Thematic Section</h4>
+                        <p>This is a thematic section within the main content.</p>
+                    </section>
+                    <article>
+                        <h4>Independent Article</h4>
+                        <p>This is an independent article or post.</p>
+                    </article>
+                    <aside>
+                        <h4>Sidebar</h4>
+                        <p>Additional information at the side.</p>
+                    </aside>
+                </main>
+                <footer><p>&copy; 2024 HTML Introduction. All rights reserved.</p></footer>
+            </div>
+        </section>
+        <hr>
+        <!-- Sonstige -->
+        <section class="lang-de">
+            <h2>10. Sonstige wichtige Tags</h2>
+            <p>Weitere nützliche Elemente:</p>
+            <pre><code>&lt;div&gt;Ein Container-Block&lt;/div&gt;
+&lt;span&gt;Ein Inline-Container&lt;/span&gt;
+&lt;iframe src="https://example.com"&gt;&lt;/iframe&gt;</code></pre>
+            <ul>
+                <li><code>&lt;div&gt;</code>: Ein Blockelement zum Gruppieren von Inhalten.</li>
+                <li><code>&lt;span&gt;</code>: Ein Inline-Element, um Teile von Text oder Inline-Elementen zu gruppieren.</li>
+                <li><code>&lt;iframe&gt;</code>: Betten eine andere Webseite innerhalb deiner Seite ein.</li>
+            </ul>
+            <div class="example">
+                <h3>Gerenderte sonstige Tags:</h3>
+                <div style="background-color:#2c2c2c;padding:10px;border-radius:4px;">
+                    <p>Dies ist ein <code>&lt;div&gt;</code> Container.</p>
+                </div>
+                <p>Dies ist ein <span style="background-color:#2c2c2c;padding:2px 4px;border-radius:4px;">Inline-Span</span> innerhalb eines Absatzes.</p>
+                <iframe src="https://www.example.com" width="300" height="200" title="Beispiel Iframe"></iframe>
+            </div>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>10. Other Important Tags</h2>
+            <p>Additional useful elements:</p>
+            <pre><code>&lt;div&gt;A Container Block&lt;/div&gt;
+&lt;span&gt;An Inline Container&lt;/span&gt;
+&lt;iframe src="https://example.com"&gt;&lt;/iframe&gt;</code></pre>
+            <ul>
+                <li><code>&lt;div&gt;</code>: A block element for grouping content.</li>
+                <li><code>&lt;span&gt;</code>: An inline element for grouping parts of text or inline elements.</li>
+                <li><code>&lt;iframe&gt;</code>: Embeds another webpage within your page.</li>
+            </ul>
+            <div class="example">
+                <h3>Rendered Other Tags:</h3>
+                <div style="background-color:#2c2c2c;padding:10px;border-radius:4px;">
+                    <p>This is a <code>&lt;div&gt;</code> container.</p>
+                </div>
+                <p>This is an <span style="background-color:#2c2c2c;padding:2px 4px;border-radius:4px;">inline span</span> within a paragraph.</p>
+                <iframe src="https://www.example.com" width="300" height="200" title="Example Iframe"></iframe>
+            </div>
+        </section>
+        <hr>
+        <!-- Fazit -->
+        <section class="lang-de">
+            <h2>Fazit</h2>
+            <p>Mit diesen HTML-Grundlagen kannst du bereits einfache Webseiten erstellen und strukturieren. Später kannst du mit CSS das Aussehen verbessern und mit JavaScript Interaktionen hinzufügen.</p>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>Conclusion</h2>
+            <p>With these HTML basics, you can already create and structure simple websites. Later, you can enhance the appearance with CSS and add interactions with JavaScript.</p>
+        </section>
+        <hr>
+        <!-- Weiterführende Ressourcen -->
+        <section class="lang-de">
+            <h2>Weiterführende Ressourcen</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/de/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML Tutorial</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-html" target="_blank">Codecademy - Learn HTML</a></li>
+            </ul>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>Further Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML Tutorial</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-html" target="_blank">Codecademy - Learn HTML</a></li>
+            </ul>
+        </section>
+        <hr>
+        <!-- Übungen -->
+        <section class="lang-de">
+            <h2>Übungen</h2>
+            <p>Setze die folgenden HTML-Tags selbstständig ein und erstelle eine einfache Webseite:</p>
+            <ul>
+                <li>Erstelle eine Tabelle mit 3 Spalten und 2 Zeilen.</li>
+                <li>Füge ein Bild und einen Link zu einer externen Webseite hinzu.</li>
+                <li>Erstelle ein einfaches Formular mit einem Textfeld und einem Absende-Button.</li>
+            </ul>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>Exercises</h2>
+            <p>Implement the following HTML tags yourself and create a simple webpage:</p>
+            <ul>
+                <li>Create a table with 3 columns and 2 rows.</li>
+                <li>Add an image and a link to an external website.</li>
+                <li>Create a simple form with a text field and a submit button.</li>
+            </ul>
+        </section>
+        <hr>
+        <!-- Glossar -->
+        <section class="lang-de">
+            <h2>Glossar</h2>
+            <dl>
+                <dt>Tag</dt>
+                <dd>Ein Baustein in HTML, der von spitzen Klammern umschlossen ist, z.B. <code>&lt;p&gt;</code>.</dd>
+                <dt>Attribut</dt>
+                <dd>Ein Zusatz zu einem HTML-Tag, der zusätzliche Informationen bereitstellt, z.B. <code>href</code> bei <code>&lt;a&gt;</code>.</dd>
+                <!-- Weitere Begriffe -->
+            </dl>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>Glossary</h2>
+            <dl>
+                <dt>Tag</dt>
+                <dd>An HTML building block enclosed in angle brackets, e.g., <code>&lt;p&gt;</code>.</dd>
+                <dt>Attribute</dt>
+                <dd>An addition to an HTML tag that provides additional information, e.g., <code>href</code> in <code>&lt;a&gt;</code>.</dd>
+                <!-- More terms -->
+            </dl>
+        </section>
+        <hr>
+        <!-- Kontakt -->
+        <section class="lang-de">
+            <h2>Kontakt</h2>
+            <p>Bei Fragen oder Feedback kannst du mich unter <a href="mailto:beispiel@example.com">beispiel@example.com</a> erreichen.</p>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>Contact</h2>
+            <p>If you have any questions or feedback, you can reach me at <a href="mailto:beispiel@example.com">beispiel@example.com</a>.</p>
+        </section>
+        <hr>
+        <!-- Impressum -->
+        <section class="lang-de">
+            <h2>Impressum</h2>
+            <p>Angaben gemäß § 5 TMG:</p>
+            <p>Max Mustermann<br>Musterstraße 1<br>12345 Musterstadt</p>
+            <p>Kontakt:<br>Telefon: 01234-56789<br>E-Mail: <a href="mailto:beispiel@example.com">beispiel@example.com</a></p>
+        </section>
+        <section class="lang-en" style="display:none;">
+            <h2>Imprint</h2>
+            <p>Information according to § 5 TMG:</p>
+            <p>John Doe<br>Sample Street 1<br>12345 Sample City</p>
+            <p>Contact:<br>Phone: 01234-56789<br>Email: <a href="mailto:beispiel@example.com">beispiel@example.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <div class="lang-de"><p>&copy; 2024 HTML-Einführung</p></div>
+        <div class="lang-en" style="display:none;"><p>&copy; 2024 HTML Introduction</p></div>
+    </footer>
+</body>
+</html>
