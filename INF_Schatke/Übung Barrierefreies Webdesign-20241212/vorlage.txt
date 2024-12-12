@@ -1,0 +1,26 @@
+Empfehlungen für ein barrierefreies Webdesign
+Screenreader
+Als Screenreader wird eine Software bezeichnet, die blinden Personen den Zugang zu Computern ermöglicht.
+Der Screenreader liest den Bildschirminhalt ein und gibt die Informationen über Braillezeile und Sprachausgabe an den blinden Nutzer aus. 
+Screenreader interpretieren dabei
+den Textinhalt, 
+die Bedeutung der grafischen Symbole, 
+die aktuelle Eingabeposition und 
+den Aufbau des gesamten Bildschirms. 
+In der Praxis bedeutet die Übertragung grafischer Bedienoberflächen in eine für Blinde zugängliche Form eine große Herausforderung.  
+Layouttabellen  
+Eine häufige Form, bei einer Webseite ein Layout festzulegen, ist der Einsatz von - meist unsichtbaren - Layouttabellen. Wenn sich ein Screenreader nun von Zelle zu Zelle "bewegt", kann die inhaltlich logische Reihenfolge durcheinander kommen. Werden Layouttabellen ineinander verschachtelt, gibt das Programm Unsinn wieder.
+Vermeiden Sie deshalb komplexe Layouttabellen und achten Sie beim Einsatz darauf, dass der Aufbau des Inhalts der Webseite dem Aufbau der Layouttabelle (von Zelle zu Zelle) entspricht.  
+Datentabellen  
+Für sehbehinderte Menschen kann es sehr mühsam sein, eine Tabelle mit Daten zu verstehen. Ein sehender Leser sucht meist nur einen oder wenige bestimmte Werte von vielen und wählt diese optisch aus.
+Um den Umgang mit Datentabellen zu erleichtern, sollten Sie die Zeilen- und Spaltenköpfe kennzeichnen sowie den Inhalt und die Aussage der Datentabelle zusammenfassen.  
+Checkliste Tabellen  
+notwendig 
+nur fürs Layout verwenden, wenn die Linearität beibehalten wird 
+der Datentabelle zu Beginn eine Überschrift/Tabellennamen geben 
+bei Datentabellen Zeilen- und Spaltenüberschriften kennzeichnen 
+empfehlenswert 
+Inhalt zusammenfassen  
+Links mit Informationen
+http://www.barrierefreies-webdesign.de/knowhow/grundlage.php (Barrierefreies Webdesign)
+http://www.einfach-fuer-alle.de/ (Einfach für alle)

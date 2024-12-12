@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navigation.css">
+<style>
+.gelb{
+    background-color: blanchedalmond; 
+}
+.red{
+    background-color: rgb(197, 74, 37);
+}
+th{
+    background-color: rgb(193, 189, 224);
+}
+body{
+  background-color: rgb(250, 242, 232);  
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="erste-seite.html">Zur Starseite</a></li>
+        <li><a href="Gedicht.html">Zu meinem Lieblingsgedicht</a></li>
+        <li><a href="ueber-mich.html">Über mich</a></li>
+        <li><a href="stundenplan.html">Zum Stundenplan</a></li>
+        <li><a href="adventskalender.html">Zum Adventskalender</a></li>
+    </ul>
+</nav>
+
+<main>
+<h1>Meine erste Tabelle</h1>
+<table border="1">
+    <tr>
+        <td>Zelle 1</td>
+        <td>Zelle 2</td>
+    </tr>
+    <tr>
+        <td>Zelle 3</td>
+        <td>Zelle 4</td>
+    </tr>
+</table>
+<h2>Zellen nebeneinander verbinden mit colspan</h2>
+<table border="1">
+    <tr>
+        <td colspan="2" class="gelb">Zelle 1</td>
+        
+    </tr>
+    <tr>
+        <td>Zelle 3</td>
+        <td>Zelle 4</td>
+    </tr>
+</table>
+
+<h2>Zellen untereinander verbinden mit rowspan</h2>
+<table border="1">
+    <tr>
+        <td rowspan="2" class="gelb">Zelle 1</td>
+        <td>Zelle 2</td>
+    </tr>
+    <tr>
+        
+        <td>Zelle 4</td>
+    </tr>
+</table>
+<h2>Mein Stundenplan der Klasse FTE1 24/25</h2>
+<table border="1">
+    
+        <tr>
+            <th>Wochentag</th>
+            <th colspan="2">Montag</th>
+            <th colspan="2">Dienstag</th>
+            <th colspan="2">Mittwoch</th>
+            <th colspan="2">Donnerstag</th>
+            <th colspan="2">Freitag</th>				
+        </tr>
+        <tr>
+            <td>1. Stunde</td>
+            <td colspan="2">ITSY-L2</td>
+            <td colspan="2">GK</td>
+            <td class="red" colspan="2">E-WP</td>
+            <td colspan="2">ITSY-L</td>
+            <td class="gelb" colspan="2">SAE-L</td>				
+        </tr>
+        
+        <tr>
+            <td>7:30 - 8:15</td>					
+            <td>201C</td>
+            <td>Nes</td>
+            <td>153</td>
+            <td>Hey</td>
+            <td>153</td>
+            <td>Kue</td>
+            <td>203C</td>
+            <td>Jes</td>
+            <td>153</td>
+            <td>Kue</td>
+        </tr>
+            
+        <tr>
+            <td>2. Stunde</td>
+            <td colspan="2">ITSY2</td>
+            <td colspan="2">GK</td>
+            <td colspan="2">-</td>
+            <td colspan="2">ITSY-L</td>
+            <td class="gelb" colspan="2">SAE-L</td>				
+        </tr>
+        
+        <tr>
+            <td>8:15 - 9:00</td>					
+            <td>210C</td>
+            <td>Hub</td>
+            <td>153</td>
+            <td>Hey</td>
+            <td>-</td>
+            <td>-</td>
+            <td>203C</td>
+            <td>Jes</td>
+            <td>201C</td>
+            <td>Stk</td>		
+        </tr>
+    
+        <tr>
+            <td>3. Stunde</td>
+            <td colspan="2">ITSY-L2</td>
+            <td colspan="2">D</td>
+            <td colspan="2">WI</td>
+            <td colspan="2">ITSY</td>
+            <td  class="gelb" colspan="2">SAE-L</td>				
+        </tr>
+        
+        <tr>
+            <td>9:15 - 10:00</td>					
+            <td>201C</td>
+            <td>Nes</td>
+            <td>153</td>
+            <td>Fun</td>
+            <td>153</td>
+            <td>Fal</td>
+            <td>203C</td>
+            <td>Jes</td>
+            <td>201C</td>
+            <td>Stk</td>
+        </tr>
+            
+        <tr>
+            <td>4. Stunde</td>
+            <td colspan="2">ITSY-L2</td>
+            <td colspan="2">D</td>
+            <td colspan="2">ITSY2</td>
+            <td colspan="2">GK</td>
+            <td colspan="2">BWL-L</td>				
+        </tr>
+        
+        <tr>
+            <td>10:00 - 10:45</td>					
+            <td>201C</td>
+            <td>Nes</td>
+            <td>153</td>
+            <td>Fun</td>
+            <td>210C</td>
+            <td>Hub</td>
+            <td>153</td>
+            <td>Hey</td>
+            <td>201C</td>
+            <td>Fal</td>		
+        </tr>
+        <tr>
+            <td>5. Stunde</td>
+            <td colspan="2">ITSY</td>
+            <td class="gelb" colspan="2">SAE</td>
+            <td colspan="2">ITSY2</td>
+            <td colspan="2">BWL</td>
+            <td colspan="2">BWL-L</td>				
+        </tr>
+        
+        <tr>
+            <td>11:00 - 11:45</td>					
+            <td>203C</td>
+            <td>Jes</td>
+            <td>225C</td>
+            <td>Stk</td>
+            <td>210C</td>
+            <td>Hub</td>
+            <td>153</td>
+            <td>Fal</td>
+            <td>201C</td>
+            <td>Fal</td>
+        </tr>
+            
+        <tr>
+            <td>6. Stunde</td>
+            <td class="gelb" colspan="2">SAE</td>
+            <td class="gelb" colspan="2">SAE</td>
+            <td colspan="2">D</td>
+            <td class="red" colspan="2">E-WP</td>
+            <td colspan="2">BWL-L</td>				
+        </tr>
+        
+        <tr>
+            <td>11:45 - 12:30</td>					
+            <td>225C</td>
+            <td>Stk</td>
+            <td>225C</td>
+            <td>Stk</td>
+            <td>153</td>
+            <td>Fun</td>
+            <td>153</td>
+            <td>Kue</td>
+            <td>201C</td>
+            <td>Fal</td>		
+        </tr>
+        <tr>
+            <td>7. Stunde</td>
+            <td colspan="2">REL</td>
+            <td colspan="2">ITSY2</td>
+            <td colspan="2">BWL</td>
+            <td colspan="2">WI</td>
+            <td class="gelb" colspan="2">SAE-L</td>				
+        </tr>
+        
+        <tr>
+            <td>13:00 - 13:45</td>					
+            <td>201C</td>
+            <td>Nes</td>
+            <td>153</td>
+            <td>Hey</td>
+            <td>153</td>
+            <td>Kue</td>
+            <td>203C</td>
+            <td>Jes</td>
+            <td>201C</td>
+            <td>Jes</td>
+        </tr>
+            
+        <tr>
+            <td>8. Stunde</td>
+            <td colspan="2">ITSY2</td>
+            <td colspan="2">GK</td>
+            <td colspan="2">-</td>
+            <td colspan="2">ITSY-L</td>
+            <td class="red" colspan="2">E-WP</td>				
+        </tr>
+        
+        <tr>
+            <td>13:45 - 14:30</td>					
+            <td>210C</td>
+            <td>Hub</td>
+            <td>153</td>
+            <td>Hey</td>
+            <td>-</td>
+            <td>-</td>
+            <td>203C</td>
+            <td>Jes</td>
+            <td>153</td>
+            <td>Kue</td>		
+        </tr>
+        
+</table>
+</main>
+
+
+</body>
+</html>

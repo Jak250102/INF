@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+    <style>
+        div{margin-bottom: 5px;}
+        span{color:red;}
+    </style>
+</head>
+<body>
+<h1>Registrierungsformular</h1>
+<form action="auswertung.php">
+<!--Textfield-->
+<div>
+    <label for="nn">Nachname</label>
+    <input type="text" name="nachname" id="nn">
+</div>
+<div>
+    <label>Vorname<input type="text" name="vorname"></label>
+</div>
+<div>
+    <label>Passwort festlegen<input type="password" name="pw"></label>
+</div>
+<div>
+  <label>Geburtsdatum<input type="date" name="geb"></label>
+</div>
+<!--Radiobutton-->
+<div>
+<fieldset>
+    <legend>Kundenbereich</legend>
+  <label><input type="radio" name="kunde" >Privatkunde</label><br>
+  <label><input type="radio" name="kunde" checked>Geschäftskunde</label>
+</fieldset>
+</div>
+<!--drop-down-list-->
+<div>
+<label>Bezahlart
+<select name="bezahlung">
+  <option value="1">Bankeinzug</option>
+  <option value="2">Kreditkarte</option>
+  <option value="3" selected>Paypal</option>
+  <option value="4">SOFORT-Überweisung</option>
+</select>
+</label>
+</div>
+<!--Checkbox-->
+<div>
+ <label><input type="checkbox" name="agb" required><span>*</span>AGBs gelesen und bestätigt.</label>   
+</div>
+<div>
+ <label><input type="checkbox" name="werbung">Ich interessiere mich für weitere Angebote.</label>   
+</div>
+<!--Sende-button-->
+<div>
+    <input type="submit" value="Senden">
+</div>
+</form>
+</body>
+</html>

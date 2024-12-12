@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventskalender</title>
+    <link rel="stylesheet" href="navigation.css">
+    <style>
+        .flex-wrapper
+        {
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: blue;
+            width:672px;
+            margin: auto;
+        }
+
+        .days
+        {
+            margin: 10px;
+            background-color: red;
+            width:200px;
+            height:200px;
+            border:2px solid black;
+            font-size:32px;
+            color:white;
+            text-align: center; /*Textzentrierung x-Achse*/
+            line-height: 200px; /*Textzentrierung y-Achse*/
+        }
+        /*.days:hover
+        {
+            background-color: green;
+            transform: scale(2.0,2.0);
+            transition-duration:1.0s;
+
+        }*/
+        .days:active
+        {
+            background: url(bunt.jpg) no-repeat red;
+            background-size: cover;
+            width:200px;
+            height: 200px;
+            transform:rotate(360deg);
+            transition-duration: 2.0s;
+           
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>Mein Adventskalender</h1>
+<nav>
+    <ul>
+        <li><a href="erste-seite.html">Zur Starseite</a></li>
+        <li><a href="Gedicht.html">Zu meinem Lieblingsgedicht</a></li>
+        <li><a href="ueber-mich.html">Über mich</a></li>
+        <li><a href="stundenplan.html">Zum Stundenplan</a></li>
+        <li><a href="adventskalender.html">Zum Adventskalender</a></li>
+    </ul>
+</nav>
+<div class="flex-wrapper">
+    <div class="days">1</div>
+    <div class="days">2</div>
+    <div class="days">3</div>
+    <div class="days">4</div>
+    <div class="days">5</div>
+    <div class="days">6</div>
+    <div class="days">7</div>
+    <div class="days">8</div>
+    <div class="days">9</div>
+</div>
+</body>
+</html>
