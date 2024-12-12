@@ -1,8 +1,8 @@
 <?php
     echo "<h1>Hello World</h1>";
 //Variablen
-$zahl; //deklaration optional wenn Init
-$zahl1=11; //Inintalisierung
+$zahl; //Deklaration optional wenn Init
+$zahl1=11; //Initialisierung
 echo gettype($zahl1);
 
 $zahl2=9;

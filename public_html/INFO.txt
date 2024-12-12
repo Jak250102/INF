@@ -1,1 +1,0 @@
-http://localhost/~muyjannik/HelloWorld.php im Browser local ablegen unter Persönlicher Ortner public_html
