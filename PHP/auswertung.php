@@ -9,10 +9,10 @@
 <h1> Ihre eingegebenen Daten:</h1>	
 
 <?php
-echo "<h1>Hello World</h1>"
-echo $_GET["nachname"];
-echo "<br>"
-echo $_GET["pw"]
+echo "<h1>Hello World</h1>";
+echo $_GET["Nachname"];
+echo "<br>";
+echo $_GET["pw"];
 ?>
 </body>
 </html>
