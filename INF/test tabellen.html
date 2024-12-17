@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.flex-wraper {
+			flex-direction: row;
+			display: flex;
+			flex-wrap: wrap;
+			background-color: rgba(150, 150, 244, 0.315);
+			border: 10px solid black;
+			width: 500px;
+			/* margin: auto; */
+		}
+		.flex-wraper>div {
+			background-color: rgb(255, 159, 80);
+			border: 1px solid black;
+			width: 50px;
+			height: 50px;
+			margin: 10px;
+			text-align: center;
+			line-height: 40px;
+		}
+	</style>
+</head>
+
+<body>
+	<table border="1">
+		<thead>
+			<td colspan="2" rowspan="2">test 1</td>
+			<td>test 2</td>
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="2"> test 3</td>
+				<td> test 4</td>
+
+			</tr>
+			<tr>
+				<td> test 5</td>
+				<td> test 6</td>
+			</tr>
+			<tr>
+				<td> test 5</td>
+				<td> test 6</td>
+			</tr>
+		</tbody>
+	</table>
+<div class="flex-wraper">
+	<div>test</div>
+	<div>test</div>
+	<div>test</div>
+</div>
+</body>
+
+</html>
