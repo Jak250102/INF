@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div {
+			margin: 10px;
+		}
+
+		label {
+			display: inline-block;
+			/* width: 100px; */
+		}
+
+		span {
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Registrierungsformular</h1>
+	<form action="auswertung2.php">
+		<!-- Textfield -->
+		<div>
+			<label for="nn">Nachname:</label>
+			<input type="text" name="Nachname" id="nn">
+		</div>
+		<div>
+			<label>Vorname:
+				<input type="text" name="vn">
+
+			</label>
+		</div>
+
+		<div>
+			<label>Passwort:
+				<input type="password" name="pw">
+			</label>
+		</div>
+		<div>
+			<label>Geburtsdatum:
+				<input type="date" name="geb">
+
+			</label>
+		</div>
+		<!-- Radiobuttons -->
+		<div>
+			<fieldset>
+				<legend>Kundenart</legend>
+				<label><input type="radio" name="kunde" checked>Privatkunde</label><br>
+				<label><input type="radio" name="kunde">Geschäftskunde</label>
+			</fieldset>
+		</div>
+
+		<!-- drop down menü -->
+		<div>
+			<label>Bezahlmöglichkeit:
+
+
+				<select name="bezahlung">
+					<option value="0">Bitte auswählen</option>
+					<option value="1">Bankeinzug</option>
+					<option value="2">Kreditkarte</option>
+					<option value="3">Paypal</option>
+					<option value="4" selected>Rechnung</option>
+
+				</select>
+			</label>
+		</div>
+
+		<!-- Checkboxen -->
+
+		<div>
+			<label>
+				<input type="checkbox" name="agb" required><span>*</span> AGB akzeptieren
+			</label>
+		</div>
+		<div>
+			<label><input type="checkbox" name="Newsletter" checked>Newsletter abonnieren</label><br>
+		</div>
+<div>
+	<input type="submit" name="senden" value="Registrieren">
+</div>
+
+	</form>
+</body>
+
+</html>
