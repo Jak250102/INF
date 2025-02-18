@@ -10,16 +10,18 @@
 <body>
 	<h1>Mein Taschenrechner</h1>
 	<form>
-		<label for="">Zahl1</label>
-		<input type="text" name="zahl1">
+		<label>Zahl1
+			<input type="text" name="zahl1">
+		</label>
 		<select name="operator" id="">
 			<option value="+">+</option>
 			<option value="-">-</option>
 			<option value="*">*</option>
 			<option value="/">/</option>
 		</select>
-		<label for="">Zahl2</label>
-		<input type="text" name="zahl2">
+		<label>Zahl2
+			<input type="text" name="zahl2">
+		</label>
 		<br>
 		<br>
 		<br>
@@ -31,19 +33,23 @@
 $ergebnis = 0;
 
 if (isset($_GET["submit"])) {
-	$zahl1 = (float)$_GET["zahl1"];
+	$zahl1 = $_GET["zahl1"];
+	$zahl1 += 0;
 	$operator = $_GET["operator"];
-	$zahl2 = (float)$_GET["zahl2"];
+	$zahl2 = $_GET["zahl2"];
 
 	switch ($operator) {
 		case "+":
 			$ergebnis = $zahl1 + $zahl2;
+			echo $zahl1 . $operator . $zahl2 . "=" . $ergebnis;
 			break;
 		case "-":
 			$ergebnis = $zahl1 - $zahl2;
+			echo $zahl1 . $operator . $zahl2 . "=" . $ergebnis;
 			break;
 		case "*":
 			$ergebnis = $zahl1 * $zahl2;
+			echo $zahl1 . $operator . $zahl2 . "=" . $ergebnis;
 			break;
 		case "/":
 			if ($zahl2 == 0) {
@@ -51,11 +57,11 @@ if (isset($_GET["submit"])) {
 				break;
 			} else
 				$ergebnis = $zahl1 / $zahl2;
+			echo $zahl1 . $operator . $zahl2 . "=" . $ergebnis;
 			break;
 		default:
 			echo "<p>Der Operator ist ungültig</p>";
 	}
-	echo "$zahl1 $operator $zahl2 = $ergebnis";
 }
 
 ?>
