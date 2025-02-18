@@ -11,7 +11,9 @@
 	<h1>Mein Taschenrechner</h1>
 	<form>
 		<label>Zahl1
-			<input type="text" name="zahl1">
+			<input type="text" name="zahl1" placeholder="Zahl1" value="<?php if (isset($_GET["submit"])) {
+																			echo $_GET['zahl1'];
+																		} ?>">
 		</label>
 		<select name="operator" id="">
 			<option value="+">+</option>
@@ -20,7 +22,9 @@
 			<option value="/">/</option>
 		</select>
 		<label>Zahl2
-			<input type="text" name="zahl2">
+			<input type="text" name="zahl2" placeholder="Zahl2" value="<?php if (isset($_GET["submit"])) {
+																			echo $_GET['zahl2'];
+																		} ?>">
 		</label>
 		<br>
 		<br>
