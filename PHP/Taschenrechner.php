@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Taschenrechner</title>
-</head>
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Taschenrechner</title>
+	</head>
+	<?php $ergebnis = 0; ?>
 
 <body>
 	<h1>Mein Taschenrechner</h1>
@@ -30,11 +31,12 @@
 		<br>
 		<br>
 		<input type="submit" value="Berechnen" name="submit">
+		<br>
+		<p>Ergebnis:</p>
 	</form>
 	<hr>
 </body>
 <?php
-$ergebnis = 0;
 
 if (isset($_GET["submit"])) {
 	$zahl1 = $_GET["zahl1"];
