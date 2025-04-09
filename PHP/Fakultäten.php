@@ -22,18 +22,24 @@
 
 
 		$n = $zahl;
+		if ($n > 170) {
+			echo "<h1>Error Integer Voll</h1>";
+			exit;
+		}
 		fakultaet($n);
+		echo "<h1>Die Fakultät von " . $n . " ist " . fakultaet($n) . "</h1>";
 	}
 	function fakultaet($n)
 	{
 		$ergebnis = 1;
 
 		for ($i = 1; $i <= $n; $i++) {
-			echo $i . " * " . $ergebnis." = ";
+			// echo $i . " * " . $ergebnis." = "; ausgabe jeder Schleife
 			$ergebnis = $ergebnis * $i;
-			echo $ergebnis . "<br>";
+			// echo $ergebnis . "<br>";
 
 		}
+		// echo "<h1>Die Fakultät von " . $n . " ist " . $ergebnis . "</h1>"; ausgabe der Endergebnisse
 		return $ergebnis;
 	}
 	?>
