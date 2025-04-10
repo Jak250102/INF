@@ -1,11 +1,13 @@
 {
 			
 	// "powermode.presets": "magic",
+	
     "editor.insertSpaces": false,
 	"editor.detectIndentation": false,
 	"cSpell.words": [
 		"ergebnis"
 	
 	]
+	
 
 }
