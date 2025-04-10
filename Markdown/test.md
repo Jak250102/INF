@@ -111,6 +111,14 @@ $$ \sum_{i=1}^n x_i^2 $$
 ## Link und Bild
 - [Link zu Google](https://www.google.com)
 - ![Beispielbild](https://via.placeholder.com/150)
+---
+## Farben
+<span style="color:red">roter Text</span>
+<span style="color:blue">blauer Text</span>
+<span style="color:green">grüner Text</span>
+
+
+
 
 ---
 
