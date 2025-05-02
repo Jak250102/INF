@@ -1,22 +1,16 @@
-#import "template.typ":*
-// #import "template.typ":hr
+#import "template/template.typ":*
+#show: styling
 
-#let vector(x) = $accent(#x, arrow)$
-
-
-#ohm 
-#set text(lang: "de", region: "de", 11pt)
-#set heading(numbering: "1.")
-#set align(center)
 #outline(indent: auto,depth: 3)
 #sym.Delta #sym.mu
-\
+
 #line(length: 100%) #sym.arrow.r^Z
 
 $accent("x", arrow)$
+$accent("b",arrow)$
 #hr
 #ohm
-
+#heading(level: 1,"hallo")
 = test
 // #v(-0.8cm)
 == test 2
@@ -42,5 +36,6 @@ $accent("x", arrow)$
 )
 
 #vector("Z")
+#vector("b")
 
 #set align(center)
