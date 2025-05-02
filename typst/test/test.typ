@@ -10,6 +10,7 @@ $accent("x", arrow)$
 $accent("b",arrow)$
 #hr
 #ohm
+$x#sub[yearly]^1$
 #heading(level: 1,"hallo")
 = test
 // #v(-0.8cm)
