@@ -1,4 +1,4 @@
-#import "template/template.typ":*
+#import "/typst/template/template.typ":*
 #show: styling
 
 #outline(indent: auto,depth: 3)
@@ -38,5 +38,11 @@ $x#sub[yearly]^1$
 
 #vector("Z")
 #vector("b")
-
+#head2("expotentialschreibweise")
 #set align(center)
+$#{let a = calc.pow(3,3);1+1+ a ;
+}$
+#sci(1421342142141,2)\
+#qty[#sci(1421342142141,2)][m]\
+#ssci(43634653456)\
+#ssci(43634653456, precision: 2)

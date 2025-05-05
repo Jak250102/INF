@@ -43,3 +43,4 @@ Jeder Punkt hat eine andere Tangensteigung.\
 Allgemein #func("x") $x^n$, ==> #funcA("x")$n*x^(n-1)$ \
 Zusatz: #func("x") $1/x^2=x^(-2)$==> #funcA("x") 
 === Summenregel
+
