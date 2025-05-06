@@ -7,7 +7,22 @@
 #outline(indent: auto,depth: 4)
 #hr
 
-= Frequenzverhalte
+= Frequenzverhalten von RLC Schaltungen 
+== Hörbare Frequenzen
+
+#red1("Bild einfügen")\
+0-20Hz Infraschall\
+20Hz-20 000Hz Hörbarer Bereich für Menschen \
+20 000Hz-200 000Hz Ultraschall z.b. Flederkläuse
+
+== Reihenschaltung als Vierpol
+#red1("Bild einfügen")\
+$U_A/U_E=R/Z$\
+$U_A/U_E=R/(sqrt(R²+(X_L)²))("Pytagoras")$\
+$=R/(sqrt(R²+1/(2*Pi*f*C)))$
+
+== Hochpassfilter
+#red1("Bild einfügen")\
 == Schwingkreise
 === Aufgabe 1
 Gegeben sei der Reihenschwingkreis mit den Bauelementen:\
