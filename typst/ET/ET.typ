@@ -135,3 +135,25 @@ $f_r=1/(2*Pi*sqrt(L*C))$
 $f_r=1/(2*Pi*sqrt(4.3 m H* 33 mu F))=422.50H z$\
 b)\
 $P=(U²)/R=((110V)²)/(56 Omega)=216.07W$\
+= Drehstromtechnik
+== Erzeugung und Verkettung
+=== Was ist ein Drehstromsystem?
+#image("Screenshot_35.png")\
+=== Verkettung
+#image("Screenshot_36.png")\
+#image("Screenshot_37.png")\
+=== Arbeitsauftrag
+#image("Screenshot_40.png")\
+#image("Screenshot_41.png")\
+#image("Screenshot_42.png")\
+=== Symmetrische Belastung
+#image("Screenshot_43.png")\
+#head2[Sternschaltung (Paralelschaltung)]\
+#image("Screenshot_44.png")\
+#image("Screenshot_45.png")\
+#red1[$I_(s t r)=I_L$]\
+#red1[Strangstrom = Leiterstrom]\
+#blue1[Leiterspannung = $ sqrt(3)" Strangspannung"$]\
+#green1("M")\
+$U_("str2")-U_("str1")+U_("12")=0$\
+$U_("12")=U_("str1")-U_("str2")$
