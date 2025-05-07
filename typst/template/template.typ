@@ -42,9 +42,9 @@
   strfmt("{test:." + str(precision) + "e}", test: number)
 }
 
-// #fancy-units-configure(
-// per-mode: "fraction"
-// )
+#fancy-units-configure(
+per-mode: "fraction"
+)
 
 #let ssci(number, precision: 1) = {
   // --- Handle Zero ---

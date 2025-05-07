@@ -10,21 +10,36 @@
 = Frequenzverhalten von RLC Schaltungen 
 == Hörbare Frequenzen
 
-#red1("Bild einfügen")\
+#image("Screenshot_31.png")\
 0-20Hz Infraschall\
 20Hz-20 000Hz Hörbarer Bereich für Menschen \
 20 000Hz-200 000Hz Ultraschall z.b. Flederkläuse
 
 == Reihenschaltung als Vierpol
-#red1("Bild einfügen")\
+#image("4d91a944-34e4-48e4-8649-22fbf82c1422.png", width: 60%)\
 $U_A/U_E=R/Z$\
 $U_A/U_E=R/(sqrt(R²+(X_L)²))("Pytagoras")$\
-$=R/(sqrt(R²+1/(2*Pi*f*C)))$
+$=R/(sqrt(R²+1/(2*Pi*f*C)))$\
+
 
 == Hochpassfilter
-#red1("Bild einfügen")\
+Ein Hochpassfilter lässt Signale bzw. Spannungen mit hohen Frequenzen durch, während niedrige Frequenzen herausgefiltert werden.
+#image("Screenshot_32.png")\
+Füllen Sie die untenstehende Tabelle aus, indem Sie das Verhältnis $U_a/U_e$ in Abhängigkeit von der Frequenz bestimmen.
+
+$U_a/U_e=R/(sqrt(R²+(1/(2*Pi*f*C))²))$\
+$X_C=1/(2*Pi*f*C)$
+
+#red1[Tabelle einfügen]
+
+== Tiefpassfilter
+Ein Tiefpassfilter lässt Signale bzw. Spannungen mit niedrigen Frequenzen durch, während hohe Frequenzen herausgefiltert werden.
+#image("Screenshot_33.png")\
+Füllen Sie die untenstehende Tabelle aus, indem Sie das Verhältnis $U_a/U_e$ in Abhängigkeit von der Frequenz bestimmen.\
+#red1[Tabelle einfügen]
+
 == Schwingkreise
-=== Aufgabe 1
+#head2[Aufgabe 1]
 Gegeben sei der Reihenschwingkreis mit den Bauelementen:\
 R = 1000 Ω, L = 100 mH, C = 0,15 µF, U = 1V, f = 1kHz.\
 Berechnen Sie den Wechselstrom I, der durch die Schaltung fließt.
@@ -37,7 +52,7 @@ $I=U/Z=U/(sqrt(R²+(X_L-X_C))²)=U/(sqrt(R²+(2*Pi*f*L- 1/(2*Pi*f*C)))²)$\
 $I=(1V)/(sqrt((1000 Omega)²+(2*Pi*1000"Hz"*0.1"H"-1/(2*Pi*1000"Hz"*0.15*10^(-6)"F")))²)=917.76 mu A =0.9"mA"$\
 \
 \
-=== Aufgabe 2
+#head2[Aufgabe 2]
 Die Frequenz, bei der der Strom maximal ist, wird Resonanzfrequenz genannt.
 Bestimmen Sie die Resonanzfrequenz. \
 $I=U/Z=U/(sqrt(R²+(X_L-X_C))²)$\
@@ -50,7 +65,7 @@ $W=sqrt(1/(L C))=1/sqrt(L C)$\
 $2*Pi*f=1/sqrt(L C)$\
 $f=1/(2*Pi*sqrt(L C))$ #red1[Resonanzfrequenz]
 
-=== Aufgabe 3
+#head2[Aufgabe 3]
 Zeichnen Sie den Strom in Abhängigkeit der Frequenz in das untenstehende Schaubild!
 Berechnen Sie dazu zunächst den Strom bei den Frequenzen 1000, 1300, 2000, 3000 und 4000 Hz.
 
@@ -61,7 +76,7 @@ $I=(1V)/(sqrt((1000 Omega)²+(2*Pi*3000"Hz"*0.1"H"-1/(2*Pi*3000"Hz"*0.15*10^(-6)
 $I=(1V)/(sqrt((1000 Omega)²+(2*Pi*4000"Hz"*0.1"H"-1/(2*Pi*4000"Hz"*0.15*10^(-6)"F")))²)=4.064*10^(-4)A=4.064"mA"$\
 #image("Screenshot_29.png")\
 
-=== Übungsaufgaben
+== Übungsaufgaben
 
 #image("GetImage (1).png")\
 
@@ -107,4 +122,16 @@ $X_C= 1/(2*Pi*f*C)$\
 $X_C= 1/(2*Pi*50 H z*5.6mu F)$\
 $X_C=586.41 Omega$\
 $U_C=5.45A*586.41 Omega$\
-$U_C=3097V$
+$U_C=3097V$\
+#head2[Nr.4]\
+Die Resonanzfrequenz eines Reihenschwingkreises lässt sich mit einer Induktivität einstellen. Der Kondensator hat eine Kapazität von 33 µF und der Widerstand hat 56 Ω.\
+Berechnen Sie:\
+a) den Resonanzfrequenzbereich, wenn sich die Induktivität der Spule von 1,8 bis 4,3 mH verändern lässt,\
+b) die Leistungsaufnahme der Schaltung bei Resonanz an 110 V.\
+a)\
+$f_r=1/(2*Pi*sqrt(L*C))$
+$f_r=1/(2*Pi*sqrt(1.8 m H* 33 mu F))=653.02H z$\
+$f_r=1/(2*Pi*sqrt(L*C))$
+$f_r=1/(2*Pi*sqrt(4.3 m H* 33 mu F))=422.50H z$\
+b)\
+$P=(U²)/R=((110V)²)/(56 Omega)=216.07W$\
