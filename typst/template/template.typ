@@ -7,6 +7,10 @@
 #let vec(x) = $accent(#x, arrow)$
 #let func(x) = $f"("#x")="$
 #let funcA(x) = $f"'("#x")="$
+#let xfunc(x,y) = $#x"("#y")="$
+#let xfuncA(x,y) = $#x"'("#y")="$
+#let funcx() = $f"("x")="$
+#let funcxA() = $f"'("x")="$
 #let comp(x,y) = $underline(#x)_(#y)$
 #let ej(x,y) = $#x e^(j #y°)$
 #let e-j(x,y) = $#x e^(-j #y°)$
