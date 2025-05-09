@@ -164,4 +164,70 @@ $#func("-2") 2/3*(-2)³+(-2)²-(-2)	=2/3 |P(-2\/2/3)$\
 
 4. Zeichnen Sie mit grün die Tangenten mit Steigung $0$ in die Grafik ein.  
 
-5. Für Schnell-Löser: Berechnen Sie die Nullstellen der Funktion $f(x)$.  
+5. Für Schnell-Löser: Berechnen Sie die Nullstellen der Funktion $f(x)$.\
+
+== Übungsblatt zur Ableitung
+#image("Screenshot_49.png")\
+#head2("Nr1.")
+a) $f(x)=x^3-2x²;P(1|-1)$\
+b) $f(x)=x^2(4-x²);P(-1|3)$\
+c) $f(x)=1/8(6x²-x³);P(2|y_0)$\
+// d) $f(x)=1/3 - x^2;P(1\mid y_0)$\
+// e) $f(x)=3x^2 - x;P(0\mid 1)$\
+// f) $f(x)=2(x-1)(x+2);P(5\mid y_0)$\
+#head2("a)")\
+#image("Screenshot_50.png")\
+$f(x)=m x + b$\
+$f'(x)= 3x²-4x$\
+$f'(1)=3*1²-4 =-1=m$\
+$t(x)=-1*x+b$\
+$-1=-1*1+b|+1$\
+$0=b$\
+$arrow t(x)=-1x=-x$\
+#head2("b)")\
+#image("Screenshot_51.png")\
+$t(x)=m *x+b$\
+$m=f'(-1)$\
+$f'(x)=8x-4x³$
+$f'(3)=8*(-1)-4*(-1)$\
+$f'(-1)=-8+4= -4=m$\
+$t(x)=-4*(-1)+b$\
+$3=-4*(-1)+b|-4$\
+$-1=b$\
+$arrow t(x)=-4x-1$\
+$y=-4*x-1$
+#head2("c)")\
+c) $f(x)=1/8(6x²-x³);P(2|y_0)$\
+$t(x)=m *x+b$\
+$f(x)=1/8(6*2²-2³)$ Y ausrechnen durch einsetzen\
+$f(x)=1/8(24-8)$\
+$f(x)=1/8(16)$\
+$f(x)=2=y_0$\
+$f'(x)=1/8(12x-3x²)$ Ableitung erstellen\
+$f'(x)=1/8(3x(4-x))$\
+$f'(2)=1/8(3*2(4-2))$\
+$f'(2)=1/8(3*2*2)$\
+$f'(2)=1/8(12)$\
+$f'(2)=3/2=m$ Steigung\
+$t(x)=3/2x+b$ Tangenten Gleichung\
+$t(2)=3/2*2+b$\
+$t(2)=3+b$\
+$t(2)=3+b|-3$\
+$t(2)=-1=b$ y achsenabschnitt\
+$t(x)=3/2x-1$\
+#head2("Nr2.")
+$f(x)=x²-2x;m=2$\
+$2x-2=2|+2$\
+$2x=4|:2$\
+$x=2$\
+$f(2)=2²-2*2=0$\
+$P(2|0)$\
+#head2[Rasenmäher]
+*Monotonie $arrow$ wan steigend/ fallend*\
+Die Funktion f mit $f(x)=1/12x³-7/4x²+10x+17/3$ beschreibt näherungsweise die wöchentlichen Verkaufszahlen von Rasenmähern. Dabei ist x die Zeit in Wochen nach der Wiedereröffnung der Geschäftsräume. Untersuchen sie die Entwicklung der Verkaufszahlen.\
+$f'(x)=1/4x²-7/2x+10=0|*4$\
+$x²-14x+40=0 arrow$ PQ\
+$x_("1,2"):x_1=4,x_2=10$\
+$f'(2)>0$\
+$f'(6)<0$\
+$f'(10)>0$\
