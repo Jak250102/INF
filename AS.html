@@ -1,87 +1,135 @@
 <!DOCTYPE html>
-<html lang="de"> <!-- Die Sprache der Seite ist Deutsch -->
+<html lang="de">
 
+</html>
 
 <head>
-	<!-- Kopfbereich,  enthält Metadaten und Links zu Ressourcen -->
-	<meta charset="UTF-8"> <!-- Zeichensatz der Seite ist UTF-8 -->
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Für die responsive Darstellung auf mobilen Geräten -->
-	<title>Kernfusion Präsentation</title> <!-- Titel der Seite -->
-	<link rel="stylesheet" href="../CSS/style.css"> <!-- Einbinden einer externen CSS-Datei -->
+	<title>Kernfusion Präsentation</title>
+	<link rel="stylesheet" href="../CSS/style.css">
 	<link rel="stylesheet" href="../CSS/bgStyle.css">
 	<script src="Java script/script.js"></script>
 	<style>
-		/* Inline-CSS-Definitionen für die Gestaltung der Seite */
-
 		body {
-			/* font-family: Arial, sans-serif; */
-			/* margin: 20px; */
+			background: #515151; /* Dunkler Hintergrund */
+			color: #f7f7f7; /* Helle Schriftfarbe für besseren Kontrast */
+			font-family: 'Arial', sans-serif;
 			line-height: 1.6;
-			/* Zeilenabstand */
+			margin: 0;
+			padding: 0;
 		}
 
 		nav {
-			margin-bottom: 20px;
-			/* Abstand zwischen der Navigation und dem restlichen Inhalt */
+			background: rgba(0, 0, 0, 0.5); /* Weniger aufdringlich */
+			padding: 10px 20px;
+			/* margin-bottom: 1px; Reduzierter Abstand zur Folie */
+			max-width: calc(100% - 60px); /* Verkürze die Breite der Nav-Leiste rechts */
+			margin-right: 50px;
+			margin-top: 5px;
+			border-radius: 10px;
 		}
 
 		nav a {
-			margin-right: 15px;
-			/* Abstand zwischen den Navigationslinks */
-			text-decoration: none;
-			/* Entfernt die Unterstreichung der Links */
-			color: #007BFF;
-			/* Farbe der Links (blau) */
+			color: #fff; /* Weißer Text */
+			text-decoration: none; /* Keine Unterstreichung */
+			margin-right: 10px; /* Abstand zwischen Links */
+			font-size: 14px; /* Kleinere Schriftgröße */
 		}
 
 		section {
-			display: none;
-			/* Abschnitte (Folie 1, 2, etc.) sind standardmäßig unsichtbar */
-			padding: 10px;
-			/* Innenabstand der Abschnitte */
-			border: 1px solid #846500;
-			/* Rahmen um die Abschnitte in brauner Farbe */
-			border-radius: 10px;
-			/* Abgerundete Ecken für die Abschnitte */
-			background-color: #feb25a;
-			/* Hintergrundfarbe der Abschnitte (orange) */
+			display: none; /* Standardmäßig ausgeblendet */
+			padding: 15px; /* Weniger Padding */
+			border-radius: 10px; /* Abgerundete Ecken */
+			background: #ffffff; /* Einfache weiße Slides */
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Reduzierter Schatten */
+			color: #333; /* Dunkler Text */
+			font-size: 16px; /* Kleinere Schriftgröße */
+			margin: 20px auto; /* Zentrierte Slides */
+			/* max-width: 1000px; Breitere Slides */
+			margin-right: 50px; /* Platz nach rechts für die Buttons */
+			min-height: 80vh; /* Mindesthöhe für Slides */
+			margin-top: 10px; /* Abstand nach oben */
 		}
 
 		h2 {
-			color: #333;
-			/* Farbe der Überschriften */
+			color: #007BFF; /* Blaue Überschrift */
+			font-size: 20px; /* Kleinere Überschrift */
+			margin-bottom: 10px; /* Abstand nach unten */
+		}
+
+		p {
+			line-height: 1.6; /* Weniger Zeilenhöhe */
+			margin-bottom: 10px; /* Abstand nach unten */
 		}
 
 		.active {
-			display: block;
-			/* Der Abschnitt mit der Klasse "active" wird angezeigt */
+			display: block; /* Sichtbare Folie */
+		}
+
+		#slideNumber {
+			position: fixed; /* Fixiert am unteren Rand */
+			bottom: 10px; /* Abstand vom unteren Rand */
+			left: 50%; /* Zentriert */
+			transform: translateX(-50%); /* Exakte Zentrierung */
+			font-size: 14px; /* Kleinere Schriftgröße */
+			color: #333333; /* Dezente Farbe */
+			background: rgba(255, 255, 255, 0.5); /* Dezenter Hintergrund */
+			padding: 3px 8px; /* Innenabstand */
+			border-radius: 3px; /* Abgerundete Ecken */
+		}
+
+		#navigationButtons {
+			display: flex; /* Flexbox für vertikale Anordnung */
+			flex-direction: column; /* Vertikale Anordnung */
+			justify-content: space-between; /* Gleichmäßige Verteilung */
+			position: absolute; /* Absolut positioniert */
+			right: 0; /* Ganz rechts */
+			top: 0; /* Ganz oben */
+			height: 100%; /* Gesamte Höhe */
+			z-index: 10; /* Über anderen Elementen */
+		}
+
+		#navigationButtons button {
+			flex-grow: 1; /* Gleichmäßige Verteilung */
+			width: 40px; /* Feste Breite */
+			text-align: center; /* Zentrierter Text */
+			margin: 5px 0; /* Vertikaler Abstand */
+			padding: 0 15px; /* Innenabstand */
+			background: #007BFF; /* Blaue Farbe */
+			color: #fff; /* Weißer Text */
+			border: none; /* Kein Rahmen */
+			border-radius: 10px; /* Abgerundete Ecken */
+			cursor: pointer; /* Zeiger-Cursor */
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+		}
+
+		#navigationButtons button:hover {
+			background: #0056b3; /* Dunkleres Blau beim Hover */
 		}
 	</style>
-
-
 </head>
 
-<body class="bgGreyAlpha"> <!-- Der Körper der Seite, hier wird der Inhalt geladen -->
+<body class="bgGreyAlpha">
 
-	<!-- Navigationsleiste mit Links, die verschiedene Folien anzeigen -->
 	<nav class="bgBlackRad">
-		<!-- Jeder Link hat eine "onclick"-Funktion, die den entsprechenden Abschnitt anzeigt -->
-		<a href="javascript:void(0);" onclick="showSection('folien1')">Folie 1</a>
-		<a href="javascript:void(0);" onclick="showSection('folien2')">Folie 2</a>
-		<a href="javascript:void(0);" onclick="showSection('folien3')">Folie 3</a>
-		<a href="javascript:void(0);" onclick="showSection('folien4')">Folie 4</a>
-		<a href="javascript:void(0);" onclick="showSection('folien5')">Folie 5</a>
-		<a href="javascript:void(0);" onclick="showSection('folien6')">Folie 6</a>
-		<a href="javascript:void(0);" onclick="showSection('folien7')">Folie 7</a>
-		<a href="javascript:void(0);" onclick="showSection('folien8')">Folie 8</a>
-		<a href="javascript:void(0);" onclick="showSection('folien9')">Folie 9</a>
+		<a href="javascript:void(0);" onclick="showSection('folien1')">Folie-1</a>
+		<a href="javascript:void(0);" onclick="showSection('folien2')">Folie-2</a>
+		<a href="javascript:void(0);" onclick="showSection('folien3')">Folie-3</a>
+		<a href="javascript:void(0);" onclick="showSection('folien4')">Folie-4</a>
+		<a href="javascript:void(0);" onclick="showSection('folien5')">Folie-5</a>
+		<a href="javascript:void(0);" onclick="showSection('folien6')">Folie-6</a>
+		<a href="javascript:void(0);" onclick="showSection('folien7')">Folie-7</a>
+		<a href="javascript:void(0);" onclick="showSection('folien8')">Folie-8</a>
+		<a href="javascript:void(0);" onclick="showSection('folien9')">Folie-9</a>
 		<a href="javascript:void(0);" onclick="showSection('quellen')">Quellen</a>
-		<!-- Zeigt den Abschnitt "Quellen" an -->
 	</nav>
 
+	<!-- Dynamische Nummerierung -->
+	<div id="slideNumber"></div>
+
 	<section id="folien1">
-		<h2>Folie 1: Einführung in die Kernfusion</h2>
+		<h2>Einführung in die Kernfusion</h2>
 		<p>Was ist Kernfusion? Fusion bezeichnet den physikalischen Prozess, bei dem zwei leichte Atomkerne zu einem
 			schwereren Kern verschmelzen. Dabei wird eine große Menge an Energie freigesetzt. Dieser Prozess findet in
 			der Sonne statt und ist verantwortlich für die enorme Energiemenge, die sie abstrahlt.</p>
@@ -92,7 +140,7 @@
 	</section>
 
 	<section id="folien2">
-		<h2>Folie 2: Grundlagen der Fusionsreaktion</h2>
+		<h2>Grundlagen der Fusionsreaktion</h2>
 		<p>Wichtige Reaktionen: In Fusionsreaktoren wird meist die Verschmelzung von Deuterium (schwerer Wasserstoff)
 			und Tritium (radioaktiver Wasserstoff) genutzt.</p>
 		<p>Reaktionsgleichung: 2H + 3H → 4He + n + Energie</p>
@@ -102,7 +150,7 @@
 	</section>
 
 	<section id="folien3">
-		<h2>Folie 3: Die physikalischen Herausforderungen</h2>
+		<h2>Die physikalischen Herausforderungen</h2>
 		<p>Extrem hohe Temperaturen: Um die Fusion zu ermöglichen, müssen die Atomkerne genug Energie haben, um die
 			Coulomb-Barriere zu überwinden. Diese Barriere entsteht durch die abstoßende elektrische Kraft zwischen den
 			positiv geladenen Kernen. Dies erfordert Temperaturen von über 100 Millionen Grad Celsius – das ist mehr als
@@ -115,7 +163,7 @@
 	</section>
 
 	<section id="folien4">
-		<h2>Folie 4: Technologien für die Kernfusion</h2>
+		<h2>Technologien für die Kernfusion</h2>
 		<p>Tokamak: Ein Tokamak ist eine ringförmige Maschine, die ein heißes Plasma durch starke Magnetfelder
 			einschließt. Die Magnetfelder verhindern, dass das Plasma die Wände des Reaktors berührt und abkühlt.</p>
 		<p>Stellarator: Ein alternativer Ansatz zur Plasmaeinschließung, bei dem die Magnetfelder so verdreht sind, dass
@@ -127,7 +175,7 @@
 	</section>
 
 	<section id="folien5">
-		<h2>Folie 5: Energiegewinnung aus der Fusion</h2>
+		<h2>Energiegewinnung aus der Fusion</h2>
 		<p>Energieübertragung: Bei der Fusion wird die meiste Energie in Form von schnellen Neutronen freigesetzt. Diese
 			Neutronen tragen die Energie in den Reaktormantel, wo sie von Materialien absorbiert und in Wärme
 			umgewandelt wird.</p>
@@ -139,7 +187,7 @@
 	</section>
 
 	<section id="folien6">
-		<h2>Folie 6: Aktuelle Forschungsprojekte</h2>
+		<h2>Aktuelle Forschungsprojekte</h2>
 		<p>ITER-Projekt: ITER ist der weltweit größte experimentelle Fusionsreaktor und wird in Südfrankreich gebaut. Es
 			ist ein internationales Gemeinschaftsprojekt, das zeigen soll, dass die Fusion als Energiequelle machbar
 			ist.</p>
@@ -151,7 +199,7 @@
 	</section>
 
 	<section id="folien7">
-		<h2>Folie 7: Herausforderungen der Kernfusion</h2>
+		<h2>Herausforderungen der Kernfusion</h2>
 		<p>Energieausbeute: Bislang haben experimentelle Reaktoren mehr Energie verbraucht, als sie durch Fusion
 			erzeugen konnten. Dieses Problem muss gelöst werden, bevor Fusionsenergie kommerziell genutzt werden kann.
 		</p>
@@ -163,7 +211,7 @@
 	</section>
 
 	<section id="folien8">
-		<h2>Folie 8: Zukunftsperspektiven der Fusionsenergie</h2>
+		<h2>Zukunftsperspektiven der Fusionsenergie</h2>
 		<p>Vorteile der Fusion: Unerschöpflich: Fast unbegrenzter Brennstoffvorrat. Umweltfreundlich: Keine
 			Treibhausgase, minimale radioaktive Abfälle. Sicher: Es besteht kein Risiko einer nuklearen Kettenreaktion
 			wie bei Kernspaltung.</p>
@@ -173,7 +221,7 @@
 	</section>
 
 	<section id="folien9">
-		<h2>Folie 9: Fazit</h2>
+		<h2>Fazit</h2>
 		<p>Kernfusion als Energiequelle der Zukunft: Kernfusion bietet das Potenzial, die Energieprobleme der Welt
 			dauerhaft zu lösen, mit minimalen Umweltbelastungen.</p>
 		<p>Technologische Herausforderungen: Um dieses Potenzial auszuschöpfen, müssen jedoch erhebliche technische
@@ -188,4 +236,57 @@
 		<p>2. ITER Organisation: <a href="https://www.iter.org">www.iter.org</a></p>
 		<p>3. Deutsches Zentrum für Luft- und Raumfahrt (DLR): <a href="https://www.dlr.de">www.dlr.de</a></p>
 		<p>4. Wissenschaftsjahr 2023: <a href="https://www.wissenschaftsjahr.de">www.wissenschaftsjahr.de</a></p>
+		<p>5. Max-Planck-Institut für Plasmaphysik: <a href="https://www.ipp.mpg.de/">www.ipp.mpg.de</a></p>
 	</section>
+
+	<!-- Navigations-Knöpfe unterhalb der Folien -->
+	<div id="navigationButtons">
+		<button onclick="nextSlide()">&gt;</button>
+		<button onclick="prevSlide()">&lt;</button>
+	</div>
+
+	<script>
+		// Array mit IDs in der Reihenfolge der Navigationslinks
+		const slides = ["folien1", "folien2", "folien3", "folien4", "folien5", "folien6", "folien7", "folien8", "folien9", "quellen"];
+		let currentIndex = 0;
+
+		function showSection(sectionId) {
+			// Alle Abschnitte verbergen
+			slides.forEach(function (id) {
+				const sec = document.getElementById(id);
+				if (sec) {
+					sec.classList.remove("active");
+				}
+			});
+			// Gewählten Abschnitt anzeigen
+			const activeSec = document.getElementById(sectionId);
+			if (activeSec) {
+				activeSec.classList.add("active");
+			}
+			// Aktuellen Index aktualisieren
+			currentIndex = slides.indexOf(sectionId);
+			// Dynamische Nummerierung aktualisieren
+			if (currentIndex !== -1) {
+				document.getElementById("slideNumber").innerText = "Folie " + (currentIndex + 1) + " von " + slides.length;
+			}
+		}
+
+		function nextSlide() {
+			if (currentIndex < slides.length - 1) {
+				showSection(slides[currentIndex + 1]);
+			}
+		}
+
+		function prevSlide() {
+			if (currentIndex > 0) {
+				showSection(slides[currentIndex - 1]);
+			}
+		}
+
+		// Standardmäßig die erste Folie anzeigen
+		showSection("folien1");
+	</script>
+
+</body>
+
+</html>
