@@ -28,3 +28,6 @@ Beispiel: Messwerterfassungen, Notenspeicherungen, \$\_Get[...]
 #yellow1[Index = Wert n = n-1]\
 #green1[\<- länge: count()\-\>\ ]\
 #head2[2. Mehrdimensionales numerisches Array (Feld)]
+
+=== Array funktion
+#image("Screenshot_62.png")\

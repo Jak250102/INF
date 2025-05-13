@@ -148,7 +148,7 @@ $P=(U²)/R=((110V)²)/(56 Omega)=216.07W$\
 #image("Screenshot_42.png")\
 === Symmetrische Belastung
 #image("Screenshot_43.png")\
-#head2[Sternschaltung (Paralelschaltung)]\
+== Sternschaltung\
 #image("Screenshot_44.png")\
 #image("Screenshot_45.png")\
 #red1[$I_(s t r)=I_L$]\
@@ -156,4 +156,54 @@ $P=(U²)/R=((110V)²)/(56 Omega)=216.07W$\
 #blue1[Leiterspannung = $ sqrt(3)" Strangspannung"$]\
 #green1("M")\
 $U_("str2")-U_("str1")+U_("12")=0$\
-$U_("12")=U_("str1")-U_("str2")$
+$U_("12")=U_("str1")-U_("str2")$\
+$U_("23")=U_("str2")-U_("str3")$\
+$U_("31")=U_("str3")-U_("str1")$\
+
+=== Zeigerdiagramm
+$U_("12")=U_("str1")-U_("str2")$\
+#image("Screenshot_52.png")\
+== Dreieckschaltung (Reihenschaltung)
+#image("Screenshot_55.png")\
+$U_("12")=U_("str1")$\
+$U_("23")=U_("str2")$\
+$U_("31")=U_("str3")$\
+#blue1[Leiterspannung = $ " Strangspannung"$]\
+$I_"str1"-I_"str3"-I_"L1"=0$\
+$I_"str2"-I_"str1"-I_"L2"=0$\
+$I_"str3"-I_"str2"-I_"L3"=0$\
+
+$I_"L1"=I_"str1"-I_"str3"$\
+$I_"L2"=I_"str2"-I_"str1"$\
+$I_"L3"=I_"str3"-I_"str2"$\
+
+== Leistung im Dreiphasenwechselstrom
+Die Gesamtleistung eines Verbrauchers bei Anschluss an Drehstrom lässt sich über die Einzelleistungen der drei Stränge berechnen.\
+$P_"ges"=P_1+P_2+P_3$\
+#image("Screenshot_57.png")\
+$P=S*cos phi$\
+$P=sqrt(3)*U*I*cos phi ("Leitergrößen")$\
+$Q=S*sin phi$\
+$Q=sqrt(3)*U*I*sin phi$\
+#image("Screenshot_58.png")\
+*Man berechnet die Leistungen bei der Stern- und Dreieckschaltung mit der gleichen Formel.*(bei Symetrischer Last)\
+#image("Screenshot_59.png")\
+8,7A=Leiterstrom\
+$P=sqrt(3)*U*I*cos phi=sqrt(3)*400V*8.7A*0.83=5002.86k W$\
+$sin phi=sin(cos^(-1)(0.83))=0.558$\
+$Q=sqrt(3)*U*I*sin phi=sqrt(3)*400V*8.7A*0.558=3363"VA"$\
+$S=sqrt(P²+Q²)=sqrt(5002.86²+3363²)=6000"VA"$\
+
+*Beispiel*\
+#image("Screenshot_60.png")\
+a)\
+#image("Screenshot_61.png")\
+b)\
+$U_"str"=U/sqrt(3)=400V/sqrt(3)=230V$\
+$I=U/R =(230V)/(60 Omega)=3.83A$\
+c)\
+$S=sqrt(3)*U*I=sqrt(3)*400V*3.83A= 2650"VA"$\
+$P=S$\
+$Q=0v a r$\
+
+

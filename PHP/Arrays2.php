@@ -34,13 +34,79 @@ echo "<hr>";
 
 // Durchschnitt mit Funktion
 echo "<h3>Durchschnitt mit Funktion</h3>";
-function berechneDurchschnitt($array) {
+function berechneDurchschnitt($tmpArray) {
 	$summe = 0;
-	foreach ($array as $wert) {
+	foreach ($tmpArray as $wert) {
 		$summe += $wert;
 	}
-	return $summe / count($array);
+	$ergebnis = $summe / count($tmpArray);
+	return $ergebnis;
 }
-$durchschnitt = berechneDurchschnitt($notenlisten);
-echo "Durchschnitt: " . $durchschnitt;
+echo "Durchschnitt: " . berechneDurchschnitt($notenlisten);
+echo "<hr>";
+// 4.) Den Maximalwert und Minimalwert im Array berechnen und ausgeben
+echo "<h3>Maximalwert und Minimalwert foreach</h3>";
+echo"<p>Durchschnitt:".berechneDurchschnitt($notenlisten)."</p>";
+echo "<p>Max-Wert:".maxBerechneDurchschnitt($notenlisten)."</p>";
+echo "<p>Min-Wert:".minBerechneDurchschnitt($notenlisten)."</p>";
+
+
+function maxBerechneDurchschnitt($tmpArray) {
+	$max = $tmpArray[0];
+	foreach ($tmpArray as $wert) {
+		if ($wert > $max) {
+			$max = $wert;
+		}
+	}
+	return $max;
+}
+function minBerechneDurchschnitt($tmpArray) {
+	$min = $tmpArray[0];
+	foreach ($tmpArray as $wert) {
+		if ($wert < $min) {
+			$min = $wert;
+		}
+	}
+	return $min;
+}
+echo "<hr>";
+echo "<h3>Maximalwert und Minimalwert for</h3>";
+echo"<p>Durchschnitt:".berechneDurchschnitt($notenlisten)."</p>";
+echo "<p>Max-Wert:".maxBerechneDurchschnittFor($notenlisten)."</p>";
+echo "<p>Min-Wert:".minBerechneDurchschnittFor($notenlisten)."</p>";
+
+function maxBerechneDurchschnittFor($tmpArray) {
+	$max = $tmpArray[0];
+	for ($i = 0; $i < count($tmpArray); $i++) {
+		if ($tmpArray[$i] > $max) {
+			$max = $tmpArray[$i];
+		}
+	}
+	return $max;
+}
+function minBerechneDurchschnittFor($tmpArray) {
+	$min = $tmpArray[0];
+	for ($i = 0; $i < count($tmpArray); $i++) {
+		if ($tmpArray[$i] < $min) {
+			$min = $tmpArray[$i];
+		}
+	}
+	return $min;
+}
+echo "<hr>";
+echo "<h3>zahl am nächsten zu 5</h3>";
+function naechsteZahl($tmpArray) {
+	$nahe5 = $tmpArray[0];
+	for ($i=0;$i<count($tmpArray);$i++) {
+		$tmp = $tmpArray[$i] - 5;
+		if ($tmp < 0) {
+			$tmp = $tmp * -1;
+		}
+		if ($tmp <$nahe5) {
+			$nahe5 = $tmpArray[$i];
+		}
+	}
+	return $nahe5;
+}
+echo "<p>Die Zahl die am nächsten zu 5 ist: ".naechsteZahl($notenlisten)."</p>";
 ?>
