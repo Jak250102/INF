@@ -231,3 +231,48 @@ $x_("1,2"):x_1=4,x_2=10$\
 $f'(2)>0$\
 $f'(6)<0$\
 $f'(10)>0$\
+
+== 2. Ableitung-Krümmungsverhalten
+#head2("Rechtskurve:")
+// #image("Screenshot_63.png")\
+Die Tangentensteigungenen werden immer kleiner.$(2 arrow 1 arrow 0.5 arrow 0 arrow -0.5 arrow -1 arrow -2)$\
+#image("Screenshot_65.png")\
+f' fällt\
+hier (bei f') sind alle Tangentensteigungen negativ $arrow f"''"<0$ \
+#red1[$f"''"(x)<0 arrow f ""$ ist rechtsgekrümmt]\
+#image("Screenshot_66.png")\
+
+#head2("Linkskurve:")
+Die Tangentensteigungenen werden immer größer.$(-2 arrow -1.5 arrow-1 arrow 0 arrow 1 arrow 1.5 arrow 2)$\
+dh. die Ableitung f' steigt an.\
+#image("Screenshot_67.png")\
+hier (bei f') sind alle Tangentensteigungen positiv $arrow f"''">0$ \
+#red1[$f"''"(x)>0 arrow f ""$ ist linksgekrümmt]\
+
+#head2("Bsp.:")
+$f(x)=x²$\
+$f"'"(x)=2x$\
+$f "''" (x)=2>0 "daraus folgt linkskurfe"$
+
+#head2("Bsp.:")
+$f(x)=-7x$\
+$f"'"(x)=-7$\
+$f "''" (x)=0$ keine grümmung f(x) ist ja eine Gerade\
+
+#head2("Bsp.:")
+$f(x)=-x³+3x+2$\
+$f"'"(x)=-3x²+3$\
+$f "''" (x)=-6x$\
+\ \
+$f"''"(x)=0$\
+$-6x=0 |(-6)$\
+$x=0$\
+x|x"< 0"|0|x">0|\
+f"''"(x)|+|0|-\
+
+
+== Allgemeinbildung
+$x²+y²=z²$\
+$3^2+4^2=5^2$\
+$x^n+y^n=z^n$\
+$x^4+y^4=z^4$\
