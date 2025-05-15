@@ -1,4 +1,4 @@
-#import "/typst/template/template.typ":*
+#import "../template/template.typ":*
 #show: styling
 
 
