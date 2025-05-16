@@ -21,7 +21,7 @@
    - Durch das Aufwickeln entstehen Verdrehungen und Knicke im Kabel, die mit der Zeit den Kabelmantel beschädigen und so das Risiko von Stromschlägen oder Bränden erhöhen.  
 
 #head2[Welche Kennzeichnung sollten elektrische Geräte mindestens besitzen?]
-   - Eine **CE-Kennzeichnung**, die zeigt, dass das Gerät den Mindestanforderungen der EU-Richtlinien entspricht.  
+   - Eine *CE-Kennzeichnung*, die zeigt, dass das Gerät den Mindestanforderungen der EU-Richtlinien entspricht.  
 
 #head2[Was sollte bei der Auswahl und dem Gebrauch eines elektrischen Gerätes weiter beachtet werden?]
    - Das Gerät muss für den Aufstellungsort und den vorgesehenen  
@@ -48,3 +48,13 @@
 
 #head2[Was sollte man tun, wenn kein RCD im Sicherungskasten vorhanden ist?]
    - Ein tragbarer RCD soll verwenden und dieser vor der Benutzung des Gerätes getestet werden. 
+
+= E-Mail schreiben
+
+
+#image("Pictures/Screenshot_71.png",width: 100%)\
+#image("Pictures/Screenshot_72.png",width: 100%)\
+#image("Pictures/Screenshot_73.png",width: 100%)\
+#image("Pictures/Screenshot_74.png",width: 100%)\
+#image("Pictures/Screenshot_75.png",width: 100%)\
+#image("Pictures/Screenshot_69.png",width: 120%)\

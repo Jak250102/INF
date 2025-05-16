@@ -8,7 +8,46 @@
 #hr
 #outline(indent: auto,depth: 4)
 #hr
-= Die 1. Ableitung
+= Differntialrechnung
+== Ableitungen
+=== Durchschnittliche Änderungsrate:
+\
+\
+#image("Pictures/Screenshot_12.png", width: 100%)\
+#image("Pictures/Screenshot_13.png", width: 100%)\
+#image("Pictures/Screenshot_11.png", width: 100%)\
+a)\
+Änderungsrate:\
+$(f(3)-f(1))/(3-1)=(-1(-1))/2=(-2)/2=-1$\
+$(f(-1)-f(3))/(1-3)=(+1-(-1))/(-2)=-1$
+
+#head2("Aufgabe 1")\
+Gegeben ist die Funktion $f(x)=x^2$\
+#image("Pictures/Screenshot_16.png")\
+Ziel: Tangente im Punkt P(1/2)(bei x=1)\
+#red1[m=2] (gesuchte Tangente)\
+
+#head2("Berechnen sie die durchschnittliche Änderungsrate im Intervallen:")\
+#image("Pictures/Screenshot_68.png")\
+== Allgemeine Formulierung:
+*Differnzenquotient* von f im Intervall\
+$I=[1-h;1]$\
+P(1-h|/1-h)²)\
+$Ä R:((1-h)²-(-1)²)/((1-h)-1)=(1-2h+h²)/(-h)=(-h*(2-h))/(-h)=2-h$\
+*Der linksseitige Differentialqotient* an der Stelle $x_0=1$\
+limh-->0\
+(2-h)=2\
+Die gesuchte *Tangente* hat die Steigung #red1[2].\
+
+
+
+Änderungsrate im Intervall [a,b] der Funktion f:\
+$"ÄR" (Delta y)/ (Delta x)=(f(b)-f(a))/(b-a) "auch Differnzenquotient"$\
+== Die 1. Ableitung
+Differnzenquotient: $"lim" (f(b)-f(a))/(b-a)h->0$\
+Ordnet man jedem x $in DD_f$ die Tangentensteigung im betreffenden Kurvenpunkt zu, so erhält man eine Funktion, die man die 1. Ableitung von f nennt. Schreibweise: f'
+
+
 Die Funktion f',die jedem x-wert die teigung der Tangente in diesem Punkt zuordnet, heißt die 1. Ableitung von f.
 
 Bsp.:\
