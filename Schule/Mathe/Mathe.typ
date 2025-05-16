@@ -8,6 +8,12 @@
 #hr
 #outline(indent: auto,depth: 4)
 #hr
+= Allgemeinbildung
+$x²+y²=z²$\
+$3^2+4^2=5^2$\
+$x^n+y^n=z^n$\
+$x^4+y^4=z^4$\
+
 = Differntialrechnung
 == Ableitungen
 === Durchschnittliche Änderungsrate:
@@ -310,8 +316,63 @@ x|x"< 0"|0|x">0|\
 f"''"(x)|+|0|-\
 
 
-== Allgemeinbildung
-$x²+y²=z²$\
-$3^2+4^2=5^2$\
-$x^n+y^n=z^n$\
-$x^4+y^4=z^4$\
+=== Extrempunkte Bestimmen
+#head2("(=Hoch-&Tiefpunkte)")\
+#image("Pictures/Screenshot_76.png")\
+
+Gilt $f"''"$(a)=0, dann hat $G_f$ bei x=a eine waagerechte Tangente\
+hier $f'(x_1)=0, f'(x_2)=0,f'(x_3)=0$\
+Überlegung: \
+Ein Hochpunkt ligt in einer Rechtskurve!\
+Ein Tiefpunkt liegt in einer Linkskurve!\
+Hinreichende Bedingung für das Vorliegen von Hoch-Tiefpunkten:\
+#red1($f'(a)=0 "und" f"''"(a)<0 arrow"bei x=a ist rel. Hochpunkt"$)\
+#red1($f'(a)=0 "und" f"''"(a)>0 arrow"bei x=a ist rel. Tiefpunkt"$)\
+#head2("Bsp.:")\
+$f(x)= 4/3 x³-8x²+12x-8/3 $\
+ges: Hoch-& Tiefpunkte\
+$f'(x)=4x²-16x+12$\
+$f"''"(x)=8x-16$\
+1) Punkte mit waagerechter Tangente:\
+$f'(x)=0$\
+$4x²-16x+12=0|:4$\
+$x²-4x+3=0$\
+$x_(1,2)=2+-1$\ \
+$x_1=3  x_2=1$ Wir haben zwei Stellen mit waagrechter Tangente gefunden. Es könnte ein hochpunkt, Tiefpunkt oder Sattelpunkt sein.\ \
+alternativ:\
+$(x-3)*(x-1)$\
+$x²-3x-1x+3$\
+$x²-4x+3$\
+
+2) $x_1=3 "und" X_L=1 "in" f"''"(x) "einsetzen:"$\
+$f"''"(3)=8*3-16=24-16=#yellow1(8)>0 arrow "rel Tiefpunkt bei" x=3$\
+$f"''"(1)=8*1-16=8-16#yellow1(-8)<0 arrow "rel Hochpunkt bei" x=1$\
+#yellow1("Diese zahl gibt auskunft darüber ob x=3 bzw x=1 in einer Rechts oder Linkskurve liegen")\
+$f(3)= 4/3 3³-8*3²+12*3-8/3 $\
+$f(3)= 4/3 *27-8*9+36-8/3 $\
+$f(3)= 36-72+36-8/3 $\
+$f(3)= 0-8/3 $\
+$f(3)= -8/3 =y arrow "rel Tiefpunkt bei" (1|-8/3)$\
+
+$f(1)= 4/3 1³-8*1²+12*1-8/3 $\
+$f(1)= 4/3 -8+12-8/3 $\
+$f(1)=-4/3+4$\
+$f(1)=-4/3+12/3$\
+$f(1)=8/3 =y arrow "rel Hochpunkt bei" (1|8/3)$\
+
+#head2("Bsp 1:")\
+$f(x)=1/3x³-2x²+3x+1$\
+#image("Pictures/Screenshot_79.png")\
+$f'(x)=x²-4x+3$\
+$f"''"(y)=2x-4$\
+$f'(x)=0: x²-4x+3=0$\
+$x_1=1$\
+$x_2=3$\
+
+
+$f(1)= 7/3" " H P (1|7/3)$\
+$f(3)=1 " " T P (3|1)$\
+
+#head2("Bsp 6")\
+#image("Pictures/Screenshot_78.png", width: 80%)\
+#image("Pictures/Screenshot_80.png", width: 80%)\
