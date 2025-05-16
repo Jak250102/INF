@@ -10,13 +10,13 @@
 = Frequenzverhalten von RLC Schaltungen 
 == Hörbare Frequenzen
 
-#image("Screenshot_31.png")\
+#image("Pictures/Screenshot_31.png")\
 0-20Hz Infraschall\
 20Hz-20 000Hz Hörbarer Bereich für Menschen \
 20 000Hz-200 000Hz Ultraschall z.b. Flederkläuse
 
 == Reihenschaltung als Vierpol
-#image("4d91a944-34e4-48e4-8649-22fbf82c1422.png", width: 60%)\
+#image("Pictures/4d91a944-34e4-48e4-8649-22fbf82c1422.png", width: 60%)\
 $U_A/U_E=R/Z$\
 $U_A/U_E=R/(sqrt(R²+(X_L)²))("Pytagoras")$\
 $=R/(sqrt(R²+1/(2*Pi*f*C)))$\
@@ -24,7 +24,7 @@ $=R/(sqrt(R²+1/(2*Pi*f*C)))$\
 
 == Hochpassfilter
 Ein Hochpassfilter lässt Signale bzw. Spannungen mit hohen Frequenzen durch, während niedrige Frequenzen herausgefiltert werden.
-#image("Screenshot_32.png")\
+#image("Pictures/Screenshot_32.png")\
 Füllen Sie die untenstehende Tabelle aus, indem Sie das Verhältnis $U_a/U_e$ in Abhängigkeit von der Frequenz bestimmen.
 
 $U_a/U_e=R/(sqrt(R²+(1/(2*Pi*f*C))²))$\
@@ -34,7 +34,7 @@ $X_C=1/(2*Pi*f*C)$
 
 == Tiefpassfilter
 Ein Tiefpassfilter lässt Signale bzw. Spannungen mit niedrigen Frequenzen durch, während hohe Frequenzen herausgefiltert werden.
-#image("Screenshot_33.png")\
+#image("Pictures/Screenshot_33.png")\
 Füllen Sie die untenstehende Tabelle aus, indem Sie das Verhältnis $U_a/U_e$ in Abhängigkeit von der Frequenz bestimmen.\
 #red1[Tabelle einfügen]
 
@@ -43,10 +43,10 @@ Füllen Sie die untenstehende Tabelle aus, indem Sie das Verhältnis $U_a/U_e$ i
 Gegeben sei der Reihenschwingkreis mit den Bauelementen:\
 R = 1000 Ω, L = 100 mH, C = 0,15 µF, U = 1V, f = 1kHz.\
 Berechnen Sie den Wechselstrom I, der durch die Schaltung fließt.
-#image("Screenshot_26.png")\
+#image("Pictures/Screenshot_26.png")\
 $Z=sqrt(R²+X²)$\
 $X=X_L-X_C$
-#image("Screenshot_27.png")\
+#image("Pictures/Screenshot_27.png")\
 $I=U/Z=U/(sqrt(R²+(X_L-X_C))²)$\
 $I=U/Z=U/(sqrt(R²+(X_L-X_C))²)=U/(sqrt(R²+(2*Pi*f*L- 1/(2*Pi*f*C)))²)$\
 $I=(1V)/(sqrt((1000 Omega)²+(2*Pi*1000"Hz"*0.1"H"-1/(2*Pi*1000"Hz"*0.15*10^(-6)"F")))²)=917.76 mu A =0.9"mA"$\
@@ -74,11 +74,11 @@ $I=(1V)/(sqrt((1000 Omega)²+(2*Pi*1300"Hz"*0.1"H"-1/(2*Pi*1300"Hz"*0.15*10^(-6)
 $I=(1V)/(sqrt((1000 Omega)²+(2*Pi*2000"Hz"*0.1"H"-1/(2*Pi*2000"Hz"*0.15*10^(-6)"F")))²)=8.09*10^(-4)A=8.09"mA"$\
 $I=(1V)/(sqrt((1000 Omega)²+(2*Pi*3000"Hz"*0.1"H"-1/(2*Pi*3000"Hz"*0.15*10^(-6)"F")))²)=5.46*10^(-4)A=5.46"mA"$\
 $I=(1V)/(sqrt((1000 Omega)²+(2*Pi*4000"Hz"*0.1"H"-1/(2*Pi*4000"Hz"*0.15*10^(-6)"F")))²)=4.064*10^(-4)A=4.064"mA"$\
-#image("Screenshot_29.png")\
+#image("Pictures/Screenshot_29.png")\
 
 == Übungsaufgaben
 
-#image("GetImage (1).png")\
+#image("Pictures/GetImage (1).png")\
 
 #head2[Nr.1]
 Ein Kondensator mit 560 pF ist mit einer Spule, die den Wirkwiderstand 1 Ω und die Induktivität 10 H hat, in Reihe an Wechselspannung geschaltet.
@@ -138,19 +138,19 @@ $P=(U²)/R=((110V)²)/(56 Omega)=216.07W$\
 = Drehstromtechnik
 == Erzeugung und Verkettung
 === Was ist ein Drehstromsystem?
-#image("Screenshot_35.png")\
+#image("Pictures/Screenshot_35.png")\
 === Verkettung
-#image("Screenshot_36.png")\
-#image("Screenshot_37.png")\
+#image("Pictures/Screenshot_36.png")\
+#image("Pictures/Screenshot_37.png")\
 === Arbeitsauftrag
-#image("Screenshot_40.png")\
-#image("Screenshot_41.png")\
-#image("Screenshot_42.png")\
+#image("Pictures/Screenshot_40.png")\
+#image("Pictures/Screenshot_41.png")\
+#image("Pictures/Screenshot_42.png")\
 === Symmetrische Belastung
-#image("Screenshot_43.png")\
+#image("Pictures/Screenshot_43.png")\
 == Sternschaltung\
-#image("Screenshot_44.png")\
-#image("Screenshot_45.png")\
+#image("Pictures/Screenshot_44.png")\
+#image("Pictures/Screenshot_45.png")\
 #red1[$I_(s t r)=I_L$]\
 #red1[Strangstrom = Leiterstrom]\
 #blue1[Leiterspannung = $ sqrt(3)" Strangspannung"$]\
@@ -162,9 +162,9 @@ $U_("31")=U_("str3")-U_("str1")$\
 
 === Zeigerdiagramm
 $U_("12")=U_("str1")-U_("str2")$\
-#image("Screenshot_52.png")\
+#image("Pictures/Screenshot_52.png")\
 == Dreieckschaltung (Reihenschaltung)
-#image("Screenshot_55.png")\
+#image("Pictures/Screenshot_55.png")\
 $U_("12")=U_("str1")$\
 $U_("23")=U_("str2")$\
 $U_("31")=U_("str3")$\
@@ -180,14 +180,14 @@ $I_"L3"=I_"str3"-I_"str2"$\
 == Leistung im Dreiphasenwechselstrom
 Die Gesamtleistung eines Verbrauchers bei Anschluss an Drehstrom lässt sich über die Einzelleistungen der drei Stränge berechnen.\
 $P_"ges"=P_1+P_2+P_3$\
-#image("Screenshot_57.png")\
+#image("Pictures/Screenshot_57.png")\
 $P=S*cos phi$\
 $P=sqrt(3)*U*I*cos phi ("Leitergrößen")$\
 $Q=S*sin phi$\
 $Q=sqrt(3)*U*I*sin phi$\
-#image("Screenshot_58.png")\
+#image("Pictures/Screenshot_58.png")\
 *Man berechnet die Leistungen bei der Stern- und Dreieckschaltung mit der gleichen Formel.*(bei Symetrischer Last)\
-#image("Screenshot_59.png")\
+#image("Pictures/Screenshot_59.png")\
 8,7A=Leiterstrom\
 $P=sqrt(3)*U*I*cos phi=sqrt(3)*400V*8.7A*0.83=5002.86k W$\
 $sin phi=sin(cos^(-1)(0.83))=0.558$\
@@ -195,9 +195,9 @@ $Q=sqrt(3)*U*I*sin phi=sqrt(3)*400V*8.7A*0.558=3363"VA"$\
 $S=sqrt(P²+Q²)=sqrt(5002.86²+3363²)=6000"VA"$\
 
 *Beispiel*\
-#image("Screenshot_60.png")\
+#image("Pictures/Screenshot_60.png")\
 a)\
-#image("Screenshot_61.png")\
+#image("Pictures/Screenshot_61.png")\
 b)\
 $U_"str"=U/sqrt(3)=400V/sqrt(3)=230V$\
 $I=U/R =(230V)/(60 Omega)=3.83A$\

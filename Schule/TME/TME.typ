@@ -1,4 +1,4 @@
-#import "/typst/template/template.typ":*
+#import "../template/template.typ":*
 #show: styling
 
 #head1[Technische-Mathematik]
@@ -11,7 +11,7 @@
 Berechnen Sie die Werte folgender Größen:\ 
 I, Z₁₃, Z₂₃, $I_R$, $I_L$, U₁₂, U₂₃ und φ
 U₁₃ = 10 V, R₁ = 10 Ω, R₂ = 30 Ω, X_L = 40 Ω.\
-#image("Screenshot_28.png")\
+#image("Pictures/Screenshot_28.png")\
 $X_L=j w L$\
 $X_C=1/(j w C)*j/j=j/(j²* w C)=j/(w C)=-j 1/(w C)$\
 
@@ -49,7 +49,7 @@ $#underline("Z")= 29.2 Omega + j 14.4 Omega = 32.56 Omega e^(j 26.25°)\
 U= 10V e^(j 0) I= #ej("0.31A",26.25)$
 \
 #head2[Aufgabe 1]\
-#image("Screenshot_34.png")\
+#image("Pictures/Screenshot_34.png")\
 $#comp("Z",23)=(R_2*j X_C)/(R_2+j X_C)=(150 Omega*(-j 20 Omega))/(150 Omega-j 20 Omega)=#ej(19.82,-82.41)=2.62 Omega-j 19.65 Omega$\
 #comp("Z","ges")$=j X_L-#comp("Z",23)=j 50 Omega+2.62 Omega - j 19.65 Omega =2.62 Omega + j 30.35 Omega = #ej(30.46,85.066)$\
 $#comp("U","ges")=#comp("Z","ges")*#comp("I","ges")=#ej(30.46,85.066)*#ej(5,60)=#ej(152.3,145.09)V$\
@@ -62,7 +62,7 @@ $2.62 ("Wirkwiderstand")+j 30.35 ("Blindwiderstand")$\
 #ej(30.46,85.066) ("Gesamtimpedanz")\
 $(20+j 40)/(#ej(10,30))=(20+j 40)/10*E-j 30=((20+j 40)*e^(-j 30))/10$
 #head2[Aufgabe 2]
-#image("Screenshot_56.png")\
+#image("Pictures/Screenshot_56.png")\
 $Z_23=((L_2)^(-1)+(R)^(-1)+(C)^(-1))^(-1)$\
 $Z_23=((ej(40,90)Omega)^(-1)+(50Omega)^(-1)+(ej(600,-90)Omega)^(-1))^(-1)$\
 $Z_23=ej(32.54,49.4)$\

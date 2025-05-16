@@ -30,4 +30,4 @@ Beispiel: Messwerterfassungen, Notenspeicherungen, \$\_Get[...]
 #head2[2. Mehrdimensionales numerisches Array (Feld)]
 
 === Array funktion
-#image("Screenshot_62.png")\
+#image("Pictures/Screenshot_62.png")\

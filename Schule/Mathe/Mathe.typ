@@ -19,16 +19,16 @@ P(-1/1)\
 Q(0/0)\
 R(1/1)\
 S(2/4)\
-#image("Screenshot_22.png", width: 80%)\
+#image("Pictures/Screenshot_22.png", width: 80%)\
 Weitere Bsp.:\
 #func("x") 2\
 #funcA("x") 0\
 Alle Tangenten haben die Steigung 0, also ist die Ableitung 0.\
-#image("Screenshot_23.png")\
+#image("Pictures/Screenshot_23.png")\
 #func("x") x\
 #funcA("x") 1\
 Alle Tangenten haben die Steigung 1, also ist die Ableitung 1.\
-#image("Screenshot_25.png")\
+#image("Pictures/Screenshot_25.png")\
 #func("x") $x^2$
 Jeder Punkt hat eine andere Tangensteigung.\
 #funcA("x") $2x$\
@@ -144,7 +144,7 @@ $#func("x") -2(4x^(2)-3x)$\
 $#funcA("x") -16x+6$\
 
 === Übungen 2
-#image("Screenshot_47.png")\
+#image("Pictures/Screenshot_47.png")\
 1. Schätzen Sie (durch Hinschauen), an welchen Punkten des Graphen die Tangente die Steigung $3$ hat.  \
    Antwort: Bei $x=-2,1$ hat die Funktion eine Tangente mit Steigung $3$.  
 
@@ -167,7 +167,7 @@ $#func("-2") 2/3*(-2)³+(-2)²-(-2)	=2/3 |P(-2\/2/3)$\
 5. Für Schnell-Löser: Berechnen Sie die Nullstellen der Funktion $f(x)$.\
 
 == Übungsblatt zur Ableitung
-#image("Screenshot_49.png")\
+#image("Pictures/Screenshot_49.png")\
 #head2("Nr1.")
 a) $f(x)=x^3-2x²;P(1|-1)$\
 b) $f(x)=x^2(4-x²);P(-1|3)$\
@@ -176,7 +176,7 @@ c) $f(x)=1/8(6x²-x³);P(2|y_0)$\
 // e) $f(x)=3x^2 - x;P(0\mid 1)$\
 // f) $f(x)=2(x-1)(x+2);P(5\mid y_0)$\
 #head2("a)")\
-#image("Screenshot_50.png")\
+#image("Pictures/Screenshot_50.png")\
 $f(x)=m x + b$\
 $f'(x)= 3x²-4x$\
 $f'(1)=3*1²-4 =-1=m$\
@@ -185,7 +185,7 @@ $-1=-1*1+b|+1$\
 $0=b$\
 $arrow t(x)=-1x=-x$\
 #head2("b)")\
-#image("Screenshot_51.png")\
+#image("Pictures/Screenshot_51.png")\
 $t(x)=m *x+b$\
 $m=f'(-1)$\
 $f'(x)=8x-4x³$
@@ -234,18 +234,18 @@ $f'(10)>0$\
 
 == 2. Ableitung-Krümmungsverhalten
 #head2("Rechtskurve:")
-// #image("Screenshot_63.png")\
+// #image("Pictures/Screenshot_63.png")\
 Die Tangentensteigungenen werden immer kleiner.$(2 arrow 1 arrow 0.5 arrow 0 arrow -0.5 arrow -1 arrow -2)$\
-#image("Screenshot_65.png")\
+#image("Pictures/Screenshot_65.png")\
 f' fällt\
 hier (bei f') sind alle Tangentensteigungen negativ $arrow f"''"<0$ \
 #red1[$f"''"(x)<0 arrow f ""$ ist rechtsgekrümmt]\
-#image("Screenshot_66.png")\
+#image("Pictures/Screenshot_66.png")\
 
 #head2("Linkskurve:")
 Die Tangentensteigungenen werden immer größer.$(-2 arrow -1.5 arrow-1 arrow 0 arrow 1 arrow 1.5 arrow 2)$\
 dh. die Ableitung f' steigt an.\
-#image("Screenshot_67.png")\
+#image("Pictures/Screenshot_67.png")\
 hier (bei f') sind alle Tangentensteigungen positiv $arrow f"''">0$ \
 #red1[$f"''"(x)>0 arrow f ""$ ist linksgekrümmt]\
 
