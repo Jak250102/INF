@@ -6,10 +6,6 @@
 #outline(indent: auto,depth: 4)
 #hr
 
-
-
-
-
 = Begrüßung
 - Bild der Sonne
 	- Erklärung das die Sonne ein Fusionsgenerator ist
@@ -17,32 +13,138 @@
 = Titelfolie
 
 = Was ist Fusion?
-	- Die Verschmelzung von zwei dingen
+	- Die Verschmelzung von zwei Stoffen
 	- Die Verschmelzung von zwei leichten Atomkernen zu einem Schweren Atomkernen
 	- leichte Atomkerne wenige Protonen und Neutronen $arrow$ niedrige Masse
 	- schwere Atomkerne viele Protonen und Neutronen $arrow$ hohe Masse
 
 = Warum brauchen wir Fusionsenergie
+(Folie nur mit der Überschrift)
 - Aktueller Energiebedarf der Menschheit
 - Notwendigkeit neuer Energiequellen
 - Umweltschutz
 	- 78% des Weltenergiebedarfs wird heute aus fossilen Energiequellen gedeckt
+-  Ein Gramm Brennstoff könnte 90 kwh Energie erzeugen so viel wie 11 Tonnen Kohle (visualisieren)
 
 = Grundlagen der Kernfusion
-- Unterschied: Kernfusion vs. Kernspaltung
-	- kernspaltung:
-	-kern
-- Unterschied: Kalte vs. heiße Fusion
-- Bedingungen für Fusion: Temperatur, Druck, Plasma
-- Natürliches Beispiel: Energiequelle der Sonne
+== Unterschied: Kernfusion vs. Kernspaltung
+#table(
+  columns: (auto,auto, auto),
+  align: horizon, 
+	// justify: false,
+	
+  table.header(
+   [*Merkmale*],[*Kernfusion*], [*Kernspaltung*]
+  ),
+	[Was passiert?],
+	[Ein schwerer Atomkern wird gespalten],
+	[Zwei leichte Atomkerne verschmelzen],
+
+	[Typischer Stoff],
+	[Uran-235, Plutonium-239],
+	[Deuterium, Tritium (Wasserstoff-Isotope)],
+
+	[Vorkommen],
+	[Atomkraftwerke ],
+	[Sonne, Sterne, Fusionsreaktor],
+
+	[Energie entsteht wie?],
+	[Durch Trennung großer Kerne],
+	[Durch Verschmelzung kleiner Kerne],
+
+	[Abfallprodukte],
+	[Radioaktiver Müll, langlebig],
+	[Kaum radioaktiver Abfall],
+
+	[Risiken],
+	[Gefahr von Kettenreaktionen, GAU möglich],
+	[Kaum Unfallrisiko, aber technisch schwierig],
+
+
+
+
+)
+== Unterschied: Kalte vs. heiße Fusion
+	- kalte: (raumtemperatur)
+	- heiße: (über 100 Milionen °C)
+== Natürliches Beispiel: Energiequelle der Sonne
+	- Jede sekunde verbrennen 600 mio Tonnen Wasserstoff zu 596 mio Tonnen Helium die Sonne wird also jede sekounde 4 mio Tonnen leichter
+== Bedingungen für Fusion: Temperatur, Druck, Plasma
+== Was ist Plasma
+	- ausführung was ist plasma (Plasma entsteht, wenn ein Gas so stark erhitzt wird, dass die Atome ihre Elektronen verlieren (4. Agregatszustand). was bei temperaturen über 100 mio °C passiert bedingt also fusion)
+#image("original1.jpg", width: 100%)\	
+https://www.ipp.mpg.de/plasma
+
+= Geschichte
+1920 erkannte Arthur Eddington das die Sonne Fusion als energiequelle nutzt
 
 = Fusionsreaktionen im Detail
+== Fusionsablauf
 - Deuterium + Tritium → Helium + Neutron + Energie
+	- Atomkerne stoßen sich gegenseitig ab, (Coulomb Kraft), um das zu verhindern werden hohe temperaturen benötigt
 #image("header_image.jpg", width: 100%)\
 https://www.ipp.mpg.de/ippcms/de/pr/fusion21\
 \
-- Energiegewinn durch Massendefekt (E = mc²)
-- Verfügbarkeit der Brennstoffe
+== Verfügbarkeit von Brennstoffen für die Kernfusion
+1. Deuterium (²H)
+- Natürliches, stabiles Wasserstoff-Isotop
+- Ca. 0,015 % des Wasserstoffs im Wasser ist Deuterium
+- das Universium besteht zu 75% aus Wasserstoff
+- kann mit Elektrolyse aus Wasser gewonnen werden
+- Gewinnung durch Durch Elektrolyse oder Isotopentrennung aus Wasser
+
+Verfügbarkeit:
+- Sehr hoch: praktisch unerschöpflich
+- In 1 m³ Meerwasser steckt genug Deuterium für ~30 Jahre Strom für einen Haushalt
+
+2. Tritium (³H)
+- Radioaktiv, Halbwertszeit ca. 12,3 Jahre
+- In der Natur nur in Spuren vorhanden
+- Muss im Fusionsreaktor erzeugt werden
+- Z. B. durch Neutronenbeschuss von Lithium:(Li-6+n→Tritium + Helium)
+
+Verfügbarkeit:
+- Indirekt abhängig von Lithiumvorräten
+
+3. Lithium:
+- In Gestein, Salzseen und Meerwasser enthalten
+- Dient zur Tritiumproduktion im Reaktor
+- ungefähr 15 Millionen Tonnen Lithium Weltweit
+
+
+== Energiegewinn durch Massendefekt (E = mc²)
+	- Der Massendefekt ist der kleine Unterschied in der Masse vor und nach einer Kernreaktion – und genau dieser Unterschied wird als Energie frei. Diese Energie berechnet man mit Einsteins berühmter Formel:
+	E = mc²
+	-	E = Energie (in Joule)
+	- m = Massendefekt (in Kilogramm)
+	- c = Lichtgeschwindigkeit (300 000 km/s)
+	Weil c²
+  ein riesiger Wert ist, erzeugt schon eine kleine Masse sehr viel Energie.
+	
+== Beispiel: Energiegewinn durch Massendefekt\ 
+Massen:\
+Deuterium (²H): 2.014 u\
+Tritium (³H): 3.016 u\
+Helium-4 (⁴He): 4.0026 u\
+Neutron (n): 1.0087 u\
+
+Masse vor der Fusion: 5.030 u\
+Masse nach der Fusion: 5.0113 u\
+Massendefekt: 0.0187 u ≈ 3.11 × 10^-29 kg\
+
+Energie nach E = mc²\
+E = 3.11 × 10^-29 kg  (3 × 10^8 m/s)^2\
+E = 2.80 × 10^-12 Joule (Piko)\
+
+Fazit: Für eine einzelne Reaktion ist das wenig,
+aber bei vielen Reaktionen wird sehr viel Energie frei.\
+
+P = 500 MW = 500 × 10^6 Watt = Joule/Sekunde\
+Dann pro Sekunde:\
+500 × 10^6 J / 2.82 × 10^-12 J ≈ 1.77 × 10^20 Fusionsvorgänge\
+Dann pro Minute:\
+1.77 × 10^20 × 60 ≈ 1.06 × 10^22 Fusionsvorgänge
+
 
 = Technische Umsetzung
 - Magnetischer Einschluss:
@@ -79,7 +181,7 @@ https://www.ipp.mpg.de/ippcms/de/pr/fusion21\
 
 = Fragen & Diskussion
 - Möglichkeit zur Rückfrage
-- Diskussionsimpuls: 
+- Diskussionsimpuls:
   _„Sollte trotz langer Entwicklung weiter in Fusion investiert werden?“_
 
 
