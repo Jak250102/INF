@@ -1,14 +1,14 @@
-#import "/typst/template/template.typ": *
+#import "../template/template.typ":*
 #show: styling
 
 #head1[ADA]
 
-#let title = [ADA-Unterweisung: UND-Gatter mit 2 Schaltern und einer Lampe]
+#let title = [ADA-Unterweisung: UND-Gatter mit 2 Schaltern und einer Leuchte]
 
 = #title
 
 == Thema der Unterweisung
-Verdrahten eines UND-Gatters mit zwei Schaltern und einer Lampe im Modell Aufbau für das Technische Verständnis.
+Verdrahten eines UND-Gatters mit zwei Schaltern und einer Leuchte im Modell Aufbau für das Technische Verständnis.
 
 == 1. Vorbereitung des Lehrlings
 
@@ -16,7 +16,7 @@ Verdrahten eines UND-Gatters mit zwei Schaltern und einer Lampe im Modell Aufbau
 Alarmanlagen in der Praxis verlangen mehrere Bedingungen, bevor sie scharf geschaltet werden. In unserem Fall:
 - Türkontakt (Schalter 1): Tür muss geschlossen sein
 - App-Befehl (Schalter 2): Digitale Freigabe muss erfolgen
-Nur wenn *beide Bedingungen* erfüllt sind, aktiviert sich die Lampe (simuliert die Alarmanlage).
+Nur wenn *beide Bedingungen* erfüllt sind, aktiviert sich die Leuchte (simuliert die Alarmanlage).
 
 *Vorwissen Abfragen:*
 
@@ -30,10 +30,10 @@ Nur wenn *beide Bedingungen* erfüllt sind, aktiviert sich die Lampe (simuliert 
 
 *Feinlernziele:*
 
-- *Kognitiv:* Der Lehrling versteht die Logik des UND-Gatters.
+- *Kognitiv:* Der Lehrling kann den aufbau erkläenen und kann die einzelnen bestenadteile erklären. er kann die grundsätzliche funktionsweise der alarmanlage nennen. er kann sicherheitsrelefante sachen nennen und erklären warum diese wichtig sind.
 
-- *Psychomotorisch:* Der Lehrling verdrahtet die Schaltung korrekt.
-- *Affektiv:* Der Lehrling erkennt den sicherheitstechnischen Nutzen kombinierter Bedingungen.
+- *Psychomotorisch:* Der Lehrling führt die Brücke Korrekt in die Arbeitsblatte ein.
+- *Affektiv:* Sorgfältiges arbeiten panfolles vorgehen
 
 == 3. Didaktische und pädagogische Prinzipien
 
@@ -53,19 +53,19 @@ Nur wenn *beide Bedingungen* erfüllt sind, aktiviert sich die Lampe (simuliert 
 
 #table(
   columns: 4,
-  align: left,
+  align: auto,
   [Was wird gemacht?], [Wie wird es gemacht?], [Warum wird es gemacht?], [Methodische Hinweise],
   [Aufbau der Schaltung],
-  [Zwei Schalter, UND-Gatter und Lampe verbinden],
-  [Um Alarmbedingung zu simulieren],
+  [Zwei Schalter, UND-Gatter und Leuchte verbinden],
+  [Um die Funktion der Anlage herzustellen],
   [reale Komponenten zeigen],
 
   [Funktionsweise erklären],
-  [Schalterstellungen variieren und Lampe beobachten],
+  [],
   [Logikverständnis fördern],
-  [Lehrling selbst testen lassen],
+  [Komponenten mit einbeziehen],
 
-  [Schaltung testen], [Strom anlegen und testen], [Erfolg sichtbar machen], [Kontrolle durch Sichtprüfung],
+  [Schaltung testen], [Strom anlegen und testen Schalter-stellungen variieren und Leuchte beobachten], [Erfolg sichtbar machen], [Lehrling selbst testen lassen, Kontrolle durch Sichtprüfung],
 )
 
 == 5. Lernzielkontrolle
@@ -76,15 +76,13 @@ Nur wenn *beide Bedingungen* erfüllt sind, aktiviert sich die Lampe (simuliert 
 
 *Praktische Kontrolle:*
 - Funktioniert die Schaltung nur bei beiden geschlossenen Schaltern?
-- Leuchtet die Lampe?
+- Leuchtet die Leuchte?
 
 *Medieneinsatz:*
 // - Schaltplan (Papier/Beamer)
 // - Logik-Simulation (z.B. Logisim)
 // - Lückentext/Wahrheitstabelle als Aufgabenblatt
-Beispiel aus Tia
+- Beispiel aus Tia
 
-== Anhang (optional)
 
-Eine einfache Schaltskizze kann erstellt und als Medienunterstützung eingebunden werden.
 
