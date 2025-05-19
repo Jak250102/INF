@@ -111,6 +111,31 @@ Verfügbarkeit:
 - Dient zur Tritiumproduktion im Reaktor
 - ungefähr 15 Millionen Tonnen Lithium Weltweit
 
+== Aufgabe des Plasmas
+- Im Plasma müssen die Atomkerne so stark beschleunigt werden, dass sie sich gegenseitig überwinden können und Kollisionsreaktionen stattfinden können
+- Die Temperatur muss hoch genug sein, damit die Atomkerne genügend Energie haben, um die Coulomb-Barriere zu überwinden \~100 Millionen °C
+- Die Dichte muss hoch genug sein, damit genügend Atomkerne aufeinanderprallen und Fusion stattfindet
+- Die Zeit muss lang genug sein, damit die Atomkerne genügend Zeit haben, um zu fusionieren \~2s
+- Plasmadichte von ungefähr $10^(14)$ Teilchen pro Kubikzentimeter – 250.000-fach dünner als die Lufthülle der Erde
+
+== Wie wird die Temperatur erzeugt?
+
+- Magnetische Einschlussmethoden (Tokamak, Stellarator)
+- Trägheitsfusion (Laserfusion)
+- Induktive Erwärmung
+- Neutralteilcheninjektion
+- Mikrowellenheizung
+
+
+== Herausforderungen der Hohen Temperaturen
+- keine Materialien halten den Temperaturen stand
+- Plasma würde mit der Wand des Reaktors reagieren und Abkühlen
+	- Plasma muss in einem Vakuum gehalten werden
+	- Plasma muss von Magnetfeldern gehalten werden
+	- Magnetische Einschlussmethoden sind komplex und teuer
+	- In einem Tokamak wird das Plasma in einem Ring gehalten, der von Magneten umgeben ist (Die Feldlienen müssen verdreht sein)
+	- In einem Stellarator wird das Plasma in einer komplexen Form gehalten, die von Magneten umgeben ist
+	- In einem Trägheitsfusionsreaktor wird das Plasma durch Laserstrahlen komprimiert und erhitzt
 
 == Energiegewinn durch Massendefekt (E = mc²)
 	- Der Massendefekt ist der kleine Unterschied in der Masse vor und nach einer Kernreaktion – und genau dieser Unterschied wird als Energie frei. Diese Energie berechnet man mit Einsteins berühmter Formel:
