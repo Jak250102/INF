@@ -118,13 +118,37 @@ Verfügbarkeit:
 - Die Zeit muss lang genug sein, damit die Atomkerne genügend Zeit haben, um zu fusionieren \~2s
 - Plasmadichte von ungefähr $10^(14)$ Teilchen pro Kubikzentimeter – 250.000-fach dünner als die Lufthülle der Erde
 
-== Wie wird die Temperatur erzeugt?
+== Temperaturerzeugung
 
-- Magnetische Einschlussmethoden (Tokamak, Stellarator)
-- Trägheitsfusion (Laserfusion)
-- Induktive Erwärmung
-- Neutralteilcheninjektion
-- Mikrowellenheizung
+  - Magnetische Einschlussmethoden:
+    - Das Plasma wird durch starke Magnetfelder eingeschlossen, damit es nicht die Wände berührt und genug Zeit zur Aufheizung hat.
+    - Verwendet z. B. im Tokamak (kreisförmig mit Plasmastrom) und Stellarator (komplexe Magnetstruktur ohne Plasmastrom).
+    - Reaktortypen: Tokamak, Stellarator
+    - Beispiele: JET (UK), ITER (Frankreich, im Bau), EAST (China), Wendelstein 7-X (Deutschland), LHD (Japan)
+
+  - Trägheitsfusion (Laserfusion):
+    - Ein winziges Brennstoffpellet wird durch starke Laser oder Ionenstrahlen komprimiert und in extrem kurzer Zeit aufgeheizt.
+    - Die Massenträgheit des Pellets hält das Plasma kurz genug zusammen, damit Fusion stattfinden kann.
+    - Reaktortyp: Laserfusion
+    - Beispiele: NIF (USA), LMJ (Frankreich)
+
+  - Induktive Erwärmung:
+    - Durch einen Transformator wird ein elektrischer Strom im Plasma erzeugt.
+    - Dieser Strom erzeugt über den elektrischen Widerstand Wärme (Ohm'sche Heizung) – funktioniert nur am Anfang, da der Widerstand mit steigender Temperatur sinkt.
+    - Reaktortyp: Nur Tokamak
+    - Beispiele: JET, ITER, EAST
+
+  - Neutralteilcheninjektion (NBI):
+    - Schnelle, elektrisch neutrale Teilchen (meist Wasserstoffatome) werden ins Plasma geschossen.
+    - Diese übertragen ihre Bewegungsenergie beim Zusammenstoß mit Plasmateilchen → Wärme entsteht.
+    - Reaktortypen: Tokamak, Stellarator
+    - Beispiele: JET, DIII-D (USA), ASDEX Upgrade (Deutschland), Wendelstein 7-X (optional)
+
+  - Mikrowellenheizung (z. B. ECRH, ICRH):
+    - Hochfrequente elektromagnetische Wellen werden gezielt ins Plasma eingespeist.
+    - Die Energie wird durch Resonanz an Elektronen oder Ionen übertragen → gezielte Aufheizung möglich.
+    - Reaktortypen: Tokamak, Stellarator
+    - Beispiele: TCV (Schweiz), ASDEX Upgrade, Wendelstein 7-X
 
 
 == Herausforderungen der Hohen Temperaturen
