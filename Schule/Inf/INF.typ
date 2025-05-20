@@ -31,3 +31,22 @@ Beispiel: Messwerterfassungen, Notenspeicherungen, \$\_Get[...]
 
 === Array funktion
 #image("Pictures/Screenshot_62.png")\
+#image("Pictures/Screenshot_89.png", width: 100%)\
+[] = Array\
+GZ= Ganze zahl\
+#table(
+  columns: (5),
+  align: horizon, 
+	// justify: false,
+	
+  table.header(
+   [*i*],[*j*], [*werte j*],[*werte j +1*], [*werte*]
+	),
+	[1],[0],[11],[17],[11,17,9,3,12],
+	[1],[1],[17],[9],[11,0,17,3,12],
+	
+
+
+)
+
+Der Bubble-Sortieralgorithmus sortiert eine Zahlenfolge der Größe nach\
