@@ -206,4 +206,12 @@ $S=sqrt(3)*U*I=sqrt(3)*400V*3.83A= 2650"VA"$\
 $P=S$\
 $Q=0v a r$\
 
-
+== Sternschaltung, unsymmetrische, gleichartige Last
+#image("Pictures/Screenshot_82.png")\
+#image("Pictures/Screenshot_84.png")\
+#image("Pictures/Screenshot_85.png")\
+$I=U/R$\
+$I_1=U/R_1=(230V)/(20 Omega)=11.5A$\
+$I_2=U/R_2=(230V)/(30 Omega)=7.67A$\
+$I_3=U/R_3=(230V)/(40 Omega)=5.75A$\
+#image("Pictures/Screenshot_86.png")\

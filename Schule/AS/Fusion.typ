@@ -123,10 +123,9 @@ Verfügbarkeit:
   - Magnetische Einschlussmethoden:
     - Das Plasma wird durch starke Magnetfelder eingeschlossen, damit es nicht die Wände berührt und genug Zeit zur Aufheizung hat.
     - Verwendet z. B. im Tokamak (kreisförmig mit Plasmastrom) und Stellarator (komplexe Magnetstruktur ohne Plasmastrom).
-    - Reaktortypen: Tokamak, Stellarator
     - Beispiele: JET (UK), ITER (Frankreich, im Bau), EAST (China), Wendelstein 7-X (Deutschland), LHD (Japan)
 
-  - Trägheitsfusion (Laserfusion):
+  - Trägheitsfusion:
     - Ein winziges Brennstoffpellet wird durch starke Laser oder Ionenstrahlen komprimiert und in extrem kurzer Zeit aufgeheizt.
     - Die Massenträgheit des Pellets hält das Plasma kurz genug zusammen, damit Fusion stattfinden kann.
     - Reaktortyp: Laserfusion
@@ -142,7 +141,7 @@ Verfügbarkeit:
     - Schnelle, elektrisch neutrale Teilchen (meist Wasserstoffatome) werden ins Plasma geschossen.
     - Diese übertragen ihre Bewegungsenergie beim Zusammenstoß mit Plasmateilchen → Wärme entsteht.
     - Reaktortypen: Tokamak, Stellarator
-    - Beispiele: JET, DIII-D (USA), ASDEX Upgrade (Deutschland), Wendelstein 7-X (optional)
+    - Beispiele: JET, DIII-D (USA), ASDEX München, Wendelstein 7-X (optional)
 
   - Mikrowellenheizung (z. B. ECRH, ICRH):
     - Hochfrequente elektromagnetische Wellen werden gezielt ins Plasma eingespeist.
@@ -194,19 +193,14 @@ Dann pro Sekunde:\
 Dann pro Minute:\
 1.77 × 10^20 × 60 ≈ 1.06 × 10^22 Fusionsvorgänge
 
-
-= Technische Umsetzung
-- Magnetischer Einschluss:
-  - Tokamak (z.B. ITER)
-  - Stellarator (z.B. Wendelstein 7-X)
-- Trägheitsfusion (Laserfusion, z.B. NIF)
-- Herausforderungen: Stabilität, Materialbelastung
-
 = Aktuelle Forschungsprojekte
-- ITER (Frankreich)
-- Wendelstein 7-X (Deutschland)
-- NIF (USA)
-- Private Initiativen (Commonwealth Fusion Systems, TAE etc.)
+Tokamak:
+- Beendete Experimente
+ -Tokamak Fusion Test Reactor (TFTR)Princeton University, USA (1983–97)
+- TEXTOR Institut für Plasmaphysik des Forschungszentrums Jülich (1983–2013)
+
+Anlagen in Betrieb:
+
 
 = Chancen und Risiken
 - Vorteile:
