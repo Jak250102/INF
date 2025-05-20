@@ -215,3 +215,29 @@ $I_1=U/R_1=(230V)/(20 Omega)=11.5A$\
 $I_2=U/R_2=(230V)/(30 Omega)=7.67A$\
 $I_3=U/R_3=(230V)/(40 Omega)=5.75A$\
 #image("Pictures/Screenshot_86.png")\
+*komplex*
+Spannungen:\
+$#comp("U","1N")=#ej(230,0)V$\
+$#comp("U","2N")=#ej(230,120)V$\
+$#comp("U","3N")=#e-j(230,120)V$\
+Ströme:\
+$#comp("I","1N")=U/R_1=(#ej(230,0)V)/(20 Omega)=#ej(11.5,0)A$\
+$#comp("I","2N")=U/R_2=(#e-j(230,120)V)/(30 Omega)=#e-j(7.67,120)A$\
+$#comp("I","3N")=U/R_3=(#ej(230,120)V)/(40 Omega)=#ej(5.75,120)A$\
+$#comp("I","N")=(#comp("I","1N")+ #comp("I","2N")+ #comp("I","3N"))$\
+$#comp("I","N")=#ej(5.07,160)V$\
+#image("Pictures/Screenshot_87.png")\
+#image("Pictures/Screenshot_85.png")\
+$I=U/R$\
+$I_1=U/R_1=(230V)/(30 Omega)=7.67A$\
+$I_2=U/R_2=(230V)/(60 Omega)=3.83A$\
+$I_3=U/R_3=(230V)/(40 Omega)=5.75A$\
+$U"Str1"=U"Str2"=U"Str3"=230V$\
+$#comp("I","N")=-(#comp("I","1N")+ #comp("I","2N")+ #comp("I","3N"))=-( #ej(7.67,0)+#e-j(3.83,120)+#ej(5.75,120))=#ej(3.33,150)$\
+
+#image("Pictures/Screenshot_88.png")\
+
+$C_1=47"µF"$\
+$C_2=33"µF"$\
+$C_3=22"µF"$\
+$U_"Str"=288.68V$\
