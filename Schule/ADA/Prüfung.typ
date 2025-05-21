@@ -6,7 +6,7 @@
 = ADA-Unterweisung: UND-Gatter mit 2 Schaltern und einer Leuchte
 
 == Thema der Unterweisung
-Verdrahtung einer Alarmanlage mit Logischen Gattern anhand einer Funktionsbeschreibung und eines Schaltplans im Modellaufbau und Simulation.
+Verdrahtung einer Alarmanlage mit Logischen Gattern anhand einer Funktionsbeschreibung und eines Schaltplans im Modellaufbau.
 == 1. Vorbereitung des Lehrlings
 
 *Praxisbezogene Motivation:* \
@@ -31,8 +31,8 @@ Anhand des Beispiels der CBS Mannheim.
 
 - *Kognitiv:* Der Lehrling kann den aufbau erkläenen und kann die einzelnen bestenadteile erklären. er kann die grundsätzliche funktionsweise der alarmanlage nennen. er kann sicherheitsrelefante sachen nennen und erklären warum diese wichtig sind.
 
-- *Psychomotorisch:* Der Lehrling führt die Brücke Korrekt in die Arbeitsblatte ein.
-- *Affektiv:* Sorgfältiges arbeiten panfolles vorgehen
+- *Psychomotorisch:* Der Lehrling verbindet die einzelnen Komponenten korrekt miteinander. (kaum Fehlerpotenzial)
+- *Affektiv:* Sorgfältiges Arbeiten, planvolles und strukturiertes Vorgehen
 
 == 3. Didaktische und pädagogische Prinzipien
 
@@ -51,9 +51,16 @@ Anhand des Beispiels der CBS Mannheim.
 == 4. Arbeitszergliederung
 
 #table(
-  columns: 4,
-  align: auto,
-  [Was wird gemacht?], [Wie wird es gemacht?], [Warum wird es gemacht?], [Methodische Hinweise],
+	columns: (5),
+	align: left,
+
+	
+	
+	table.header(
+   [*Was wird gemacht?*],[*Wie wird es gemacht?*], [*Warum wird es gemacht?*], [*Methodische Hinweise*],[*Zeit*]
+  ),
+
+	[Vorwissen abfragen], [Vorwissen abfragen], [Vorwissen aktivieren], [Fragen stellen], [2 Min],
   [Aufbau der Schaltung],
   [Zwei Schalter, UND-Gatter und Leuchte verbinden],
   [Um die Funktion der Anlage herzustellen],
