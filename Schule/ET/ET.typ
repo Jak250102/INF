@@ -207,7 +207,9 @@ $P=S$\
 $Q=0v a r$\
 
 == Sternschaltung, unsymmetrische, gleichartige Last
+#head2("Nr.1")
 #image("Pictures/Screenshot_82.png")\
+#head2("Nr.2")
 #image("Pictures/Screenshot_84.png")\
 #image("Pictures/Screenshot_85.png")\
 $I=U/R$\
@@ -226,6 +228,7 @@ $#comp("I","2N")=U/R_2=(#e-j(230,120)V)/(30 Omega)=#e-j(7.67,120)A$\
 $#comp("I","3N")=U/R_3=(#ej(230,120)V)/(40 Omega)=#ej(5.75,120)A$\
 $#comp("I","N")=(#comp("I","1N")+ #comp("I","2N")+ #comp("I","3N"))$\
 $#comp("I","N")=#ej(5.07,160)V$\
+#head2("Nr.3")
 #image("Pictures/Screenshot_87.png")\
 #image("Pictures/Screenshot_85.png")\
 $I=U/R$\
@@ -235,9 +238,46 @@ $I_3=U/R_3=(230V)/(40 Omega)=5.75A$\
 $U"Str1"=U"Str2"=U"Str3"=230V$\
 $#comp("I","N")=-(#comp("I","1N")+ #comp("I","2N")+ #comp("I","3N"))=-( #ej(7.67,0)+#e-j(3.83,120)+#ej(5.75,120))=#ej(3.33,150)$\
 
+#head2("Nr.4")
 #image("Pictures/Screenshot_88.png")\
 
 $C_1=47"µF"$\
 $C_2=33"µF"$\
 $C_3=22"µF"$\
-$U_"Str"=288.68V$\
+$#comp("U","1N")=(500V)/sqrt(3)*e^("j0°")=#ej(288.68,0)$\
+$#comp("U","2N")=(500V)/sqrt(3)*e^("-j120°")=#e-j(288.68,120)$\
+$#comp("U","3N")=(500V)/sqrt(3)*e^("j120°")=#ej(288.68,120)$\
+$#comp("x","C")=1/(omega*c)=1/(2*pi*f*c)$\
+$#comp("x","C1")=1/(2*pi*50H z*47*10^(-6)F)=-j 67.73Ω$\
+$#comp("x","C2")=1/(2*pi*50H z*33*10^(-6)F)=-j 96.21Ω$\
+$#comp("x","C3")=1/(2*pi*50H z*22*10^(-6)F)=-j 144.34Ω$\
+$#comp("I","1N")=U/R_1=(#ej(288.68,0)V)/(-j 67.73Ω)=#ej(4.26,90)A$\
+$#comp("I","2N")=U/R_2=(#e-j(288.68,120)V)/(96.21Ω)=#e-j(2.99,30)$\
+$#comp("I","3N")=U/R_3=(#ej(288.68,120)V)/(-j 144.34Ω)=#e-j(2.00,150)A$\
+#image("Pictures/Screenshot_94.png")\
+b)$ #comp("I","N")=-(#comp("I","1N")+ #comp("I","2N")+ #comp("I","3N"))=-( #ej(4.26,90)+#e-j(2.99,30)+#e-j(2.00,150))=#e-j(1.96,115.91)$\
+#image("Pictures/output.png",width: 40%)\
+
+#head2("Nr.5")
+
+#image("Pictures/Screenshot_95.png")\
+- a)\
+$I=I_("Str")=U/R=(230V)/(10Ω)=23A$\
+- b)\
+$I=I_("Str")=U/R=(230V)/(10Ω)=23A$\
+- c)\
+$#comp("I","N")=-(#comp("I","1N")+ #comp("I","2N")+ #comp("I","3N"))=-( #ej(23,0)A+#e-j(23,120)A+#ej(230,120)A)=#ej(0,0)$\
+- d)\
+$#comp("I","N")=-(#comp("I","1N")+ #comp("I","2N"))=-( #ej(23,0)A+#e-j(23,120)A)=#ej(23,120)A$
+- e)\
+$#comp("I","N")=-(#comp("I","1N"))=-( #ej(23,0)A)=#ej(23,180)A$
+
+== Sternschaltung, unsymmetrische, ungleichartige Last
+
+#image("Pictures/Screenshot_99.png",width: 100%)\
+#head2("Nr.1")
+#image("Pictures/Screenshot_97.png",width: 100%)\
+- a)\
+$I_("Str1")=U/R=((500V)/sqrt(3))/(14.4Ω)=20.5A$\
+$X_C=1/(omega*C)=1/(2*pi*f*C)$\
+

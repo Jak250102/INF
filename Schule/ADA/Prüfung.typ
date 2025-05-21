@@ -3,13 +3,10 @@
 
 #head1[ADA]
 
-#let title = [ADA-Unterweisung: UND-Gatter mit 2 Schaltern und einer Leuchte]
-
-= #title
+= ADA-Unterweisung: UND-Gatter mit 2 Schaltern und einer Leuchte
 
 == Thema der Unterweisung
-Verdrahten eines UND-Gatters mit zwei Schaltern und einer Leuchte im Modell Aufbau für das Technische Verständnis.
-
+Verdrahtung einer Alarmanlage mit Logischen Gattern anhand einer Funktionsbeschreibung und eines Schaltplans im Modellaufbau und Simulation.
 == 1. Vorbereitung des Lehrlings
 
 *Praxisbezogene Motivation:* \
@@ -17,6 +14,8 @@ Alarmanlagen in der Praxis verlangen mehrere Bedingungen, bevor sie scharf gesch
 - Türkontakt (Schalter 1): Tür muss geschlossen sein
 - App-Befehl (Schalter 2): Digitale Freigabe muss erfolgen
 Nur wenn *beide Bedingungen* erfüllt sind, aktiviert sich die Leuchte (simuliert die Alarmanlage).
+
+Anhand des Beispiels der CBS Mannheim.
 
 *Vorwissen Abfragen:*
 

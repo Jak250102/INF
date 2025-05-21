@@ -194,13 +194,53 @@ Dann pro Minute:\
 1.77 × 10^20 × 60 ≈ 1.06 × 10^22 Fusionsvorgänge
 
 = Aktuelle Forschungsprojekte
-Tokamak:
-- Beendete Experimente
- -Tokamak Fusion Test Reactor (TFTR)Princeton University, USA (1983–97)
-- TEXTOR Institut für Plasmaphysik des Forschungszentrums Jülich (1983–2013)
+*Tokamak:*
+- *Beendete Experimente*
+ - Tokamak Fusion Test Reactor (TFTR)Princeton University, USA (1983–97)
+ - TEXTOR Institut für Plasmaphysik des Forschungszentrums Jülich (1983–2013)
 
-Anlagen in Betrieb:
+- *Anlagen in Betrieb:*
+ - Joint European Torus (JET) Culham, England
+ - National Spherical Torus Experiment (NSTX-U) Princeton Plasma Physics Laboratory (PPPL), USA
+ - 	ASDEX Upgrade Max-Planck-Institut für Plasmaphysik, Garching bei München
+ - DIII-D General Atomics
+ - Experimental Advanced Superconducting Tokamak (EAST) Hefei, China
+ - JT-60SA Naka, Japan
+ - Tokamak à configuration variable (TCV) Eidgenössischen Technischen Hochschule Lausanne, Schweiz
+ - Tore Supra/WEST Cadarache, Frankreich
+ - KSTAR Daejeon, Südkorea
+ - HL-2M Sichuan, China
+ - Pegasus III University of Wisconsin-Madison, Madison, WI, USA
+ - ADITYA Institute for Plasma Research, Gandhinagar, India
 
+- *Anlagen im Bau*
+ - ITER Cadarache, Frankreich
+ - SPARC Commonwealth Fusion Systems (CFS), Cambridge, Massachusetts, USA
+
+*Stellaratoren*
+ -*Beendete Experimente*
+ - Wendelstein 7-AS Max-Planck-Institut für Plasmaphysik, Garching bei München (1993–2002)
+ - National Compact Stellarator Experiment (NCSX) Princeton University, USA (2003–08, Bau nicht fertiggestellt)
+
+- *Anlagen in Betrieb*
+ - Wendelstein 7-X Greifswald
+ - Columbia Non-Neutral Torus Columbia University, New York, USA
+ - Large Helical Device (LHD) Toki (Gifu), Japan
+ - 	Helically Symmetric eXperiment (HSX) University of Wisconsin-Madison, Madison, WI, USA
+ - H-1NF Canberra, Australien	
+ - TJ-II CIEMAT, Madrid, Spanien
+
+- *Anlagen im Bau*
+  - Chinese First Quasi-Axisymmetric Stellarator (CFQS) Chengdu, China
+
+
+*Trägheitseinschluss (Laserfusion)*
+
+- *Anlagen in Betrieb*
+ - National Ignition Facility (NIF) Lawrence Livermore National Laboratory in Livermore (Kalifornien), USA
+ - OMEGA-Laser, Rochester, USA
+ - GEKKO-Laser, Osaka, Japan
+ - Laser Mégajoule Le Barp, Südwestfrankreich
 
 = Chancen und Risiken
 - Vorteile:
