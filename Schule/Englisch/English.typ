@@ -62,11 +62,13 @@
 #head2[Aufgabe E-Mail schreiben]\
 Dear Sir or Madam,
 
-I am writing to you from the Purchasing Department of our medium-sized enterprise specializing in building technology.
+I am writing to you from the Purchasing Department of our medium-sized enterprise.
 
-We would like to request a offer for the delivery of 200 meters of power cable, specifically type NYY-J 5x2.5 mm².
+We are a company specialized in building technology for Imperial defensive Measures.
 
-Could you please provide us with your current pricing, estimated delivery time, and terms and conditions for this order? 
+We are interested in requesting an offer for the delivery of 200 meters of power cable, specifically type NYY-J 5x2.5 mm².
+
+Could you please send us your current price quotation, estimated delivery time, and terms and conditions for this order?
 
 Additionally, we would appreciate it if you could send us a technical data sheet or a sample.
 
@@ -74,10 +76,11 @@ Thank you very much for the quick processing of our request in advance.
 
 Best regards,
 
-Darth Vader\
+Grand Moff Jürgen\
 Purchasing Department\
 Corellian Industrial Solutions Ltd.\
-Imperial Logistics Center\ \
+Imperial Logistics Center\ 
+\
 Sector 12, Corridor 47B\
 Death Star, DS-1 Orbital Battle Station\
 Galactic Empire Postal Code: DS-1138\

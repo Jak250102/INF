@@ -59,19 +59,28 @@ Anhand des Beispiels der CBS Mannheim.
 	table.header(
    [*Was wird gemacht?*],[*Wie wird es gemacht?*], [*Warum wird es gemacht?*], [*Methodische Hinweise*],[*Zeit*]
   ),
+	[Begrüßung], [Vorstellung des Themas], [Motivation], [Lehrling aktivieren], [2 Min],
 
 	[Vorwissen abfragen], [Vorwissen abfragen], [Vorwissen aktivieren], [Fragen stellen], [2 Min],
-  [Aufbau der Schaltung],
-  [Zwei Schalter, UND-Gatter und Leuchte verbinden],
-  [Um die Funktion der Anlage herzustellen],
-  [reale Komponenten zeigen],
 
-  [Funktionsweise erklären],
-  [],
-  [Logikverständnis fördern],
-  [Komponenten mit einbeziehen],
+	[Sicherheits-unterweisung], [Mündlich], [Sensibilisierung], [Fragen stellen], [2 Min],
 
-  [Schaltung testen], [Strom anlegen und testen Schalter-stellungen variieren und Leuchte beobachten], [Erfolg sichtbar machen], [Lehrling selbst testen lassen, Kontrolle durch Sichtprüfung],
+	[Funktion des UND-Gatters erklären], [Beispiel], [Verständnis prüfen], [Fragen stellen], [2 Min],
+
+	[Funktions-beschreibung analysieren], [Gespräch], [Verständnis prüfen], [gemeinsam durchgehen], [2 Min],
+
+	[Schaltplan analysieren], [Mündlich], [Verständnis prüfen], [Fragen stellen], [2 Min],
+
+	[Schaltung aufbauen], [Modellaufbau], [Verständnis prüfen], [Fragen stellen], [5 Min],
+
+	[Theoretische Kontrolle], [Mündlich], [Verständnis prüfen], [Fragen stellen], [2 Min],
+
+	[Praktische Kontrolle], [Praktische Kontrolle], [Verständnis prüfen], [Fragen stellen], [5 Min],
+
+	[Reflexion], [Gespräch], [Verständnis prüfen], [Fragen stellen], [2 Min],
+
+	[Üben], [Praktische Übung], [Verständnis prüfen], [Fragen stellen], [5 Min],
+
 )
 
 == 5. Lernzielkontrolle

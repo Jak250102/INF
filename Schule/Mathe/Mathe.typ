@@ -376,3 +376,76 @@ $f(3)=1 " " T P (3|1)$\
 #head2("Bsp 6")\
 #image("Pictures/Screenshot_78.png", width: 80%)\
 #image("Pictures/Screenshot_80.png", width: 80%)\
+
+#head2("Bsp")\
+$g(x)=-x^4/4+x^3$\
+ges: Extrempunkte\
+$g'(x)=-x³+3x²$\
+$g"''"(x)=-3x²+6x$\
+Erste Ableitung 0 setzen\
+$g'(x)=0$\
+$-x³+3x²=0$\
+$x²(-x+3)=0$\
+$x_"1,2"=0$\
+$x_3=3$\
+Einsetzen in die 2. Ableitung\
+$g"''"(0)=-3*0²+6*0=0$ Problem\
+$g"''"(3)=-3*3²+6*3=-27+18=-9<0$ =HP\
+*$g"''"(0)=0:$* es kann zunächst keine Aussage getroffen werden ob es sich um einen Hoch- oder Tiefpunkt oder Sattelpunkt handelt.\ \
+Idee: wir betrachten die Tangentensteigung ein stückchen links und rechts des entsprechenden $x$-Wertes.\
+Interessante Stelle:x=0\
+
+#table(
+	columns: (4),
+	align: horizon,
+[x],[x< 0],[0],[x< x< 3],
+[f'(x)],[+],[0],[+],
+)
+$arrow$Sattelpunkt bei x=0, da kein Monotoniewechsel stattfindet.\
+(kurz vorher: steigend, kurz danach: steigend)\
+y-Wert zu x=3:\
+$g(3)=-((3^4)/4)+(3^3)$\
+$g(3)=-81/4+27$\
+$g(3)=-81/4+108/4$\
+$g(3)=-27/4$\
+$H p(3|6,75)$\
+#image("Pictures/Screenshot_100.png")\
+#head2("NR.2")\
+- a)
+$f(x)=0.5x^4-2x^3+3$\
+$f'(x)=2x³-6x²$\
+$f"''"(x)=6x²-12x$\
+$f'(x)=0$\
+$2x³-6x²=0$\
+$x²(2x-6)=0$\
+$x_"1,2"=0$\
+$x_2=3$\
+$f"''"(0)=6*0²-12*0=0$\
+$f"''"(3)=6*3²-12*3=54-36=18>0$\
+#table(
+	columns: (4),
+	align: horizon,
+[x],[x< 0],[0],[x< x< 3],
+[f'(x)],[-],[0],[-],
+)
+$f'(1)=2*1³-6*1²=2-6=-4$\
+$f'(-1)=2*(-1)³-6*(-1)²=-2-6=-8$\
+$arrow$ Sattelpunkt bei x=0, da kein Monotoniewechsel stattfindet.\
+(kurz vorher: steigend, kurz danach: steigend)\
+$f(3)=0.5*3^4-2*3^3+3=10.5$\
+$H p(3|10.5)$\
+$S P (0|0	)$\
+
+- b)
+$f(x)=1/3x^4-4$\
+$f'(x)=4/3x³$\
+$f"''"(x)=4x²$\
+$f'(x)=0$\
+$f'(x)=4/3x³=0$\
+$x_"1,2,3"=0$\
+#table(
+	columns: (4),
+	align: horizon,
+[x],[x< 0],[0],[x< x< y],
+[f'(x)],[-],[0],[-],
+)
