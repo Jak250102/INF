@@ -447,5 +447,72 @@ $x_"1,2,3"=0$\
 	columns: (4),
 	align: horizon,
 [x],[x< 0],[0],[x< x< y],
-[f'(x)],[-],[0],[-],
+[f'(x)],[-],[0],[+],
 )
+$f'(-1)=4/3*(-1)³=-4/3<0$\
+$f'(1)=4/3*1³=4/3>0$\
+
+$arrow$ Tiefpunkt bei x=0, da erst fallend dann steigend\
+$f(0)=4/3*0³-4/=-4$\
+Tiefpunkt bei (0|-4)
+
+1.Ableitung = Steigung der Tangente (HP/TP)\
+2.Ableitung = Krümmung der Funktion (WP)\
+
+=== Wendepunkte	
+#image("Pictures/Screenshot_106.png")\
+Bei $x_0$ liegt ein Wendepunkt vor ,falls $f"''"$einen Vorzeichenwechsel an dieser Stelle hat.\
+$f"''"(x)>0 arrow f"''"(x)<0$ oder $f"''"(x)<0 arrow f"''"(x)>0$\
+Gilt nun $f"'''" "sym.eq.not"$ 0, dann ist die Steigung der Tangente bei $x_0$ der Funktion $f"''"$ nicht 0 und es wird die x-Achse überquert.\
+($arrow$ Wendepunkt liegt vor)\
+
+#red1($x_0 in DD.$)\
+#text(red)[
+"Gilt"$f"''"(x_0)=0$ und $f"'''"$(x_0) #sym.eq.not 0 $arrow$ bei $x_0$ liegt ein Wendepunkt vor.\
+]
+
+#head2("Bsp.: Wendepunkte")\
+$f(x)=1/6x³-x²+1$\
+$f"'"(x)=1/2x²-2x$\
+$f"''"(x)=x-2$\
+$f"'''"(x)=1$\
+Ans.:$"''"(x)=0$\
+$x-2=0$\
+$x=2 arrow $ in $f"'''"(x)$einsetzen\
+
+$f"'''"(2) eq.not 0$ Wendepunkt WP(2|-5/3)\
+
+
+$g(x)=1/5(x^4-4x^3)$\
+ges: Wendepunkte\
+$g'(x)=1/5(4x³-12x²)$\
+$g"''"(x)=1/5(12x²-24x)$\
+$g"'''"(x)=1/5(24x-24)$\
+Ans:\
+$g"''"(x)=0$\
+$1/5(12x²-24x)=0|*5$\
+$12x²-24x=0| :12$\
+$x²-2x=0$\
+$x*(x-2)=0$\
+$x_1=0$\
+$x_2=2$\
+
+$x=0$ und $x=2$ in $f"'''"(x)$ einsetzen\
+$f"'''"(0)=-24/5 eq.not 0 arrow$ WP bei $x=0$\
+$f"'''"(2)=24/5 eq.not 0 arrow$ WP bei $x=2$\
+WP(0|0)\
+WP(2|-$16/5$)\
+
+#head2("Übungen")\
+- a)
+$f(x)=x³-7.5x²$\
+$f'(x)=3x²-15x$\
+$f"''"(x)=6x-15$\
+$f'''(x)=6$\
+$6x-15=0|:6$\
+$x=2.5$\
+$f"'''"(2.5)eq.not 6$\
+WP bei x=2.5\
+$f(2.5)=2.5³-7.5*2.5²$\
+$f(2.5)=15.625-46.875=-31.25$\
+WP(2.5|-31.25)\

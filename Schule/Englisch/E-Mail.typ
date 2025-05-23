@@ -1,32 +1,42 @@
 #import "../template/template.typ":*
 #show: styling
 
-Dear Sir or Madam,
 
-I am writing to you from the Purchasing Department of our medium-sized enterprise.
+*subject:* Imperial GreenLine 9000\
+*sender:* Grand Moff Jürgen\
+\
+\
 
-We are a company specialized in building technology for Imperial defensive Measures.
+Dear Sir/Madam,\ \
+I'm writing you from the Advertising Department of our medium-sized enterprise, Corellian Industrial Solutions Ltd., located in the Outer Rim Territories.\
 
-We are interested in requesting an offer for the delivery of 200 meters of power cable, specifically type NYY-J 5x2.5 mm².
+We are an electronics company specialized in Filling system for Nature and Bio-Products fulfill all of the Imperial Galactic standards.
 
-Could you please send us your current price quotation, estimated delivery time, and terms and conditions for this order?
+We are responding to the difficulty economic situation in the outer Rim with a limited time offer.
 
-Additionally, we would appreciate it if you could send us a technical data sheet or a sample.
+If you buy one of our newest generation filling machines, you will get a two year maintenance contract for free.
+The offer is valid until the end of this month.
 
-Thank you very much for the quick processing of our request in advance.
+Our maintenance contract includes a 24/7 service hotline, a 24 hours on-site service and a 10% discount on spare parts.
+In addition, we offer a free, Rebell Insurance.\
+"Because Freedom Fighters Call It 'Collateral' – We Call It 'Covered"\
 
-Best regards,
+More information about our products can be found on our website:\ 
+(#blue1("www.corellian-industrial-outerrim.imperial")).
+
+Please do not hesitate to contact me if you have any questions.\
+Best regards,\
 
 Grand Moff Jürgen\
 Purchasing Department\
 Corellian Industrial Solutions Ltd.\
-Imperial Logistics Center\ 
-\
-Sector 12, Corridor 47B\
-Death Star, DS-1 Orbital Battle Station\
-Galactic Empire Postal Code: DS-1138\
-Outer Rim Territories\
+Imperial Logistics Center\
+
+Imperial Outpost 17,\
+Germany Sector,\
+Outer Rim Territories,\
+Planet Baden-Württemberg
 
 Ps.\
 Glory to the Empire\
-Failure in meeting delivery timelines will not be tolerated.
+"Your shield generator might fail – we won’t."
