@@ -4,6 +4,7 @@
 	
     "editor.insertSpaces": false,
 	"editor.detectIndentation": false,
+	"editor.renderWhitespace": "all",
 	"cSpell.words": [
 		"ergebnis"
 	

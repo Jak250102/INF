@@ -29,7 +29,7 @@ Anhand des Beispiels der CBS Mannheim.
 
 *Feinlernziele:*
 
-- *Kognitiv:* Der Lehrling kann den aufbau erkläenen und kann die einzelnen bestenadteile erklären. er kann die grundsätzliche funktionsweise der alarmanlage nennen. er kann sicherheitsrelefante sachen nennen und erklären warum diese wichtig sind.
+- *Kognitiv:* Der Lehrling kann den Aufbau erklären und kann die einzelnen Bestandteile erklären. Er kann die grundsätzliche Funktionsweise der Alarmanlage nennen. Er kann sicherheitsrelevante Sachen nennen und erklären, warum diese wichtig sind.
 
 - *Psychomotorisch:* Der Lehrling verbindet die einzelnen Komponenten korrekt miteinander. (kaum Fehlerpotenzial)
 - *Affektiv:* Sorgfältiges Arbeiten, planvolles und strukturiertes Vorgehen
@@ -77,9 +77,9 @@ Anhand des Beispiels der CBS Mannheim.
 
 	[Praktische Kontrolle], [Praktische Kontrolle], [Verständnis prüfen], [Fragen stellen], [5 Min],
 
-	[Reflexion], [Gespräch], [Verständnis prüfen], [Fragen stellen], [2 Min],
+	[Reflexion des gelernten], [Gespräch], [Erkenntnisse sichern], [Fragen stellen], [2 Min],
 
-	[Üben], [Praktische Übung], [Verständnis prüfen], [Fragen stellen], [5 Min],
+	[Üben], [Praktische Übung], [gelerntes festigen], [Selbstständiges Arbeiten fördern], [5 Min],
 
 )
 
