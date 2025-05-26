@@ -242,6 +242,47 @@ Dann pro Minute:\
  - GEKKO-Laser, Osaka, Japan
  - Laser Mégajoule Le Barp, Südwestfrankreich
 
+ = Interesante Forschungsobjekte
+
+ == ITER
+- International Thermonuclear Experimental Reactor
+- Standort: Cadarache, Frankreich
+- Ziel: Erzeugung von 500 MW Fusionsenergie aus 50 MW Heizleistung
+- Bauzeit: 2007–2025
+- Kosten: 20 Milliarden Euro
+- Reaktortyp: Tokamak
+- Brennstoffe: Deuterium und Tritium
+- Besonderheiten:
+  - Größter Fusionsreaktor der Welt
+  - Erster Reaktor, der netto Energie erzeugen soll
+  - Verwendung von supraleitenden Magneten
+  - Erster Reaktor, der mit Tritium betrieben werden soll
+  #image("image-1.png")
+  Daten von https://www.iter.org/about/iter-members 23.5.2025\
+
+
+
+  Länder beteiligen sich mit Geld und Bauteilen
+   #image("flags_evening_lights_1_small.jpg")
+     Bild von https://www.iter.org/about/iter-members 23.5.2025
+
+	 #image("drone_riche_whole-site_may-2025_c.jpg")
+	 Bild von https://www.iter.org/about/iter-france 23.5.2025
+
+= Wendelstein 7-X
+- Experimenteller Stellarator
+- Keine Energieerzeugung, sondern Grundlagenforschung
+- Kein echter fusionsvorgang
+ - es wird versucht Umstände zu schaffen, die für eine Fusion nötig sind
+ - Erzeugung und Kontrolle von extrem heißem Plasma (>100 Mio °C)
+ - Einschluss des Plasmas mit Magnetfeldern
+ - Verhinderung von Instabilitäten und Energieverlusten
+ - Diagnostik des Verhaltens von Teilchen und Energie im Plasma
+- keine Deuterium-Tritium Reaktionen, sondern nur Deuterium und Helium-3
+ - 	Tritium ist radioaktiv (β-Strahler), schwer zu handhaben, teuer und unterliegt strengen Kontrollen.
+ - Bei DT-Fusion entstehen schnelle Neutronen → würden Materialien aktivieren → radioaktive Belastung → aufwändige Abschirmung nötig
+ - Für viele grundlegende Tests reichen H- oder He-Plasmen, z. B. zur Untersuchung von Stabilität, Magnetfeldern, Energieeinschluss
+ - W7-X testet, ob die Stellarator-Form überhaupt für Dauerbetrieb geeignet ist – unabhängig vom Brennstoff
 = Chancen und Risiken
 - Vorteile:
   - Kein CO₂
@@ -267,4 +308,9 @@ Dann pro Minute:\
 - Diskussionsimpuls:
   _„Sollte trotz langer Entwicklung weiter in Fusion investiert werden?“_
 
+
+
+= Quellen
+- 1 Max-Planck-Institut für Plasmaphysik https://www.ipp.mpg.de/  [23.5.2025]
+- 2 ITER organization https://www.iter.org/ [23.5.2025]
 
