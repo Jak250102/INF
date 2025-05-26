@@ -4,10 +4,7 @@ TITLE 'Speicher'
 
 DECLARATIONS
 "Eingänge"
-"Peter PIN 31;"
 Tackt PIN 88;
-"Tom PIN 30;"
-C0, C1, C2, C3 Pin 31, 30, 29, 28;
 
 "Ausgänge"
 P1 PIN 56 ISTYPE 'BUFFER,REG';
@@ -15,6 +12,9 @@ P2 PIN 55 ISTYPE 'BUFFER,REG';
 P3 PIN 54 ISTYPE 'BUFFER,REG';
 P4 PIN 53 ISTYPE 'BUFFER,REG';
 J, Y, Z, U, V, W, S Pin 81, 79, 80, 85, 87, 84, 86 ISTYPE 'BUFFER,COM';
+
+"Hilfsvariablen"
+C0, C1, C2, C3 NODE ISTYPE 'BUFFER,COM';
 
 set1=[C3, C2, C1, C0];
 
@@ -31,8 +31,6 @@ P3.CLK = P2.Q;
 
 P4.D = !P4.Q;
 P4.CLK = P3.Q;
-
-
 
 C0 = !P1.Q;
 C1 = !P2.Q;
