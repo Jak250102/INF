@@ -278,6 +278,22 @@ $#comp("I","N")=-(#comp("I","1N"))=-( #ej(23,0)A)=#ej(23,180)A$
 #head2("Nr.1")
 #image("Pictures/Screenshot_97.png",width: 100%)\
 - a)\
-$I_("Str1")=U/R=((500V)/sqrt(3))/(14.4Ω)=20.5A$\
-$X_C=1/(omega*C)=1/(2*pi*f*C)$\
+$U_"Str1"=U/"sqrt(3)"=(500V)/sqrt(3)e^"j0")= #ej(288.68,0)$\
+$U_"Str1"=U/"sqrt(3)"=(500V)/sqrt(3)e^"-j120")= #e-j(288.68,120)$\
+$U_"Str1"=U/"sqrt(3)"=(500V)/sqrt(3)e^"j120")= #ej(288.68,120)$\
+
+- b)\
+$I_("Str1")=U/R=((500V)/sqrt(3)e^"j0")/(14.4Ω)=20.5A$\
+$X_L=j omega L=2*pi*f*l=2*pi*50"HZ"*33"mH"=j 10.37 Omega$\
+$I_("Str2")=U/X_L=((500V)/sqrt(3)e^"-j120")/(10.37 Omega)=#ej(27.84,150)$\
+
+$X_C= -j 1/(2*pi*f*c)=-j 1/(2*pi*50"HZ"*570"µF")=- 5.57 Omega j$\
+
+$I_("Str3")=U/X_C=((500V)/sqrt(3)e^"j120")/(-5.57 Omega j)=#e-j(51.83,150)$\
+- b)\
+
+#head2("Nr.2")
+#image("Pictures/image.png")
+$I_N=-(I_1+I_2+I_3)=$\
+
 
