@@ -8,7 +8,7 @@ echo "<h3>Alle Werte im Array</h3>";
 foreach ($notenlisten as $note) {
 	echo $note . "<br>";
 }
-
+ 
 // 3.) Den Durchschnitt der Werte im Array berechnen und ausgeben
 echo "<hr>";
 echo "<h3>Durchschnitt mit for-Schleife</h3>";
