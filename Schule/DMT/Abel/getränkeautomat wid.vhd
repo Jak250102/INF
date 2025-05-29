@@ -3,7 +3,7 @@ MODULE aktuell
 TITLE 'aktuell'
 
 @dcset
-
+  
 DECLARATIONS
 takt PIN 88;
 b10, b20 PIN 30,31;
