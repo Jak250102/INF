@@ -63,7 +63,7 @@ TRUTH_TABLE
 
 
 
-TRUTH_TABLE ([ff1,ff2,ff3,ff4] -> [A, B, C, D, E, F, G])
+TRUTH_TABLE (ff -> [A, B, C, D, E, F, G])
   0 -> [1, 1, 1, 1, 1, 1, 0];
   1 -> [0, 1, 1, 0, 0, 0, 0];
   2 -> [1, 1, 0, 1, 1, 0, 1];
