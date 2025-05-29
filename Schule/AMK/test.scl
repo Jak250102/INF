@@ -1,0 +1,36 @@
+// SCL Einfühung
+// 
+
+// Input
+#xTasterTorauf
+#xEndschalterTorOffen
+
+// Output
+#xTorFahreAuf
+#xTorFahreZu
+
+Region
+// Rücksetzdominant
+	if #xTasterTorauf then
+		#xTorFahreAuf := true;
+	end_if;
+
+	if #xEndschalterTorOffen then
+		#xTorFahreAuf := false;
+	end_if;
+End_Region
+
+if #xEndschalterTorZu then
+	#xTorFahreZu := false;
+elsif #xTasterTorZu then
+	#xTorFahreZu := true;
+end_if;
+
+If #xTasterTorAuf and #xTorFahreZu then
+	#xTorFahreAuf := false;
+	#xTorFahreZu := true;
+end_if;
+If #xTasterTorZu and #xTorFahreAuf then
+	#xTorFahreAuf := true;
+	#xTorFahreZu := false;
+end_if;

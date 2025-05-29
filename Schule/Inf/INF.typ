@@ -50,3 +50,11 @@ GZ= Ganze zahl\
 )
 
 Der Bubble-Sortieralgorithmus sortiert eine Zahlenfolge der Größe nach\
+
+== Selection sort
+Vorgehensweise:\
+Zu beginn ist das Array unsortiert.\
+Es wird stets das kleinste Element des noch unsortierten Arrays gesucht und selektiert.\
+Es wird das selektierte Element mit dem ersten Element des unsortierten Arrays getauscht.\
+Somit wirt das kleinste Elemetn in noch unsortierten Teil gesucht und in den sortierten Teil eingefügt.\
+Dies wird so lange wiederholt, bis das gesamte Array sortiert ist.\

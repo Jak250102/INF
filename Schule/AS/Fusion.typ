@@ -120,34 +120,64 @@ Verfügbarkeit:
 
 == Temperaturerzeugung
 
-  - Magnetische Einschlussmethoden:
-    - Das Plasma wird durch starke Magnetfelder eingeschlossen, damit es nicht die Wände berührt und genug Zeit zur Aufheizung hat.
-    - Verwendet z. B. im Tokamak (kreisförmig mit Plasmastrom) und Stellarator (komplexe Magnetstruktur ohne Plasmastrom).
-    - Beispiele: JET (UK), ITER (Frankreich, im Bau), EAST (China), Wendelstein 7-X (Deutschland), LHD (Japan)
+=== Unterschied: Tokamak vs. Stellarator
+- *Tokamak*:
+	- Der Tokamak ist ein torusförmiger (ringförmiger) Reaktortyp, der das Plasma durch eine Kombination aus äußeren Magnetspulen und einem induktiv erzeugten Plasmastrom einschließt.
+	- Der Plasmastrom wird wie bei einem Transformator durch eine Primärwicklung induziert und erzeugt im Plasma ein zirkulierendes Magnetfeld.
+	- Dieser Strom bewirkt zwei Dinge:
+		1. Er sorgt für eine Verdrillung der Magnetfeldlinien, die notwendig ist, um das Plasma stabil einzuschließen.
+		2. Er erzeugt durch den elektrischen Widerstand des Plasmas eine Ohm'sche Heizung (Joule-Erwärmung), die zur Temperaturerzeugung beiträgt.
+	- Nachteil: Der Plasmastrom kann nicht dauerhaft aufrechterhalten werden → der Tokamak arbeitet nur im Impulsbetrieb.
+	- Reaktortypen: ITER (im Bau), JET, EAST, ASDEX Upgrade
 
-  - Trägheitsfusion:
-    - Ein winziges Brennstoffpellet wird durch starke Laser oder Ionenstrahlen komprimiert und in extrem kurzer Zeit aufgeheizt.
-    - Die Massenträgheit des Pellets hält das Plasma kurz genug zusammen, damit Fusion stattfinden kann.
-    - Reaktortyp: Laserfusion
-    - Beispiele: NIF (USA), LMJ (Frankreich)
+- *Stellarator*:
+  - Der Stellarator verwendet keine induzierte Strömung im Plasma, sondern erzeugt das notwendige dreidimensional verdrehte Magnetfeld vollständig durch externe Magnetspulen.
+  - Vorteil: Es ist kein Plasmastrom nötig, daher ist ein kontinuierlicher Dauerbetrieb prinzipiell möglich.
+  - Da keine Ohm'sche Heizung durch einen Plasmastrom erfolgt, muss die Temperatur ausschließlich durch externe Heizmethoden erzeugt werden:
+    - Mikrowellenresonanzheizung (ECRH, ICRH)
+    - Neutralteilcheninjektion (NBI)
+  - Nachteil: Der Bau der komplexen Magnetspulen ist technisch sehr anspruchsvoll, insbesondere bei großer Reaktorgröße.
+  - Reaktortypen: Wendelstein 7-X, Large Helical Device (LHD)
 
-  - Induktive Erwärmung:
-    - Durch einen Transformator wird ein elektrischer Strom im Plasma erzeugt.
-    - Dieser Strom erzeugt über den elektrischen Widerstand Wärme (Ohm'sche Heizung) – funktioniert nur am Anfang, da der Widerstand mit steigender Temperatur sinkt.
-    - Reaktortyp: Nur Tokamak
-    - Beispiele: JET, ITER, EAST
 
-  - Neutralteilcheninjektion (NBI):
-    - Schnelle, elektrisch neutrale Teilchen (meist Wasserstoffatome) werden ins Plasma geschossen.
-    - Diese übertragen ihre Bewegungsenergie beim Zusammenstoß mit Plasmateilchen → Wärme entsteht.
-    - Reaktortypen: Tokamak, Stellarator
-    - Beispiele: JET, DIII-D (USA), ASDEX München, Wendelstein 7-X (optional)
+*Zusammenfassung:*\
+Tokamaks nutzen ihren Plasmastrom zur Aufheizung, arbeiten aber gepulst.\
+Stellaratoren arbeiten ohne Strom, sind stabiler, benötigen aber ausschließlich externe Heizmethoden.
 
-  - Mikrowellenheizung (z. B. ECRH, ICRH):
-    - Hochfrequente elektromagnetische Wellen werden gezielt ins Plasma eingespeist.
-    - Die Energie wird durch Resonanz an Elektronen oder Ionen übertragen → gezielte Aufheizung möglich.
-    - Reaktortypen: Tokamak, Stellarator
-    - Beispiele: TCV (Schweiz), ASDEX Upgrade, Wendelstein 7-X
+
+=== Arten der Plasmaerwärmung
+
+- *Magnetische Einschlussmethoden:*
+  - Plasma wird durch starke Magnetfelder gehalten
+  - Verhindert Kontakt mit Reaktorwand, erlaubt lange Aufheizzeiten
+  - Tokamak: ITER, JET, EAST, ASDEX Upgrade
+  - Stellarator: Wendelstein 7-X, LHD
+
+- *Trägheitsfusion:*
+  - Brennstoffpellet wird durch Laser oder Ionenstrahlen komprimiert
+  - Plasma entsteht durch extreme Dichte & Temperatur in kurzer Zeit
+  - Reaktortyp: Laserfusion
+  - Beispiele: NIF (USA), LMJ (Frankreich)
+
+- *Induktive Erwärmung:*
+  - Strom wird durch einen Transformator im Plasma erzeugt
+  - Ohm’sche Erwärmung – nur zu Beginn wirksam, da Widerstand sinkt
+  - Nur in Tokamaks einsetzbar
+  - Beispiele: JET, ITER, EAST
+
+- *Neutralteilcheninjektion (NBI):*
+  - Schnelle, neutrale Teilchen (z. B. Wasserstoffatome) werden ins Plasma geschossen
+  - Übertragen ihre Bewegungsenergie auf Plasmateilchen → Erwärmung
+  - Reaktortypen: Tokamak, Stellarator
+  - Tokamak: JET, DIII-D, ASDEX Upgrade
+  - Stellarator: Wendelstein 7-X
+
+- *Mikrowellenheizung (z. B. ECRH, ICRH):*
+  - Hochfrequente elektromagnetische Wellen (z. B. GHz-Bereich)
+  - Energieübertragung über Resonanz an Elektronen oder Ionen
+  - Reaktortypen: Tokamak, Stellarator
+  - Tokamak: TCV (Schweiz), ASDEX Upgrade
+  - Stellarator: Wendelstein 7-X
 
 
 == Herausforderungen der Hohen Temperaturen
@@ -217,10 +247,10 @@ Dann pro Minute:\
  - ITER Cadarache, Frankreich
  - SPARC Commonwealth Fusion Systems (CFS), Cambridge, Massachusetts, USA
 
-*Stellaratoren*
- -*Beendete Experimente*
- - Wendelstein 7-AS Max-Planck-Institut für Plasmaphysik, Garching bei München (1993–2002)
- - National Compact Stellarator Experiment (NCSX) Princeton University, USA (2003–08, Bau nicht fertiggestellt)
+*Stellaratoren*\
+ - *Beendete Experimente*
+  - Wendelstein 7-AS Max-Planck-Institut für Plasmaphysik, Garching bei München (1993–2002)
+  - National Compact Stellarator Experiment (NCSX) Princeton University, USA (2003–08, Bau nicht fertiggestellt)
 
 - *Anlagen in Betrieb*
  - Wendelstein 7-X Greifswald
@@ -242,6 +272,47 @@ Dann pro Minute:\
  - GEKKO-Laser, Osaka, Japan
  - Laser Mégajoule Le Barp, Südwestfrankreich
 
+ = Interesante Forschungsobjekte
+
+ == ITER
+- International Thermonuclear Experimental Reactor
+- Standort: Cadarache, Frankreich
+- Ziel: Erzeugung von 500 MW Fusionsenergie aus 50 MW Heizleistung
+- Bauzeit: 2007–2025
+- Kosten: 20 Milliarden Euro
+- Reaktortyp: Tokamak
+- Brennstoffe: Deuterium und Tritium
+- Besonderheiten:
+  - Größter Fusionsreaktor der Welt
+  - Erster Reaktor, der netto Energie erzeugen soll
+  - Verwendung von supraleitenden Magneten
+  - Erster Reaktor, der mit Tritium betrieben werden soll
+  #image("image-1.png")
+  Daten von https://www.iter.org/about/iter-members 23.5.2025\
+
+
+
+  Länder beteiligen sich mit Geld und Bauteilen
+   #image("flags_evening_lights_1_small.jpg")
+     Bild von https://www.iter.org/about/iter-members 23.5.2025
+
+	 #image("drone_riche_whole-site_may-2025_c.jpg")
+	 Bild von https://www.iter.org/about/iter-france 23.5.2025
+
+== Wendelstein 7-X
+- Experimenteller Stellarator
+- Keine Energieerzeugung, sondern Grundlagenforschung
+- Kein echter fusionsvorgang
+ - es wird versucht Umstände zu schaffen, die für eine Fusion nötig sind
+ - Erzeugung und Kontrolle von extrem heißem Plasma (>100 Mio °C)
+ - Einschluss des Plasmas mit Magnetfeldern
+ - Verhinderung von Instabilitäten und Energieverlusten
+ - Diagnostik des Verhaltens von Teilchen und Energie im Plasma
+- keine Deuterium-Tritium Reaktionen, sondern nur Deuterium und Helium-3
+ - 	Tritium ist radioaktiv (β-Strahler), schwer zu handhaben, teuer und unterliegt strengen Kontrollen.
+ - Bei DT-Fusion entstehen schnelle Neutronen → würden Materialien aktivieren → radioaktive Belastung → aufwändige Abschirmung nötig
+ - Für viele grundlegende Tests reichen H- oder He-Plasmen, z. B. zur Untersuchung von Stabilität, Magnetfeldern, Energieeinschluss
+ - W7-X testet, ob die Stellarator-Form überhaupt für Dauerbetrieb geeignet ist – unabhängig vom Brennstoff
 = Chancen und Risiken
 - Vorteile:
   - Kein CO₂
@@ -267,4 +338,9 @@ Dann pro Minute:\
 - Diskussionsimpuls:
   _„Sollte trotz langer Entwicklung weiter in Fusion investiert werden?“_
 
+
+
+= Quellen
+- 1 Max-Planck-Institut für Plasmaphysik https://www.ipp.mpg.de/  [23.5.2025]
+- 2 ITER organization https://www.iter.org/ [23.5.2025]
 
