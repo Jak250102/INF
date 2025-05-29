@@ -28,7 +28,7 @@ TRUTH_TABLE
 6 :> 5;
 7 :> 1;
 
-TRUTH_TABLE (set1 -> [A, B, C, D, E, F, G])
+TRUTH_TABLE (ff -> [A, B, C, D, E, F, G])
   0 -> [1, 1, 1, 1, 1, 1, 0];
   1 -> [0, 1, 1, 0, 0, 0, 0];
   2 -> [1, 1, 0, 1, 1, 0, 1];
