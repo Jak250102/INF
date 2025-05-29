@@ -17,8 +17,8 @@ set1 =[S2,S1];
 set2 =[S4,S3];
 ff = [ff1, ff2, ff3];
 
-state IDLE=0;
-stateDrive =1;
+STATEIDLE=0;
+STATEDRIVE=1;
 
 
 EQUATIONS
@@ -26,11 +26,11 @@ ff.clk = takt;
 
 
 STATE_DIAGRAM ff;
-STATE IDLE:
-IF set1 != set2 THEN stateDrive ELSE IDLE;
-STATE Drive:
+STATEIDLE:
+IF set1 != set2 THEN STATEDRIVE ELSE STATEIDLE;
+STATEDRIVE:
 Mein = 1;
-goto IDLE;
+goto STATEIDLE;
 
 
 End
