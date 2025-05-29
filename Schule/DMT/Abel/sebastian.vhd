@@ -10,10 +10,10 @@ G0,G1,G2,G3,takt,Motorstart PIN 91,93,94,98,88,17;
 M0,M1,M2,M3 PIN 31,30,29,28;
  
 "Ausgänge"
-Q0 PIN NODE ISTYPE 'BUFFER,REG';
-Q1 PIN NODE istype 'BUFFER,REG';
-Q2 PIN NODE istype 'BUFFER,REG';
-Q3 PIN NODE istype 'Buffer,REG';
+Q0 PIN ISTYPE 'BUFFER,REG';
+Q1 PIN istype 'BUFFER,REG';
+Q2 PIN istype 'BUFFER,REG';
+Q3 PIN istype 'Buffer,REG';
 aa,bb,cc,dd,ee,ff,gg PIN 81,79,80,85,87,84,86 istype 'Buffer,COM';
 a,b,c,d,e,f,g PIN 67,65,66,70,72,69,71 ISTYPE 'BUFFER,COM';
 AnMotor,DrehRichtung  PIN 37,36 ISTYPE 'BUFFER,COM';
