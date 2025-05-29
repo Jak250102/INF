@@ -29,8 +29,8 @@ STATE_DIAGRAM ff;
 STATE IDLE:
 IF set1 != set2 THEN DRIVE ELSE IDLE;
 STATE DRIVE:
+IF set1 = set2 THEN IDLE ELSE DRIVE;
 Mein = 1;
-goto IDLE;
 
 
 End
