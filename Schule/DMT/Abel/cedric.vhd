@@ -9,7 +9,7 @@ DECLARATIONS
   ff1, ff2, ff3 PIN 61, 60, 59 ISTYPE 'BUFFER, REG';
   ff = [ff1, ff2, ff3];   "SET
  
-  a, b, c, d, e, f, g PIN 67,65,66,70,72,69,71 ISTYPE 'BUFFER, REG';  " 7-Segment-Anzeige
+  a, b, c, d, e, f, g PIN 67,65,66,70,72,69,71 ISTYPE 'BUFFER, COM';  " 7-Segment-Anzeige
  
 EQUATIONS
   ff.clk = takt;
