@@ -294,6 +294,28 @@ $I_("Str3")=U/X_C=((500V)/sqrt(3)e^"j120")/(-5.57 Omega j)=#e-j(51.83,150)$\
 
 #head2("Nr.2")
 #image("Pictures/image.png")
-$I_N=-(I_1+I_2+I_3)=$\
+$I_N=-(I_1+I_2+I_3)=-(#ej(10,36.9)+#e-j(20,120)+#ej(20,120))=#e-j(13.4,26.58)$\
 
+#head2("Nr.3")
+#image("image.png")
+$L 1 phi= arccos(0.5)= 60°$\
+$L 2 phi= arccos(0.6)= 53.13°-120°= -66.87°$\
+$L 3 phi= arccos(0.8)= 36.87°+120°= 156.87°$\
+$I_N=-(I_1+I_2+I_3)=-(#ej(25,60)+#e-j(35,66.87)+#ej(40,156.87))=#e-j(11.74,26.17)$\
 
+#head2("Nr.4")
+#image("image-1.png")
+$L 1 phi= arccos(1)= 0°$\
+$L 2 phi= arccos(0.75)= 41.41°-120°=-78.59°$\
+$L 3 phi= arccos(0.9)= 25.84°+120°=145.84°$\
+$I_"L1"=10A$\
+$I_"L2"=20A$\
+$I_"L3"=5A$\
+$I_N=-(I_1+I_2+I_3)=-(#ej(10,0)+#e-j(20,78.59)+#ej(5,145.84))=#ej(19.46,120.3)$\
+
+== Dreieckschaltung, symmetrische, gleichartige Last
+
+#head2("Nr.1")
+#image("image-2.png")
+- a)
+$U_"Str"=400V$\
