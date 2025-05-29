@@ -10,7 +10,7 @@ takt PIN 88;
 S1,S2 PIN 30,31;
 A, B, C, D, E, F, G Pin 81, 79, 80, 85, 87, 84, 86 ISTYPE 'BUFFER,COM';
 
-ff1,ff2,ff3,ff4 PIN ISTYPE 'BUFFER, REG';
+ff1,ff2,ff3,ff4 PIN 58,59,60,61 ISTYPE 'BUFFER, REG';
 
 ff = [ff1,ff2,ff3,ff4];" SET"
 
