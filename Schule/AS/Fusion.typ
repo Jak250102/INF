@@ -76,15 +76,29 @@
 https://www.ipp.mpg.de/plasma
 
 = Geschichte
-1920 erkannte Arthur Eddington das die Sonne Fusion als energiequelle nutzt
+- 1920 erkannte Arthur Eddington das die Sonne Fusion als energiequelle nutzt
+- 1934 Ernst Rutherford führte erste Experimente zur Kernfusion durch
+- 1950 erste Fusionsreaktion im Labor 
+- 1968 erster Fusionsreaktor in der Sowjetunion (Tokomak)(Kalter Krieg)
+- 1985 erste internationale Zusammenarbeit in der Fusionsforschung USA/Sowjetunion (Tokamak)(Kalter Krieg) darauf folgte Iter
 
 = Fusionsreaktionen im Detail
 == Fusionsablauf
+1.) Wasserstofffusion
+- Wasserstoff + Wasserstoff → Deuterium + Neutron + Energie
+- Geringe Ausbeute, da Wasserstoff-Isotope sehr leicht sind
+2.) Deuteriumfusion
 - Deuterium + Tritium → Helium + Neutron + Energie
-	- Atomkerne stoßen sich gegenseitig ab, (Coulomb Kraft), um das zu verhindern werden hohe temperaturen benötigt
+- Hohe Energieausbeute, da Deuterium und Tritium schwerer sind
+3.) Tritiumfusion
+- Tritium + Tritium → Helium + 2 Neutronen + Energie
+- Hohe Energieausbeute, da Tritium schwerer ist
+- Kaum vorhanden
+
 #image("header_image.jpg", width: 100%)\
 https://www.ipp.mpg.de/ippcms/de/pr/fusion21\
 \
+	- Atomkerne stoßen sich gegenseitig ab, (Coulomb Kraft), um das zu verhindern werden hohe temperaturen benötigt
 == Verfügbarkeit von Brennstoffen für die Kernfusion
 1. Deuterium (²H)
 - Natürliches, stabiles Wasserstoff-Isotop
@@ -100,6 +114,7 @@ Verfügbarkeit:
 2. Tritium (³H)
 - Radioaktiv, Halbwertszeit ca. 12,3 Jahre
 - In der Natur nur in Spuren vorhanden
+- 20kg auf der Erde
 - Muss im Fusionsreaktor erzeugt werden
 - Z. B. durch Neutronenbeschuss von Lithium:(Li-6+n→Tritium + Helium)
 
@@ -129,6 +144,7 @@ Verfügbarkeit:
 		2. Er erzeugt durch den elektrischen Widerstand des Plasmas eine Ohm'sche Heizung (Joule-Erwärmung), die zur Temperaturerzeugung beiträgt.
 	- Nachteil: Der Plasmastrom kann nicht dauerhaft aufrechterhalten werden → der Tokamak arbeitet nur im Impulsbetrieb.
 	- Reaktortypen: ITER (im Bau), JET, EAST, ASDEX Upgrade
+	- Erstmals in der Sowjetunion 1958 entwickelt, heute weltweit verbreitet.
 
 - *Stellarator*:
   - Der Stellarator verwendet keine induzierte Strömung im Plasma, sondern erzeugt das notwendige dreidimensional verdrehte Magnetfeld vollständig durch externe Magnetspulen.
@@ -143,10 +159,11 @@ Verfügbarkeit:
 *Zusammenfassung:*\
 Tokamaks nutzen ihren Plasmastrom zur Aufheizung, arbeiten aber gepulst.\
 Stellaratoren arbeiten ohne Strom, sind stabiler, benötigen aber ausschließlich externe Heizmethoden.
+Tokomaks sind einfacher zu bauen, Stellaratoren komplexer, aber stabiler für Dauerbetrieb.
 
 
 === Arten der Plasmaerwärmung
-
+- Mehrere Methoden werden in einem einzelnen Reaktor kombiniert, um die Temperatur zu erreichen und aufrechtzuerhalten.
 - *Magnetische Einschlussmethoden:*
   - Plasma wird durch starke Magnetfelder gehalten
   - Verhindert Kontakt mit Reaktorwand, erlaubt lange Aufheizzeiten
@@ -278,8 +295,10 @@ Dann pro Minute:\
 - International Thermonuclear Experimental Reactor
 - Standort: Cadarache, Frankreich
 - Ziel: Erzeugung von 500 MW Fusionsenergie aus 50 MW Heizleistung
+ - Belegung der technischen Machbarkeit von Kernfusion (+Energie)
+ - Kein Dauerbetrieb, sondern Testbetrieb
 - Bauzeit: 2007–2025
-- Kosten: 20 Milliarden Euro
+- Kosten: 20 Milliarden Euro (Teuerstes Forschungsprojekt der Welt)
 - Reaktortyp: Tokamak
 - Brennstoffe: Deuterium und Tritium
 - Besonderheiten:
@@ -298,6 +317,10 @@ Dann pro Minute:\
 
 	 #image("drone_riche_whole-site_may-2025_c.jpg")
 	 Bild von https://www.iter.org/about/iter-france 23.5.2025
+- Problem: Kein reines Forschungsobjekt
+ - ITER ist ein internationales Projekt, das von 35 Ländern finanziert und gebaut wird.
+ - Es gibt viele politische und organisatorische Herausforderungen, die den Fortschritt verzögern können.
+
 
 == Wendelstein 7-X
 - Experimenteller Stellarator
@@ -319,6 +342,7 @@ Dann pro Minute:\
   - Kaum Atommüll
   - Geringes Gefahrenpotenzial
 - Risiken/Hürden:
+  - Neutronen entstehen und zersetzen den Reaktor (Problem wird im JET und ITER untersucht)
   - Technischer Aufwand
   - Hohe Entwicklungskosten
   - Jahrzehntelanger Zeithorizont
@@ -333,6 +357,12 @@ Dann pro Minute:\
 - Bewertung: Reale Lösung oder utopisch?
 - Denkanstoß ans Publikum
 
+= Optional Aussicht bei endloser Energie
+- Potenzial für unbegrenzte, saubere Energie
+- Auswirkungen auf Klimawandel und Energieversorgung
+- Schnee am Equator
+- 
+
 = Fragen & Diskussion
 - Möglichkeit zur Rückfrage
 - Diskussionsimpuls:
@@ -344,3 +374,10 @@ Dann pro Minute:\
 - 1 Max-Planck-Institut für Plasmaphysik https://www.ipp.mpg.de/  [23.5.2025]
 - 2 ITER organization https://www.iter.org/ [23.5.2025]
 
+= allgemeine Quellen
+- https://www.youtube.com/watch?v=jXlFhEhiixM
+- https://www.youtube.com/watch?v=xskmghN8xgg
+- ChatGPT
+- Github Copilot
+- https://www.ipp.mpg.de/
+- https://www.iter.org/
