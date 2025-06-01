@@ -5,9 +5,9 @@ TITLE 'Synchronzähler 0–7 mit Vor-/Rückwärts und Haltefunktion'
 DECLARATIONS
   takt         PIN 88;                " Gültiger Clock-Pin (ggf. anpassen)"
   b0, b1       PIN 31,30;            " Steuereingänge"
-  ff0..ff2     PIN 61, 60, 59 ISTYPE 'REG';
-  ff = [ff1, ff2, ff3];
-  GA,MG PIN 58,56;
+  ff0..ff3     PIN 61, 60, 59, 58 ISTYPE 'REG';
+  ff = [ff0,ff1, ff2, ff3];
+  GA,MG PIN 55,56;
 Idle=0;
 S10c=1;
 S20c=2;
