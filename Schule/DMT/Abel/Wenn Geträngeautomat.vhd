@@ -6,8 +6,9 @@ DECLARATIONS
   takt         PIN 88;                " Gültiger Clock-Pin (ggf. anpassen)"
   b0, b1       PIN 31,30;            " Steuereingänge"
   ff0..ff3     PIN 61, 60, 59, 58 ISTYPE 'REG';
+    GA,MG PIN 55,56 ISTYPE 'COM';
   ff = [ff0,ff1, ff2, ff3];
-  GA,MG PIN 55,56;
+
 Idle=0;
 S10c=1;
 S20c=2;
@@ -24,7 +25,7 @@ EQUATIONS
   When (b0 == 1)Then ff := ff +1;
   When (b1 == 1) Then ff := ff +2;
   When (ff >= 4) Then GA := 1;
-  When (GA == 1;) Then ff := 0;
+  When (GA == 1) Then ff := 0;
  
 
   " 7-Segment-Dekodierung "
