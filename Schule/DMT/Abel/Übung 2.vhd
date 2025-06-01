@@ -3,7 +3,7 @@ MODULE zaehler_mit_schalter
 TITLE 'Synchronzähler 0–7 mit Vor-/Rückwärts und Haltefunktion'
  
 DECLARATIONS
-  takt         PIN 13;                " Gültiger Clock-Pin (ggf. anpassen)"
+  takt         PIN 88;                " Gültiger Clock-Pin (ggf. anpassen)"
   s1, s2       PIN 30, 31;            " Steuereingänge"
   ff0..ff2     PIN 61, 60, 59 ISTYPE 'REG';
   ff = [ff2, ff1, ff0];               " Zählerbits als Set"
