@@ -20,19 +20,23 @@ DECLARATIONS
 EQUATIONS
   zustand.CLK = takt;
  
-  " Zustandsübergänge mit WHEN-THEN-ELSE
-  WHEN (T) THEN
+  " KORREKTE WHEN-THEN-ELSE-Syntax mit Blöcken und Semikolon!
+  WHEN (T) THEN { 
     zustand := Idle;
-  ELSE WHEN (zustand == Idle) & (K) THEN
+  }
+  ELSE WHEN (zustand == Idle) & (K) THEN {
     zustand := Einmal;
-  ELSE WHEN (zustand == Einmal) & (K) THEN
+  }
+  ELSE WHEN (zustand == Einmal) & (K) THEN {
     zustand := Zweimal;
-  ELSE WHEN (zustand == Zweimal) & (B) THEN
+  }
+  ELSE WHEN (zustand == Zweimal) & (B) THEN {
     zustand := Idle;
-  ELSE
+  }
+  ELSE {
     zustand := zustand;
+  }
  
-  " Ausgang: AB ist im Zustand Zweimal aktiv
   AB = (zustand == Zweimal);
  
 END
