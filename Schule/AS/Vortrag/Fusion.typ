@@ -379,7 +379,7 @@ https://www.ipp.mpg.de/panoramaw7x
 #hr
 [1]
 - #image("ChatGPT Image 1. Juni 2025, 10_29_53.png") 
- - ChatGPT [6.1.2025]
+ - ChatGPT [1.6.2025]
 #hr
 [2]
 - #image("original1.jpg", width: 100%)
@@ -403,25 +403,28 @@ https://www.ipp.mpg.de/panoramaw7x
 #hr
 [7]
 - #image("great.jpg")
- - https://www.fz-juelich.de/de/aktuelles/news/meldungen/2024/fusionsreaktor-jet-erzielt-neuen-weltrekord-bei-finalen-experimenten/jet-interior-with-superimposed-plasma.jpg/@@images/image/great [6.1.2025]
+ - https://www.fz-juelich.de/de/aktuelles/news/meldungen/2024/fusionsreaktor-jet-erzielt-neuen-weltrekord-bei-finalen-experimenten/jet-interior-with-superimposed-plasma.jpg/@@images/image/great [1.6.2025]
 #hr
  [8]
  - #image("fusionsreaktor-funktionsprinzip.png")
  - #image("992Fusionsreaktor_Querschnitt_ITER.png")
-  - https://www.leifiphysik.de/kern-teilchenphysik/kernspaltung-und-kernfusion/ausblick/fusionsreaktor [6.1.2025]
+  - https://www.leifiphysik.de/kern-teilchenphysik/kernspaltung-und-kernfusion/ausblick/fusionsreaktor [1.6.2025]
 	#hr
 [9]
 
 = allgemeine Quellen
-- https://www.youtube.com/watch?v=jXlFhEhiixM [6.1.2025]
-- https://www.youtube.com/watch?v=xskmghN8xgg [6.1.2025]
+- https://www.youtube.com/watch?v=jXlFhEhiixM [1.6.2025]
+- https://www.youtube.com/watch?v=xskmghN8xgg [1.6.2025]
 - ChatGPT
 - Github Copilot
 - Max-Planck-Institut für Plasmaphysik https://www.ipp.mpg.de/  [23.5.2025]
 - ITER organization https://www.iter.org/ [23.5.2025]
-- Forschungszentrum Jülich https://www.fz-juelich.de/de [6.1.2025]
+- Forschungszentrum Jülich https://www.fz-juelich.de/de [1.6.2025]
 - LEIFIphysik https://www.leifiphysik.de/kern-teilchenphysik/kernspaltung-und-kernfusion/ausblick/fusionsreaktor
 
 = Hintergrundbilder
 #image("great.jpg")
 https://www.fz-juelich.de/de/aktuelles/news/meldungen/2024/fusionsreaktor-jet-erzielt-neuen-weltrekord-bei-finalen-experimenten/jet-interior-with-superimposed-plasma.jpg/@@images/image/great
+
+#image("NuclearFusion-Iter.png")
+https://edison.media/atomkraft/25215356/
