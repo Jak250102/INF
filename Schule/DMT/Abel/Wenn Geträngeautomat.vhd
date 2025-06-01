@@ -22,9 +22,7 @@ S40c=4;
 EQUATIONS
   ff.clk = takt;
 
-  WHEN (ff >= 44) THEN ff := 0;
-  ELSE WHEN (b0 == 1) THEN ff := ff + 1;
-  ELSE WHEN (b1 == 1) THEN ff := ff + 2;
+  WHEN (b0 == 1) THEN ff := ff + 1;
   ELSE ff := ff;
  
   GA = (ff >= 4);
