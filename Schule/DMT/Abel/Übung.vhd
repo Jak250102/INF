@@ -20,8 +20,8 @@ ff.clk = takt; "Takt auf alle ffs im SET legen "
 TRUTH_TABLE
 
 ([S1,S2,ff1,ff2,ff3,ff4] :> ff ) " Vor dem Takt :> Nach dem Takt"
-"---------------
-" vorwaerts 
+"---------------"
+" vorwaerts "
 [0,0,0,0,0,0] :> 1;
 [0,0,0,0,0,1] :> 2;
 [0,0,0,0,1,0] :> 3;
@@ -34,7 +34,6 @@ TRUTH_TABLE
 [0,0,1,0,0,1] :> 0;
 
 "---------------"
-
 
 " Zaehler stoppt"
 [1,0,0,0,0,0] :> 0;
