@@ -25,7 +25,7 @@ EQUATIONS
   When (b0 == 1)Then ff := ff +1;
   When (b1 == 1) Then ff := ff +2;
  
-  When (ff >= 5) Then ff == 0; " Zähler auf 0 zurücksetzen, wenn größer als 7"
+  When (ff >= 5) Then ff := 0; " Zähler auf 0 zurücksetzen, wenn größer als 7"
   GA = (ff >= 4);
   
  
