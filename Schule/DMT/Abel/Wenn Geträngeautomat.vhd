@@ -24,7 +24,6 @@ EQUATIONS
   WHEN (ff >= 4) THEN ff := 0;
   ELSE WHEN (b0 == 1) THEN ff := ff + 1;
   ELSE WHEN (b1 == 1) THEN ff := ff + 2;
-  ELSE ff := ff;
  
   GA = (ff >= 4);
 
