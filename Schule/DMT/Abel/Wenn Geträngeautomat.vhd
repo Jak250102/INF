@@ -25,9 +25,14 @@ EQUATIONS
   When (b0 == 1)Then ff := ff +1;
   When (b1 == 1) Then ff := ff +2;
  
-  When (ff >= 5) Then ff := 0; " Zähler auf 0 zurücksetzen, wenn größer als 7"
   GA = (ff >= 4);
-  
+
+Truth_table (ff :> ff)
+  5 :> 0;
+  6 :> 0;
+  7 :> 0;
+  8 :> 0;
+  9 :> 0;
  
 
   " 7-Segment-Dekodierung "
