@@ -16,13 +16,13 @@ ff = [ff1,ff2,ff3,ff4];" SET"
 
 EQUATIONS
 ff.clk = takt; "Takt auf alle ffs im SET legen "
-When S1 = 0 and S2 = 0 then
+When S1 = 0 & S2 = 0 then
   ff1 = ff1 + 1; " Vorwaerts zaehlen "
-When S1 = 1 and S2 = 0 then
+When S1 = 1 & S2 = 0 then
   ff1 = ff1; " Zaehler stoppt "
-When S1 = 0 and S2 = 1 then
+When S1 = 0 & S2 = 1 then
   ff1 = ff1 - 1; " Rueckwaerts zaehlen "
-When others then
+Else
   ff1 = ff1; " Keine Aenderung "
 END EQUATIONS
 
