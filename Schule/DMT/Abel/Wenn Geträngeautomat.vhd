@@ -21,8 +21,8 @@ EQUATIONS
   ff.clk = takt;
 
 
-  When (b1 == 1)Then ff := ff +1;
-  When (b2 == 1) Then ff := ff +2;
+  When (b0 == 1)Then ff := ff +1;
+  When (b1 == 1) Then ff := ff +2;
   When (ff >= 4) Then GA := 1;
   When (GA == 1;) Then ff := 0;
  
