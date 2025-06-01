@@ -1,4 +1,4 @@
-#import "../template/template.typ":*
+#import "../../template/template.typ":*
 #show: styling
 #head1[Fusionsenergie – Die Zukunft der Energie]
 
@@ -8,7 +8,10 @@
 
 = Begrüßung
 - Bild der Sonne
+1 #image("ChatGPT Image 1. Juni 2025, 10_29_53.png")
 	- Erklärung das die Sonne ein Fusionsgenerator ist
+Einleitung:
+	Ich habe euch heute ein Bild mitgebracht, mit etwas dass ihr alle kennt. Die Sonne. Sie ist das Zentrum und die Energiequelle unseres Sonnensystems. Doch das Wirft die Frage auf, wie erzeugt sie diese Energie? Die Antwort ist einfach: Durch Kernfusion. Und genau darum soll es heute gehen. Ich möchte euch die Grundlagen der Fusionsenergie näherbringen und erklären, warum sie eine vielversprechende Zukunftstechnologie ist.
 
 = Titelfolie
 
@@ -69,7 +72,10 @@
 	- heiße: (über 100 Milionen °C)
 == Natürliches Beispiel: Energiequelle der Sonne
 	- Jede sekunde verbrennen 600 mio Tonnen Wasserstoff zu 596 mio Tonnen Helium die Sonne wird also jede sekounde 4 mio Tonnen leichter
-== Bedingungen für Fusion: Temperatur, Druck, Plasma
+== Bedingungen für Fusion: 
+- Temperatur
+- Druck
+- Plasma
 == Was ist Plasma
 	- ausführung was ist plasma (Plasma entsteht, wenn ein Gas so stark erhitzt wird, dass die Atome ihre Elektronen verlieren (4. Agregatszustand). was bei temperaturen über 100 mio °C passiert bedingt also fusion)
 #image("original1.jpg", width: 100%)\	
@@ -90,10 +96,6 @@ https://www.ipp.mpg.de/plasma
 2.) Deuteriumfusion
 - Deuterium + Tritium → Helium + Neutron + Energie
 - Hohe Energieausbeute, da Deuterium und Tritium schwerer sind
-3.) Tritiumfusion
-- Tritium + Tritium → Helium + 2 Neutronen + Energie
-- Hohe Energieausbeute, da Tritium schwerer ist
-- Kaum vorhanden
 
 #image("header_image.jpg", width: 100%)\
 https://www.ipp.mpg.de/ippcms/de/pr/fusion21\
@@ -336,6 +338,9 @@ Dann pro Minute:\
  - Bei DT-Fusion entstehen schnelle Neutronen → würden Materialien aktivieren → radioaktive Belastung → aufwändige Abschirmung nötig
  - Für viele grundlegende Tests reichen H- oder He-Plasmen, z. B. zur Untersuchung von Stabilität, Magnetfeldern, Energieeinschluss
  - W7-X testet, ob die Stellarator-Form überhaupt für Dauerbetrieb geeignet ist – unabhängig vom Brennstoff
+https://www.ipp.mpg.de/panoramaw7x
+
+
 = Chancen und Risiken
 - Vorteile:
   - Kein CO₂
@@ -371,13 +376,52 @@ Dann pro Minute:\
 
 
 = Quellen
-- 1 Max-Planck-Institut für Plasmaphysik https://www.ipp.mpg.de/  [23.5.2025]
-- 2 ITER organization https://www.iter.org/ [23.5.2025]
+#hr
+[1]
+- #image("ChatGPT Image 1. Juni 2025, 10_29_53.png") 
+ - ChatGPT [6.1.2025]
+#hr
+[2]
+- #image("original1.jpg", width: 100%)
+ - https://www.ipp.mpg.de/plasma [23.5.2025]
+#hr
+[3]
+- #image("header_image.jpg", width: 100%)
+ - https://www.ipp.mpg.de/ippcms/de/pr/fusion21\ [23.5.2025]
+#hr
+[4]
+- #image("image-1.png")
+  - Daten von https://www.iter.org/about/iter-members [23.5.2025]
+#hr
+[5]
+- #image("flags_evening_lights_1_small.jpg")
+ - Bild von https://www.iter.org/about/iter-members [23.5.2025]
+#hr
+[6]
+- #image("drone_riche_whole-site_may-2025_c.jpg")
+ - Bild von https://www.iter.org/about/iter-france [23.5.2025]
+#hr
+[7]
+- #image("great.jpg")
+ - https://www.fz-juelich.de/de/aktuelles/news/meldungen/2024/fusionsreaktor-jet-erzielt-neuen-weltrekord-bei-finalen-experimenten/jet-interior-with-superimposed-plasma.jpg/@@images/image/great [6.1.2025]
+#hr
+ [8]
+ - #image("fusionsreaktor-funktionsprinzip.png")
+ - #image("992Fusionsreaktor_Querschnitt_ITER.png")
+  - https://www.leifiphysik.de/kern-teilchenphysik/kernspaltung-und-kernfusion/ausblick/fusionsreaktor [6.1.2025]
+	#hr
+[9]
 
 = allgemeine Quellen
-- https://www.youtube.com/watch?v=jXlFhEhiixM
-- https://www.youtube.com/watch?v=xskmghN8xgg
+- https://www.youtube.com/watch?v=jXlFhEhiixM [6.1.2025]
+- https://www.youtube.com/watch?v=xskmghN8xgg [6.1.2025]
 - ChatGPT
 - Github Copilot
-- https://www.ipp.mpg.de/
-- https://www.iter.org/
+- Max-Planck-Institut für Plasmaphysik https://www.ipp.mpg.de/  [23.5.2025]
+- ITER organization https://www.iter.org/ [23.5.2025]
+- Forschungszentrum Jülich https://www.fz-juelich.de/de [6.1.2025]
+- LEIFIphysik https://www.leifiphysik.de/kern-teilchenphysik/kernspaltung-und-kernfusion/ausblick/fusionsreaktor
+
+= Hintergrundbilder
+#image("great.jpg")
+https://www.fz-juelich.de/de/aktuelles/news/meldungen/2024/fusionsreaktor-jet-erzielt-neuen-weltrekord-bei-finalen-experimenten/jet-interior-with-superimposed-plasma.jpg/@@images/image/great
