@@ -26,9 +26,6 @@ EQUATIONS
   When (ff >= 4) Then GA := 1;
   When (GA == 1;) Then ff := 0;
  
-  " Zählersteuerung: Halten, Vorwärts, Rückwärts"
-  WHEN (b0 == 0) THEN ff := ff;                 " Halten"
-  ELSE WHEN (b1 == 1) THEN ff := ff + 1;  " Vorwärts"
 
   " 7-Segment-Dekodierung "
 TRUTH_TABLE (ff -> [a,b,c,d,e,f,g])
