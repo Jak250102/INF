@@ -8,7 +8,7 @@ DECLARATIONS
   ff0..ff3     PIN 61, 60, 59, 58 ISTYPE 'REG';
     GA,MG PIN 55,56 ISTYPE 'COM';
   ff = [ff0,ff1, ff2, ff3];
-
+ 
 Idle=0;
 S10c=1;
 S20c=2;
