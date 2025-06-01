@@ -24,7 +24,7 @@ EQUATIONS
 
   When (b0 == 1)Then ff := ff +1;
   When (b1 == 1) Then ff := ff +2;
-  When (ff >= 5)Then ff := ff-5;
+  When (ff == 5)Then ff := ff-5;
  
   GA = (ff >= 4);
 
