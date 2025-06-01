@@ -1,46 +1,32 @@
-MODULE aktuell
-
-TITLE 'aktuell'
-
-
-@dcset
-
+MODULE zaehler_mit_schalter
+ 
+TITLE 'Synchronzähler 0–7 mit Vor-/Rückwärts und Haltefunktion'
+ 
 DECLARATIONS
-takt PIN 88; 
-S1,S2 PIN 30,31;
-A, B, C, D, E, F, G Pin 81, 79, 80, 85, 87, 84, 86 ISTYPE 'BUFFER,COM';
-
-ff1,ff2,ff3,ff4 PIN 58,59,60,61 ISTYPE 'BUFFER, REG';
-
-ff = [ff1,ff2,ff3,ff4];" SET"
-
+  takt         PIN 13;                " Gültiger Clock-Pin (ggf. anpassen)"
+  s1, s2       PIN 30, 31;            " Steuereingänge"
+  ff0..ff2     PIN 61, 60, 59 ISTYPE 'REG';
+  ff = [ff2, ff1, ff0];               " Zählerbits als Set"
+ 
+  a, b, c, d, e, f, g PIN 67,65,66,70,72,69,71 ISTYPE 'COM';  " 7-Segment-Ausgänge (kombinatorisch!)"
+ 
 EQUATIONS
-ff.clk = takt; "Takt auf alle ffs im SET legen "
-When S1 = 0 & S2 = 0 then
-  ff1 = ff1 + 1; " Vorwaerts zaehlen "
-When S1 = 1 & S2 = 0 then
-  ff1 = ff1; " Zaehler stoppt "
-When S1 = 0 & S2 = 1 then
-  ff1 = ff1 - 1; " Rueckwaerts zaehlen "
-Else
-  ff1 = ff1; " Keine Aenderung "
-END EQUATIONS
-
-
-
-TRUTH_TABLE (ff -> [A, B, C, D, E, F, G])
-  0 -> [1, 1, 1, 1, 1, 1, 0];
-  1 -> [0, 1, 1, 0, 0, 0, 0];
-  2 -> [1, 1, 0, 1, 1, 0, 1];
-  3 -> [1, 1, 1, 1, 0, 0, 1];
-  4 -> [0, 1, 1, 0, 0, 1, 1];
-  5 -> [1, 0, 1, 1, 0, 1, 1];
-  6 -> [1, 0, 1, 1, 1, 1, 1];
-  7 -> [1, 1, 1, 0, 0, 0, 0];
-  8 -> [1, 1, 1, 1, 1, 1, 1];
-  9 -> [1, 1, 1, 1, 0, 1, 1];
-  
-
-
-
+  ff.clk = takt;
+ 
+  " Zählersteuerung: Halten, Vorwärts, Rückwärts"
+  WHEN (s1 == 0) THEN ff := ff;                 " Halten"
+  ELSE WHEN (s1 == 1) & (s2 == 1) THEN ff := ff + 1;  " Vorwärts"
+  ELSE WHEN (s1 == 1) & (s2 == 0) THEN ff := ff - 1;  " Rückwärts"
+ 
+  " 7-Segment-Dekodierung "
+TRUTH_TABLE (ff -> [a,b,c,d,e,f,g])
+    0 -> [1,1,1,1,1,1,0];
+    1 -> [0,1,1,0,0,0,0];
+    2 -> [1,1,0,1,1,0,1];
+    3 -> [1,1,1,1,0,0,1];
+    4 -> [0,1,1,0,0,1,1];
+    5 -> [1,0,1,1,0,1,1];
+    6 -> [1,0,1,1,1,1,1];
+    7 -> [1,1,1,0,0,0,0];
+ 
 END
