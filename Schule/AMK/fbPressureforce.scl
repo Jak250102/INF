@@ -1,0 +1,6 @@
+#i_rPressure
+#i_rDiameter
+#i_rEfficiency
+#o_rForce
+
+#o_rForce := #i_rPressure * 10*(sqrt(#i_rDiameter) * 3.14)/4*#i_rEfficiency;
