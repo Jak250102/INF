@@ -316,6 +316,83 @@ $I_N=-(I_1+I_2+I_3)=-(#ej(10,0)+#e-j(20,78.59)+#ej(5,145.84))=#ej(19.46,120.3)$\
 == Dreieckschaltung, symmetrische, gleichartige Last
 
 #head2("Nr.1")
-#image("image-2.png")
-- a)
-$U_"Str"=400V$\
+#image("image-3.png")
+- a)\
+$U=U_"Str"=400V$\
+
+- b)\
+$I_"Str1"=U/R=(#ej(400,0)V)/(40Ω)=#ej(10,0)A$\
+$I_"Str1"=U/R=(#e-j(400,120)V)/(40Ω)=#e-j(10,120)A$\
+$I_"Str1"=U/R=(#ej(400,120)V)/(40Ω)=#ej(10,120)A$\
+- c)\
+$I_"L1"=I_"Str1"*sqrt(3)=#ej(10,0)A*sqrt(3)=#ej(17.32,0)A$\
+$I_"L2"=I_"Str2"*sqrt(3)=#e-j(10,120)A*sqrt(3)=#e-j(17.32,120)A$\
+$I_"L3"=I_"Str3"*sqrt(3)=#ej(10,120)A*sqrt(3)=#ej(17.32,120)A$
+
+#head2("Nr.7")
+#image("image-4.png")
+- a)\
+$I_"Str1"=U/R=(#ej(400,0)V)/(22Ω)=#ej(18.18,0)A$\
+$I_"Str1"=U/R=(#e-j(400,120)V)/(22Ω)=#e-j(18.18,120)A$\
+$I_"Str1"=U/R=(#ej(400,120)V)/(22Ω)=#ej(18.18,120)A$\
+- c)\
+$I_"L1"=I_"Str1"*sqrt(3)=#ej(18.18,0)A*sqrt(3)=#ej(31.18,0)A$\
+$I_"L2"=I_"Str2"*sqrt(3)=#e-j(18.18,120)A*sqrt(3)=#e-j(31.18,120)A$\
+$I_"L3"=I_"Str3"*sqrt(3)=#ej(18.18,120)A*sqrt(3)=#ej(31.18,120)A$
+
+- b)\
+$I_"L1"=I_"Str1"*sqrt(3)=#ej(18.18,0)A*sqrt(3)=#ej(31.18,0)A$\
+$I_"L2"=I_"Str2"*sqrt(3)=#e-j(18.18,120)A*sqrt(3)=#e-j(31.18,120)A$\
+$I_"L3"=I_"Str3"=#ej(18.18,120)A$\
+
+== Dreieckschaltung, unsymmetrische, gleichartige Last
+#head2("Nr.1")
+#image("image-6.png")\
+
+- b)\
+$I_"Str1"=I_"12"=#ej(15,0)A$\
+$I_"Str2"=I_"23"=#e-j(25,120)A$\
+$I_"Str3"=I_"31"=#ej(30,120)A$\
+
+$I_"1"=I_"12"-I_"31"=I_"Str1"-I_"Str3"= #ej(15,0)A-#ej(30,120)A = #e-j(39.7,40.9)A$\
+$I_"2"=I_"23"-I_"12"=I_"Str2"-I_"Str1"= #e-j(25,120)A-#ej(15,0)A=#e-j(35,141.8)$\
+$I_"3"=I_"31"-I_"23"=I_"Str3"-I_"Str2"= #ej(30,120)A-#e-j(25,120)A= #ej(47.7,93)$\
+
+
+#head2("Nr.5")
+#image("image-7.png")
+- a)\
+$X_C=1/(2*pi*50"HZ"*16"µF")=199 Omega $\
+$X_C=1/(2*pi*50"HZ"*22"µF")=144 Omega $\
+$X_C=1/(2*pi*50"HZ"*47"µF")=67.7 Omega $\
+
+- b)\
+$I_"Str1"=U/X_C=(#ej(400,0)V)/(199Ω)=#ej(2,0)A$\
+$I_"Str2"=U/X_C=(#e-j(400,120)V)/(144Ω)=#e-j(2.75,120)A$\
+$I_"Str3"=U/X_C=(#ej(400,120)V)/(67.7Ω)=#ej(5.9,120)A$\
+
+- c)\
+$I_"1"=I_"12"-I_"31"=I_"Str1"-I_"Str3"= #ej(2,0)A-#ej(5.9,120)A = #e-j(15,18.8)A$\
+$I_"2"=I_"23"-I_"12"=I_"Str2"-I_"Str1"= #e-j(2.75,120)A-#ej(2,0)A=#e-j(4,141.8)$\
+$I_"3"=I_"31"-I_"23"=I_"Str3"-I_"Str2"= #ej(5.9,120)A-#e-j(2.75,120)A= #ej(7.66,102)$\
+
+- d)\
+$X_C=1/(2*pi*50"HZ"*27"µF")=117.9 Omega $\
+$X_C=1/(2*pi*50"HZ"*22"µF")=144 Omega $\
+$X_C=1/(2*pi*50"HZ"*47"µF")=67.7 Omega $\
+\
+$I_"Str1"=U/X_C=(#ej(400,0)V)/(117.9Ω)=#ej(3.4,0)A$\
+$I_"Str2"=U/X_C=(#e-j(400,120)V)/(144Ω)=#e-j(2.75,120)A$\
+$I_"Str3"=U/X_C=(#ej(400,120)V)/(67.7Ω)=#ej(5.9,120)A$\
+\
+$I_"1"=I_"12"-I_"31"=I_"Str1"-I_"Str3"= #ej(3.4,0)A-#ej(5.9,120)A = #e-j(8.14,38.9)A$\
+$I_"2"=I_"23"-I_"12"=I_"Str2"-I_"Str1"= #e-j(2.75,120)A-#ej(3.4,0)A=#e-j(5.33,153.3)$\
+$I_"3"=I_"31"-I_"23"=I_"Str3"-I_"Str2"= #ej(5.9,120)A-#e-j(2.75,120)A= #ej(7.66,102)$\
+
+== Dreieckschaltung, unsymmetrische, gleichartige Last
+#head2("Nr.1")
+#image("image-8.png")
+$Z=U/I=(400V)/(2A)=200Ω$\
+$Z=sqrt(R²+X_L²)$\
+$Z²=R²+X_L²$\
+$X_L=sqrt(Z²-R²)$\
