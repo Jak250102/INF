@@ -99,3 +99,23 @@ Bei dessen Teilung teilen sich, bei zusammenfügen addieren sich, z.B. Volumen V
 - Mit Hilfe des 2. Hauptsatzes lassen sich unterschiedliche Energieformen hinsichtlich ihrer Umwandelbarkeit in mechanische Arbeit bewerten, z.b.\
   - Aus Energie bei hoher Temp. kann mehr Arbeit erzeugt werden, als aus der gleichen Energiemenge bei niedriger Temp.\
 - Der 2. Hauptsatz liefert die thermodynamischen oberen Grenzwerte für die Wirkungsgrade und Leistungszahlen häufig verwendeter Maschinen, Apparate und Anlagen.\
+
+= Entropie
+- Die Entropie S (in [J/K]) ist eine nicht anschaulich vorstellbare Rechengröße zur Beurteilung thermodynamischer Systeme.\
+- Entropie eines System nimmt zu, wenn:
+  - Wärme zugeführt wird\
+  - Arbeit verrichtet wird\
+  - Reibung auftritt\
+  - Dissipationsarbeit (Reibung) auftritt\
+
+- Entropie eines Systems nimmt ab, wenn:
+  - Wärme entzogen wird\
+  - Arbeit am System verrichtet wird\
+  - Reibung vermieden wird\
+
+- Entropie ist ein Maß für die Unordnung eines Systems.\
+- Sie ist eine Kalorische (Energetische) Zustandsgröße.\
+- Bezogen auf die Systemmasse $arrow$ spezifische Entropie s=S/m
+- Bezogen auf die Zeit $arrow$ Entropiestrom s (in[W/K])\
+- Definitionsgleichung:
+ - $"ds"=("dQ"+"dW"_"diss")/T$
