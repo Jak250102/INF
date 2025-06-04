@@ -129,13 +129,14 @@ Verfügbarkeit:
 - ungefähr 15 Millionen Tonnen Lithium Weltweit
 
 
-Aus einem Glass Wasser 200ml lassen sich rund 800kWh Energie gewinnen, das reicht für einen Normalen Haushalt für rund 2,7 Tage. Dabei werden nur 0.15g Lithium benötigt
+Aus einem Glass Wasser 200ml lassen sich rund 800kWh Energie gewinnen, das reicht für einen Normalen Haushalt für rund 50 Tage. Dabei werden nur 0.15g Lithium benötigt
 
-Dahin würden in der selben zeit 10kg Kohle verbrannt werden
+Dahin würden in der selben zeit 50kg Kohle verbrannt werden
 
 Unser Lithium vorrat reicht für rund 7500 jahre Strom für die ganze Welt
 
-Aus einem Glas Wasser (200 ml) gewinnst du rund 800 kWh Energie – das versorgt einen Normalhaushalt etwa 2,7 Tage. Dafür brauchst du nur 0,15 g Li. Würdest du stattdessen Kohle verbrennen, bräuchtest du etwa 220 kg, um die gleiche Strommenge zu erzeugen. Und: Unser heute bekannter Lithium-Vorrat würde ausreichen, um die weltweite Stromversorgung noch rund 19 000 Jahre lang vollständig per Fusion abzudecken.
+#image("image-3.png")
+https://fusionsspiel.ipp.mpg.de/
 == Aufgabe des Plasmas
 - Im Plasma müssen die Atomkerne so stark beschleunigt werden, dass sie sich gegenseitig überwinden können und Kollisionsreaktionen stattfinden können
 - Die Temperatur muss hoch genug sein, damit die Atomkerne genügend Energie haben, um die Coulomb-Barriere zu überwinden \~100 Millionen °C
@@ -419,6 +420,8 @@ https://www.ipp.mpg.de/panoramaw7x
   - https://www.leifiphysik.de/kern-teilchenphysik/kernspaltung-und-kernfusion/ausblick/fusionsreaktor [1.6.2025]
 	#hr
 [9]
+#image("image-4.png")
+https://fusionsspiel.ipp.mpg.de/
 
 = allgemeine Quellen
 - https://www.youtube.com/watch?v=jXlFhEhiixM [1.6.2025]
