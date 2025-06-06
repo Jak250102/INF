@@ -131,3 +131,86 @@ Planet Baden-Württemberg
 Ps.\
 Glory to the Empire\
 "Your shield generator might fail – we won’t."
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+= Prüfung 2020 Sommer Mediation Elektrotechnik
+
+#head2[Aufgabe Mediation Elektrotechnik]
+Servus Julius,\ 
+ich habe eine interessante Nachricht über die Einführung von RFID-Kennzeichnung für Gepäckstücke am Flughafen gelesen.
+
+Hier sind die wichtigsten Punkte, die ich herausgefunden habe:
+
+*Ziele Einführung RFID Kennzeichnung:*
+- reduzieren von Gepäckverlust
+- reduzieren von fehlerhaften Zuordnungen der Gepäckstücke
+- reduzieren für Ausgaben die Gepäckstücke zu finden
+- unterstützung verlorenes Gepäck zu finden
+- keine Notwendigkeit von Papieretiketten unterstützt Umweltfreundlichkeit
+
+
+*Funktionsweise:*
+- Wiederverwendbare Cips
+- Gepäck kann vom Moment des Kaufens im Einzelhandel des Flughafens bis zum Auschecken am Flughafen verfolgt werden
+
+- Zum Verkaufszeitpunkt wird das Gepäckstück registriert
+- RFID Lesegeräte lesen passive RFID Chips aus
+- an hand der RFID Antenne wird  das Gepäckstück anhand des Tags identifiziert.
+- Das Lesegerät sendet die Informationen an das zentrale System zur Verarbeitung über netzwerk.
+- Das System wertet die informationen aus und sendet sie an die APP des Mobilgeräts des Passagiers.
+- Integriertes IoT-System ist entwickelt zum nachverfolgen von RFID Tags.
+
+
+Viele Grüße,\
+Jannik Muy\
+
+= Prüfung 2021 Sommer Mediation Elektrotechnik
+#image("image.png")
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+#head2("Störlichtbogenschutz")	\
+#head2("Was ist ein Störlichtbogen?")\
+- elektrische Entladung durch die Luft
+- Erreicht Temperaturen von über 19.999 Grad Celsius
+#head2("Entstehung und Ursache des Störlichtbogens")\
+- Spannungsspitzen
+- Isolationsfehler
+- alte Verbindungen
+
+#head2("Folgen des Störlichtbogens")\
+
+- Die elektrische Entladung kann tödlich sein
+- Sie verbrennt Kleidung und Haut
+- Reicht bis zu 6 Meter weiter
+- Kann eine Druckwelle erzeugen, die einen Arbeiter durch den Raum schleudert
+- kann Temporäre oder permanente Blindheit hervorrufen
+- Arbeiter an Hochspannungsleitungen sind dem Risiko von Störlichtbögen ausgesetzt
+
+#head2("Schutzmaßnahmen gegen Störlichtbögen")\
+- Störlichtbogenschutz ist wichtig
+- Schutzkleidung reduziert den Schaden
+- Restrisiko besteht
+
